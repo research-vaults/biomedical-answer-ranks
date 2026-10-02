@@ -1,0 +1,42 @@
+{
+  "status": "FROZEN_BEFORE_NEW_SELECTOR_OUTPUTS",
+  "expected": 6400,
+  "case_clusters": {
+    "medeinst": 96,
+    "medx": 128
+  },
+  "item_branches": 320,
+  "arms": 5,
+  "orders": 2,
+  "selectors": {
+    "gemini": "google/gemini-2.5-flash-lite",
+    "llama": "meta-llama/llama-3.1-8b-instruct"
+  },
+  "rates": {
+    "google/gemini-2.5-flash-lite": {
+      "prompt": "0.0000001",
+      "completion": "0.0000004",
+      "image": "0.0000001",
+      "audio": "0.0000003",
+      "input_audio_cache": "0.00000003",
+      "web_search": "0.014",
+      "internal_reasoning": "0.0000004",
+      "input_cache_read": "0.00000001",
+      "input_cache_write": "0.0000000833333333333333"
+    },
+    "meta-llama/llama-3.1-8b-instruct": {
+      "prompt": "0.00000005",
+      "completion": "0.00000008",
+      "input_cache_read": "0.000000025"
+    }
+  },
+  "one_pass_conservative_usd": 3.0966022499999912,
+  "two_pass_conservative_usd": 6.1932044999999825,
+  "cap_usd": 7,
+  "prior_spend": 9.6898139371,
+  "project_ceiling": 29,
+  "units_sha256": "926d9b64811696b4f66f8b764ee9ee267b54578dd437cf5448d5bf551c0a4437",
+  "schedule_sha256": "c67a7645389df1f2b53d3a3ffdbaa69d48d1978d4300d3179e1938df5b2f74fe",
+  "analysis_sha256": "954ecb904b8559b533218d1f12c7be0e4b2fafa5fb8f00d10ecf2b9eafae8371",
+  "release_integrity_only": true
+}

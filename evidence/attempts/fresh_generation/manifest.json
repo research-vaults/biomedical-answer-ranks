@@ -1,0 +1,31 @@
+{
+  "format": "sanitized-evidence-gzip-shards-v1",
+  "logical_name": "fresh_generation.jsonl",
+  "logical_bytes": 11577304,
+  "logical_sha256": "83dbef360fb6346b5c15ecada173c5ef15edbe747ab0a17bd4da52c4a2e6fc8b",
+  "chunk_bytes": 4194304,
+  "parts": [
+    {
+      "file": "part-000000.gz",
+      "compressed_bytes": 427490,
+      "compressed_sha256": "7dd48b9ede4c5bcfcb9385cf3ea1751055574363873ca511b0492f7dfe107ad8",
+      "logical_bytes": 4194304,
+      "logical_sha256": "45553eabb945a959e3268ea2260c4456a1c10d9518ac5016c5ba8009941788ea"
+    },
+    {
+      "file": "part-000001.gz",
+      "compressed_bytes": 428011,
+      "compressed_sha256": "585dfef2d7991e1595c0040171d9149b456875874fa2c6ed28206165ce5e5bb2",
+      "logical_bytes": 4194304,
+      "logical_sha256": "de16f1697c58c271bc4df77dc6e0c3eb2cb7c0c92f0dbf31479139a74916613f"
+    },
+    {
+      "file": "part-000002.gz",
+      "compressed_bytes": 313798,
+      "compressed_sha256": "9817553d3b71a781fd80ac91f87c2fdbc947e991b71632292236297412c4c6fb",
+      "logical_bytes": 3188696,
+      "logical_sha256": "e6eddb71ce5af50d2ddd5b1bbd80b76271302c3cafd30cb8bd7042dd7146eb6e"
+    }
+  ],
+  "privacy_note": "Compression is not anonymization; scan the logical content before and after packing."
+}

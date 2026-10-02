@@ -1,0 +1,11 @@
+{
+  "status": "FROZEN_BEFORE_SELECTION",
+  "schedule_sha256": "851cb4da08a5c5fcca95b81c709c053947a9d9734effc8305c0d67a79d4e9b37",
+  "pool_sha256": "1bf26bb12843b621fce5ae69d660d47ae2d13e86a347bc273f8c2e732aef4b53",
+  "generation_canonical_sha256": "295820e88e3c0bce31b2d8a4ef72a24f36a4751810f0f8869c2fde3c794b8a1f",
+  "expected_choices": 1024,
+  "valid_generation": 1777,
+  "failed_empty_calls": 15,
+  "generation_attempts": 1855,
+  "release_integrity_only": true
+}

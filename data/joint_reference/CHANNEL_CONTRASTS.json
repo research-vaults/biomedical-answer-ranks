@@ -1,0 +1,392 @@
+{
+  "corrected_v4_inclusive": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.0625,
+      "ci95": [
+        -0.010416666666666666,
+        0.14583333333333334
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.052083333333333336,
+      "ci95": [
+        -0.11458333333333333,
+        0.010416666666666666
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.11458333333333333,
+      "ci95": [
+        -0.21875,
+        -0.010416666666666666
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.19791666666666666,
+      "ci95": [
+        -0.34375,
+        -0.052083333333333336
+      ]
+    }
+  },
+  "corrected_v4_strict": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.041666666666666664,
+      "ci95": [
+        0.0,
+        0.09375
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.020833333333333332,
+      "ci95": [
+        -0.08333333333333333,
+        0.03125
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.0625,
+      "ci95": [
+        -0.14583333333333334,
+        0.020833333333333332
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.125,
+      "ci95": [
+        -0.23958333333333334,
+        -0.010416666666666666
+      ]
+    }
+  },
+  "original_frozen_inclusive": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.052083333333333336,
+      "ci95": [
+        -0.03125,
+        0.13541666666666666
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.041666666666666664,
+      "ci95": [
+        -0.10416666666666667,
+        0.010416666666666666
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.09375,
+      "ci95": [
+        -0.19791666666666666,
+        0.010416666666666666
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.125,
+      "ci95": [
+        -0.2708333333333333,
+        0.020833333333333332
+      ]
+    }
+  },
+  "original_frozen_strict": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.041666666666666664,
+      "ci95": [
+        0.0,
+        0.09375
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.020833333333333332,
+      "ci95": [
+        -0.08333333333333333,
+        0.03125
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.0625,
+      "ci95": [
+        -0.14583333333333334,
+        0.020833333333333332
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.13541666666666666,
+      "ci95": [
+        -0.25,
+        -0.03125
+      ]
+    }
+  },
+  "refinement_etiologic": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.041666666666666664,
+      "ci95": [
+        0.0,
+        0.09375
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.020833333333333332,
+      "ci95": [
+        -0.08333333333333333,
+        0.03125
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.0625,
+      "ci95": [
+        -0.14583333333333334,
+        0.020833333333333332
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.125,
+      "ci95": [
+        -0.23958333333333334,
+        -0.010416666666666666
+      ]
+    }
+  },
+  "refinement_etiologic_severity_or_site": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.041666666666666664,
+      "ci95": [
+        0.0,
+        0.09375
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.020833333333333332,
+      "ci95": [
+        -0.08333333333333333,
+        0.03125
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.0625,
+      "ci95": [
+        -0.14583333333333334,
+        0.020833333333333332
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.125,
+      "ci95": [
+        -0.23958333333333334,
+        -0.010416666666666666
+      ]
+    }
+  },
+  "refinement_severity_or_site": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.041666666666666664,
+      "ci95": [
+        0.0,
+        0.09375
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.020833333333333332,
+      "ci95": [
+        -0.08333333333333333,
+        0.03125
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.0625,
+      "ci95": [
+        -0.14583333333333334,
+        0.020833333333333332
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.125,
+      "ci95": [
+        -0.23958333333333334,
+        -0.010416666666666666
+      ]
+    }
+  },
+  "refinement_temporal": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.0625,
+      "ci95": [
+        0.0,
+        0.125
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.052083333333333336,
+      "ci95": [
+        -0.11458333333333333,
+        0.010416666666666666
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.11458333333333333,
+      "ci95": [
+        -0.20833333333333334,
+        -0.03125
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.13541666666666666,
+      "ci95": [
+        -0.2604166666666667,
+        0.0
+      ]
+    }
+  },
+  "refinement_temporal_etiologic": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.0625,
+      "ci95": [
+        0.0,
+        0.125
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.0625,
+      "ci95": [
+        -0.125,
+        0.0
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.125,
+      "ci95": [
+        -0.21875,
+        -0.041666666666666664
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.15625,
+      "ci95": [
+        -0.2916666666666667,
+        -0.020833333333333332
+      ]
+    }
+  },
+  "refinement_temporal_etiologic_severity_or_site": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.0625,
+      "ci95": [
+        0.0,
+        0.125
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.0625,
+      "ci95": [
+        -0.125,
+        0.0
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.125,
+      "ci95": [
+        -0.21875,
+        -0.041666666666666664
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.14583333333333334,
+      "ci95": [
+        -0.28125,
+        -0.010416666666666666
+      ]
+    }
+  },
+  "refinement_temporal_severity_or_site": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.0625,
+      "ci95": [
+        0.0,
+        0.125
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.052083333333333336,
+      "ci95": [
+        -0.11458333333333333,
+        0.010416666666666666
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.11458333333333333,
+      "ci95": [
+        -0.20833333333333334,
+        -0.03125
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.125,
+      "ci95": [
+        -0.25,
+        0.010416666666666666
+      ]
+    }
+  },
+  "source_coded_plus_all_refinements": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.052083333333333336,
+      "ci95": [
+        -0.010416666666666666,
+        0.11458333333333333
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.0625,
+      "ci95": [
+        -0.125,
+        0.0
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.11458333333333333,
+      "ci95": [
+        -0.20833333333333334,
+        -0.020833333333333332
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.17708333333333334,
+      "ci95": [
+        -0.3229166666666667,
+        -0.03125
+      ]
+    }
+  },
+  "source_coded_target_only": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.03125,
+      "ci95": [
+        -0.020833333333333332,
+        0.08333333333333333
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.03125,
+      "ci95": [
+        -0.09375,
+        0.03125
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.0625,
+      "ci95": [
+        -0.14583333333333334,
+        0.020833333333333332
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.16666666666666666,
+      "ci95": [
+        -0.28125,
+        -0.052083333333333336
+      ]
+    }
+  }
+}

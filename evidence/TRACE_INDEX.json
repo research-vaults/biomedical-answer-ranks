@@ -1,0 +1,120 @@
+{
+  "scope": "Complete retained attempts for the explicitly listed banks; attempts are not independent cases. Canonical selected records remain in data/.",
+  "banks": [
+    {
+      "bank": "development_generation",
+      "manifest": "evidence/attempts/development_generation/manifest.json",
+      "source_records": [
+        {
+          "route_class": "hosted",
+          "records": 1238,
+          "original_record_file_sha256": "f834215dd519c8866e1fa45fa6bfc1388c1720e90dab92a2b6ac795332068568"
+        },
+        {
+          "route_class": "local_serving",
+          "records": 166,
+          "original_record_file_sha256": "51523a2f763a1e80f3a6aa7f184d7f061f0cb720c07f42b725a8e824272ba34b"
+        }
+      ],
+      "attempt_records": 1404,
+      "unique_scientific_identities": 1344,
+      "records_with_text": 1345,
+      "ok_true": 1344,
+      "ok_false": 60,
+      "ok_missing": 0,
+      "logical_bytes": 2444218,
+      "stored_bytes": 302718,
+      "logical_sha256": "9791fccbb7e289c548f933ed1790d7292a06abaa7b34bd627c0a6cb76d1e1374"
+    },
+    {
+      "bank": "fresh_generation",
+      "manifest": "evidence/attempts/fresh_generation/manifest.json",
+      "source_records": [
+        {
+          "route_class": "hosted",
+          "records": 2356,
+          "original_record_file_sha256": "80854fba222cafca14b2a1d3516939d4889438934a533cc70b67743695c0704d"
+        },
+        {
+          "route_class": "local_serving",
+          "records": 388,
+          "original_record_file_sha256": "e75bf56669f91bf7a2da0571515ce5a476ed923ebfc60a975fe7a6f6e9ad8cba"
+        }
+      ],
+      "attempt_records": 2744,
+      "unique_scientific_identities": 2688,
+      "records_with_text": 2720,
+      "ok_true": 2682,
+      "ok_false": 62,
+      "ok_missing": 0,
+      "logical_bytes": 11577304,
+      "stored_bytes": 1169299,
+      "logical_sha256": "83dbef360fb6346b5c15ecada173c5ef15edbe747ab0a17bd4da52c4a2e6fc8b"
+    },
+    {
+      "bank": "native_key_generation",
+      "manifest": "evidence/attempts/native_key_generation/manifest.json",
+      "source_records": [
+        {
+          "route_class": "hosted",
+          "records": 1595,
+          "original_record_file_sha256": "9f7475b6af9dcbd944c0f3db1d627727aa33c203b5d2111700ff1f387d24b7a4"
+        },
+        {
+          "route_class": "local_serving",
+          "records": 260,
+          "original_record_file_sha256": "c79c13d13b3eae2b514e69629a4e52fb700cc37a8569e96720b36caca8f03b3b"
+        }
+      ],
+      "attempt_records": 1855,
+      "unique_scientific_identities": 1792,
+      "records_with_text": 1840,
+      "ok_true": 1777,
+      "ok_false": 78,
+      "ok_missing": 0,
+      "logical_bytes": 8277894,
+      "stored_bytes": 1381881,
+      "logical_sha256": "b157c61f63de2b6a458f3756e2c11b28d81cc0e5a972fbf7d2cf7f7509751a0f"
+    },
+    {
+      "bank": "development_difficulty",
+      "manifest": "evidence/attempts/development_difficulty/manifest.json",
+      "source_records": [
+        {
+          "route_class": "hosted",
+          "records": 96,
+          "original_record_file_sha256": "4c1330c3eb94f908e2c2eb3a758ee364b7fdcb1d8a761e527db41a0ca5b0e1ce"
+        }
+      ],
+      "attempt_records": 96,
+      "unique_scientific_identities": 96,
+      "records_with_text": 96,
+      "ok_true": 96,
+      "ok_false": 0,
+      "ok_missing": 0,
+      "logical_bytes": 53155,
+      "stored_bytes": 3632,
+      "logical_sha256": "3085b2cdc6036d2c05ac654169f460fe829f838727ef4c389bcffe783d37ec19"
+    },
+    {
+      "bank": "full_ranking_predecessor",
+      "manifest": "evidence/attempts/full_ranking_predecessor/manifest.json",
+      "source_records": [
+        {
+          "route_class": "hosted",
+          "records": 581,
+          "original_record_file_sha256": "66e3a57777202cd1d9c227cab0efadc420961a882313b5580903a873a049bd08"
+        }
+      ],
+      "attempt_records": 581,
+      "unique_scientific_identities": 576,
+      "records_with_text": 581,
+      "ok_true": 571,
+      "ok_false": 10,
+      "ok_missing": 0,
+      "logical_bytes": 3674841,
+      "stored_bytes": 489484,
+      "logical_sha256": "4754f1346245f9af04a3f8d033faad424324b6a4c80b9f3087db7bb013f9cd60"
+    }
+  ]
+}

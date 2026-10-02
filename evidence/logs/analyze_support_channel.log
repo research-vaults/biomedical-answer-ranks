@@ -1,0 +1,62 @@
+{
+  "corrected_v4_strict": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.041666666666666664,
+      "ci95": [
+        0.0,
+        0.09375
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.020833333333333332,
+      "ci95": [
+        -0.08333333333333333,
+        0.03125
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.0625,
+      "ci95": [
+        -0.14583333333333334,
+        0.020833333333333332
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.125,
+      "ci95": [
+        -0.23958333333333334,
+        -0.010416666666666666
+      ]
+    }
+  },
+  "refinement_temporal_etiologic_severity_or_site": {
+    "H_true_joint_minus_counts": {
+      "estimate": 0.0625,
+      "ci95": [
+        0.0,
+        0.125
+      ]
+    },
+    "M_true_joint_minus_counts": {
+      "estimate": -0.0625,
+      "ci95": [
+        -0.125,
+        0.0
+      ]
+    },
+    "R_true_allocation_channel_interaction": {
+      "estimate": -0.125,
+      "ci95": [
+        -0.21875,
+        -0.041666666666666664
+      ]
+    },
+    "D_joint_minus_D_counts": {
+      "estimate": -0.14583333333333334,
+      "ci95": [
+        -0.28125,
+        -0.010416666666666666
+      ]
+    }
+  }
+}

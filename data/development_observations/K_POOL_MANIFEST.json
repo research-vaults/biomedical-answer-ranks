@@ -1,0 +1,4132 @@
+{
+  "status": "C2_ADMITTED_K2_K8_POOLS_FROZEN_BEFORE_K_OUTPUT",
+  "seed_namespace": "AH-MEDEINST-C2-K-ADMITTED-v1",
+  "selector_model": "google/gemini-2.5-flash-lite",
+  "focal_events": 11,
+  "matched_controls": 11,
+  "matching": "Hungarian minimum total absolute pre-outcome rank-AUC difference + fixed 0.25 branch and 0.10 transition-stratum penalties; controls restricted to both-available branches on non-focal cases; SHA tie-break",
+  "matches": [
+    {
+      "match_id": "M01",
+      "focal": {
+        "case_id": "case_101459",
+        "branch": "control",
+        "ground_truth": "Bronchitis",
+        "transition": "Bronchitis -> URTI",
+        "transition_balance_stratum": "mid",
+        "length_stratum": "medium",
+        "preoutcome_correct_rank": "1",
+        "preoutcome_rank_auc": "1.0",
+        "preoutcome_difficulty_quartile": "2",
+        "regime": "mixed_only",
+        "homogeneous_strict_available": "0",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "",
+        "mixed_strict_rank_auc": "0.4117647058823529",
+        "homogeneous_candidate_count": "8",
+        "mixed_candidate_count": "18",
+        "homogeneous_top_id": "C008",
+        "mixed_top_id": "C006"
+      },
+      "control": {
+        "case_id": "case_72446",
+        "branch": "control",
+        "ground_truth": "Panic attack",
+        "transition": "Panic attack -> Possible NSTEMI / STEMI",
+        "transition_balance_stratum": "mid",
+        "length_stratum": "long",
+        "preoutcome_correct_rank": "1",
+        "preoutcome_rank_auc": "1.0",
+        "preoutcome_difficulty_quartile": "4",
+        "regime": "both_available",
+        "homogeneous_strict_available": "1",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "1",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "1",
+        "mixed_inclusive_final": "1",
+        "homogeneous_strict_rank_auc": "1.0",
+        "mixed_strict_rank_auc": "0.9090909090909091",
+        "homogeneous_candidate_count": "9",
+        "mixed_candidate_count": "23",
+        "homogeneous_top_id": "C005",
+        "mixed_top_id": "C012"
+      },
+      "absolute_preoutcome_rank_auc_difference": 0.0,
+      "same_branch": true,
+      "same_transition_stratum": true
+    },
+    {
+      "match_id": "M02",
+      "focal": {
+        "case_id": "case_111392",
+        "branch": "control",
+        "ground_truth": "Bronchitis",
+        "transition": "Bronchitis -> URTI",
+        "transition_balance_stratum": "mid",
+        "length_stratum": "short",
+        "preoutcome_correct_rank": "1",
+        "preoutcome_rank_auc": "1.0",
+        "preoutcome_difficulty_quartile": "3",
+        "regime": "mixed_only",
+        "homogeneous_strict_available": "0",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "",
+        "mixed_strict_rank_auc": "0.6666666666666666",
+        "homogeneous_candidate_count": "9",
+        "mixed_candidate_count": "19",
+        "homogeneous_top_id": "C005",
+        "mixed_top_id": "C011"
+      },
+      "control": {
+        "case_id": "case_116489",
+        "branch": "control",
+        "ground_truth": "Tuberculosis",
+        "transition": "Tuberculosis -> Pulmonary neoplasm",
+        "transition_balance_stratum": "mid",
+        "length_stratum": "short",
+        "preoutcome_correct_rank": "1",
+        "preoutcome_rank_auc": "1.0",
+        "preoutcome_difficulty_quartile": "3",
+        "regime": "both_available",
+        "homogeneous_strict_available": "1",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "0.8181818181818182",
+        "mixed_strict_rank_auc": "0.7954545454545454",
+        "homogeneous_candidate_count": "12",
+        "mixed_candidate_count": "24",
+        "homogeneous_top_id": "C006",
+        "mixed_top_id": "C001"
+      },
+      "absolute_preoutcome_rank_auc_difference": 0.0,
+      "same_branch": true,
+      "same_transition_stratum": true
+    },
+    {
+      "match_id": "M03",
+      "focal": {
+        "case_id": "case_113919",
+        "branch": "control",
+        "ground_truth": "Ebola",
+        "transition": "Ebola -> Bronchitis",
+        "transition_balance_stratum": "rare",
+        "length_stratum": "short",
+        "preoutcome_correct_rank": "1",
+        "preoutcome_rank_auc": "1.0",
+        "preoutcome_difficulty_quartile": "3",
+        "regime": "mixed_only",
+        "homogeneous_strict_available": "0",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "1",
+        "mixed_inclusive_final": "1",
+        "homogeneous_strict_rank_auc": "",
+        "mixed_strict_rank_auc": "0.96",
+        "homogeneous_candidate_count": "7",
+        "mixed_candidate_count": "26",
+        "homogeneous_top_id": "C001",
+        "mixed_top_id": "C008"
+      },
+      "control": {
+        "case_id": "case_110719",
+        "branch": "control",
+        "ground_truth": "Influenza",
+        "transition": "Influenza -> Viral pharyngitis",
+        "transition_balance_stratum": "rare",
+        "length_stratum": "long",
+        "preoutcome_correct_rank": "1",
+        "preoutcome_rank_auc": "1.0",
+        "preoutcome_difficulty_quartile": "2",
+        "regime": "both_available",
+        "homogeneous_strict_available": "1",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "0.7142857142857143",
+        "mixed_strict_rank_auc": "0.125",
+        "homogeneous_candidate_count": "15",
+        "mixed_candidate_count": "25",
+        "homogeneous_top_id": "C004",
+        "mixed_top_id": "C006"
+      },
+      "absolute_preoutcome_rank_auc_difference": 0.0,
+      "same_branch": true,
+      "same_transition_stratum": true
+    },
+    {
+      "match_id": "M04",
+      "focal": {
+        "case_id": "case_113919",
+        "branch": "trap",
+        "ground_truth": "Bronchitis",
+        "transition": "Ebola -> Bronchitis",
+        "transition_balance_stratum": "rare",
+        "length_stratum": "short",
+        "preoutcome_correct_rank": "3",
+        "preoutcome_rank_auc": "0.7142857142857143",
+        "preoutcome_difficulty_quartile": "1",
+        "regime": "mixed_only",
+        "homogeneous_strict_available": "0",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "",
+        "mixed_strict_rank_auc": "0.5",
+        "homogeneous_candidate_count": "8",
+        "mixed_candidate_count": "25",
+        "homogeneous_top_id": "C005",
+        "mixed_top_id": "C014"
+      },
+      "control": {
+        "case_id": "case_81882",
+        "branch": "trap",
+        "ground_truth": "Pneumonia",
+        "transition": "Croup -> Pneumonia",
+        "transition_balance_stratum": "rare",
+        "length_stratum": "short",
+        "preoutcome_correct_rank": "3",
+        "preoutcome_rank_auc": "0.7142857142857143",
+        "preoutcome_difficulty_quartile": "1",
+        "regime": "both_available",
+        "homogeneous_strict_available": "1",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "0.5714285714285714",
+        "mixed_strict_rank_auc": "0.3333333333333333",
+        "homogeneous_candidate_count": "8",
+        "mixed_candidate_count": "22",
+        "homogeneous_top_id": "C002",
+        "mixed_top_id": "C015"
+      },
+      "absolute_preoutcome_rank_auc_difference": 0.0,
+      "same_branch": true,
+      "same_transition_stratum": true
+    },
+    {
+      "match_id": "M05",
+      "focal": {
+        "case_id": "case_115083",
+        "branch": "control",
+        "ground_truth": "Bronchitis",
+        "transition": "Bronchitis -> URTI",
+        "transition_balance_stratum": "mid",
+        "length_stratum": "medium",
+        "preoutcome_correct_rank": "3",
+        "preoutcome_rank_auc": "0.7142857142857143",
+        "preoutcome_difficulty_quartile": "1",
+        "regime": "mixed_only",
+        "homogeneous_strict_available": "0",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "",
+        "mixed_strict_rank_auc": "0.9090909090909091",
+        "homogeneous_candidate_count": "10",
+        "mixed_candidate_count": "23",
+        "homogeneous_top_id": "C010",
+        "mixed_top_id": "C014"
+      },
+      "control": {
+        "case_id": "case_93712",
+        "branch": "control",
+        "ground_truth": "Spontaneous pneumothorax",
+        "transition": "Spontaneous pneumothorax -> Unstable angina",
+        "transition_balance_stratum": "mid",
+        "length_stratum": "medium",
+        "preoutcome_correct_rank": "2",
+        "preoutcome_rank_auc": "0.8571428571428571",
+        "preoutcome_difficulty_quartile": "2",
+        "regime": "both_available",
+        "homogeneous_strict_available": "1",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "1",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "0.8888888888888888",
+        "mixed_strict_rank_auc": "0.9",
+        "homogeneous_candidate_count": "10",
+        "mixed_candidate_count": "21",
+        "homogeneous_top_id": "C005",
+        "mixed_top_id": "C007"
+      },
+      "absolute_preoutcome_rank_auc_difference": 0.1428571428571428,
+      "same_branch": true,
+      "same_transition_stratum": true
+    },
+    {
+      "match_id": "M06",
+      "focal": {
+        "case_id": "case_115306",
+        "branch": "trap",
+        "ground_truth": "URTI",
+        "transition": "Influenza -> URTI",
+        "transition_balance_stratum": "mid",
+        "length_stratum": "long",
+        "preoutcome_correct_rank": "4",
+        "preoutcome_rank_auc": "0.5714285714285714",
+        "preoutcome_difficulty_quartile": "1",
+        "regime": "mixed_only",
+        "homogeneous_strict_available": "0",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "",
+        "mixed_strict_rank_auc": "0.4",
+        "homogeneous_candidate_count": "10",
+        "mixed_candidate_count": "31",
+        "homogeneous_top_id": "C006",
+        "mixed_top_id": "C023"
+      },
+      "control": {
+        "case_id": "case_115084",
+        "branch": "trap",
+        "ground_truth": "Tuberculosis",
+        "transition": "Pneumonia -> Tuberculosis",
+        "transition_balance_stratum": "rare",
+        "length_stratum": "long",
+        "preoutcome_correct_rank": "4",
+        "preoutcome_rank_auc": "0.5714285714285714",
+        "preoutcome_difficulty_quartile": "1",
+        "regime": "both_available",
+        "homogeneous_strict_available": "1",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "1",
+        "homogeneous_strict_rank_auc": "0.8333333333333334",
+        "mixed_strict_rank_auc": "0.7916666666666666",
+        "homogeneous_candidate_count": "13",
+        "mixed_candidate_count": "25",
+        "homogeneous_top_id": "C013",
+        "mixed_top_id": "C019"
+      },
+      "absolute_preoutcome_rank_auc_difference": 0.0,
+      "same_branch": true,
+      "same_transition_stratum": false
+    },
+    {
+      "match_id": "M07",
+      "focal": {
+        "case_id": "case_117368",
+        "branch": "control",
+        "ground_truth": "Bronchitis",
+        "transition": "Bronchitis -> Viral pharyngitis",
+        "transition_balance_stratum": "rare",
+        "length_stratum": "medium",
+        "preoutcome_correct_rank": "3",
+        "preoutcome_rank_auc": "0.7142857142857143",
+        "preoutcome_difficulty_quartile": "1",
+        "regime": "mixed_only",
+        "homogeneous_strict_available": "0",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "",
+        "mixed_strict_rank_auc": "0.8695652173913043",
+        "homogeneous_candidate_count": "8",
+        "mixed_candidate_count": "24",
+        "homogeneous_top_id": "C004",
+        "mixed_top_id": "C010"
+      },
+      "control": {
+        "case_id": "case_105365",
+        "branch": "control",
+        "ground_truth": "Pancreatic neoplasm",
+        "transition": "Pancreatic neoplasm -> Possible NSTEMI / STEMI",
+        "transition_balance_stratum": "rare",
+        "length_stratum": "medium",
+        "preoutcome_correct_rank": "3",
+        "preoutcome_rank_auc": "0.7142857142857143",
+        "preoutcome_difficulty_quartile": "1",
+        "regime": "both_available",
+        "homogeneous_strict_available": "1",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "1",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "1",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "1.0",
+        "mixed_strict_rank_auc": "0.9523809523809523",
+        "homogeneous_candidate_count": "12",
+        "mixed_candidate_count": "22",
+        "homogeneous_top_id": "C010",
+        "mixed_top_id": "C017"
+      },
+      "absolute_preoutcome_rank_auc_difference": 0.0,
+      "same_branch": true,
+      "same_transition_stratum": true
+    },
+    {
+      "match_id": "M08",
+      "focal": {
+        "case_id": "case_51401",
+        "branch": "control",
+        "ground_truth": "Bronchitis",
+        "transition": "Bronchitis -> Acute COPD exacerbation / infection",
+        "transition_balance_stratum": "high",
+        "length_stratum": "short",
+        "preoutcome_correct_rank": "1",
+        "preoutcome_rank_auc": "1.0",
+        "preoutcome_difficulty_quartile": "4",
+        "regime": "mixed_only",
+        "homogeneous_strict_available": "0",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "",
+        "mixed_strict_rank_auc": "0.8095238095238095",
+        "homogeneous_candidate_count": "6",
+        "mixed_candidate_count": "22",
+        "homogeneous_top_id": "C002",
+        "mixed_top_id": "C006"
+      },
+      "control": {
+        "case_id": "case_59987",
+        "branch": "control",
+        "ground_truth": "Spontaneous pneumothorax",
+        "transition": "Spontaneous pneumothorax -> Pulmonary embolism",
+        "transition_balance_stratum": "high",
+        "length_stratum": "medium",
+        "preoutcome_correct_rank": "1",
+        "preoutcome_rank_auc": "1.0",
+        "preoutcome_difficulty_quartile": "4",
+        "regime": "both_available",
+        "homogeneous_strict_available": "1",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "1",
+        "mixed_inclusive_final": "1",
+        "homogeneous_strict_rank_auc": "0.75",
+        "mixed_strict_rank_auc": "0.9444444444444444",
+        "homogeneous_candidate_count": "9",
+        "mixed_candidate_count": "19",
+        "homogeneous_top_id": "C003",
+        "mixed_top_id": "C006"
+      },
+      "absolute_preoutcome_rank_auc_difference": 0.0,
+      "same_branch": true,
+      "same_transition_stratum": true
+    },
+    {
+      "match_id": "M09",
+      "focal": {
+        "case_id": "case_7340",
+        "branch": "control",
+        "ground_truth": "Acute pulmonary edema",
+        "transition": "Acute pulmonary edema -> Possible NSTEMI / STEMI",
+        "transition_balance_stratum": "high",
+        "length_stratum": "long",
+        "preoutcome_correct_rank": "3",
+        "preoutcome_rank_auc": "0.7142857142857143",
+        "preoutcome_difficulty_quartile": "1",
+        "regime": "mixed_only",
+        "homogeneous_strict_available": "0",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "",
+        "mixed_strict_rank_auc": "0.7407407407407407",
+        "homogeneous_candidate_count": "18",
+        "mixed_candidate_count": "28",
+        "homogeneous_top_id": "C014",
+        "mixed_top_id": "C028"
+      },
+      "control": {
+        "case_id": "case_17054",
+        "branch": "control",
+        "ground_truth": "Pericarditis",
+        "transition": "Pericarditis -> Spontaneous pneumothorax",
+        "transition_balance_stratum": "high",
+        "length_stratum": "short",
+        "preoutcome_correct_rank": "2",
+        "preoutcome_rank_auc": "0.8571428571428571",
+        "preoutcome_difficulty_quartile": "2",
+        "regime": "both_available",
+        "homogeneous_strict_available": "1",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "1",
+        "mixed_inclusive_final": "1",
+        "homogeneous_strict_rank_auc": "0.7142857142857143",
+        "mixed_strict_rank_auc": "0.8",
+        "homogeneous_candidate_count": "8",
+        "mixed_candidate_count": "21",
+        "homogeneous_top_id": "C001",
+        "mixed_top_id": "C014"
+      },
+      "absolute_preoutcome_rank_auc_difference": 0.1428571428571428,
+      "same_branch": true,
+      "same_transition_stratum": true
+    },
+    {
+      "match_id": "M10",
+      "focal": {
+        "case_id": "case_7581",
+        "branch": "control",
+        "ground_truth": "Bronchitis",
+        "transition": "Bronchitis -> URTI",
+        "transition_balance_stratum": "mid",
+        "length_stratum": "short",
+        "preoutcome_correct_rank": "1",
+        "preoutcome_rank_auc": "1.0",
+        "preoutcome_difficulty_quartile": "4",
+        "regime": "mixed_only",
+        "homogeneous_strict_available": "0",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "1",
+        "homogeneous_strict_rank_auc": "",
+        "mixed_strict_rank_auc": "0.95",
+        "homogeneous_candidate_count": "8",
+        "mixed_candidate_count": "21",
+        "homogeneous_top_id": "C007",
+        "mixed_top_id": "C012"
+      },
+      "control": {
+        "case_id": "case_59081",
+        "branch": "control",
+        "ground_truth": "SLE",
+        "transition": "SLE -> Possible NSTEMI / STEMI",
+        "transition_balance_stratum": "mid",
+        "length_stratum": "long",
+        "preoutcome_correct_rank": "1",
+        "preoutcome_rank_auc": "1.0",
+        "preoutcome_difficulty_quartile": "4",
+        "regime": "both_available",
+        "homogeneous_strict_available": "1",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "1",
+        "mixed_strict_final": "1",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "1",
+        "mixed_inclusive_final": "1",
+        "homogeneous_strict_rank_auc": "1.0",
+        "mixed_strict_rank_auc": "1.0",
+        "homogeneous_candidate_count": "7",
+        "mixed_candidate_count": "27",
+        "homogeneous_top_id": "C002",
+        "mixed_top_id": "C002"
+      },
+      "absolute_preoutcome_rank_auc_difference": 0.0,
+      "same_branch": true,
+      "same_transition_stratum": true
+    },
+    {
+      "match_id": "M11",
+      "focal": {
+        "case_id": "case_99358",
+        "branch": "control",
+        "ground_truth": "Bronchitis",
+        "transition": "Bronchitis -> Bronchospasm / acute asthma exacerbation",
+        "transition_balance_stratum": "mid",
+        "length_stratum": "medium",
+        "preoutcome_correct_rank": "1",
+        "preoutcome_rank_auc": "1.0",
+        "preoutcome_difficulty_quartile": "4",
+        "regime": "mixed_only",
+        "homogeneous_strict_available": "0",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "1",
+        "homogeneous_strict_rank_auc": "",
+        "mixed_strict_rank_auc": "0.75",
+        "homogeneous_candidate_count": "6",
+        "mixed_candidate_count": "13",
+        "homogeneous_top_id": "C004",
+        "mixed_top_id": "C005"
+      },
+      "control": {
+        "case_id": "case_70555",
+        "branch": "control",
+        "ground_truth": "Tuberculosis",
+        "transition": "Tuberculosis -> Pulmonary neoplasm",
+        "transition_balance_stratum": "mid",
+        "length_stratum": "short",
+        "preoutcome_correct_rank": "1",
+        "preoutcome_rank_auc": "1.0",
+        "preoutcome_difficulty_quartile": "4",
+        "regime": "both_available",
+        "homogeneous_strict_available": "1",
+        "mixed_strict_available": "1",
+        "homogeneous_strict_final": "0",
+        "mixed_strict_final": "0",
+        "homogeneous_inclusive_available": "1",
+        "mixed_inclusive_available": "1",
+        "homogeneous_inclusive_final": "0",
+        "mixed_inclusive_final": "0",
+        "homogeneous_strict_rank_auc": "0.8",
+        "mixed_strict_rank_auc": "0.9545454545454546",
+        "homogeneous_candidate_count": "11",
+        "mixed_candidate_count": "23",
+        "homogeneous_top_id": "C005",
+        "mixed_top_id": "C003"
+      },
+      "absolute_preoutcome_rank_auc_difference": 0.0,
+      "same_branch": true,
+      "same_transition_stratum": true
+    }
+  ],
+  "expected": {
+    "base_roles": 22,
+    "pool_instances": 44,
+    "orders": 2,
+    "selector_identities": 88
+  },
+  "pools": [
+    {
+      "pool_id": "c2k::M01::focal::case_101459::control::k2",
+      "match_id": "M01",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_101459",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 2,
+      "k": 2,
+      "patient_record": "Sex: F, Age: 36\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * burning\n  - The pain locations are:\n    * lower chest\n    * side of the chest(L)\n    * pharynx\n    * breast(R)\n    * breast(L)\n- On a scale of 0-10, the pain intensity is 1\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 1\n- I have had a cough that produces colored or more abundant sputum than usual.\n- I have a sore throat.\n- I have nasal congestion or a clear runny nose.\n- My symptoms are more prominent at night.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have not traveled out of the country in the last 4 weeks.\n- My vaccinations are up to date.",
+      "candidates": [
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "SURFACE:diabetic_ketoacidosis_dka_complicated_pneumonia",
+          "diagnosis": "Diabetic ketoacidosis (DKA)-complicated pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P0BC77E3E841DE48D",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C01",
+      "strict_correct_ids": [
+        "C01"
+      ]
+    },
+    {
+      "pool_id": "c2k::M01::focal::case_101459::control::k8",
+      "match_id": "M01",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_101459",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 2,
+      "k": 8,
+      "patient_record": "Sex: F, Age: 36\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * burning\n  - The pain locations are:\n    * lower chest\n    * side of the chest(L)\n    * pharynx\n    * breast(R)\n    * breast(L)\n- On a scale of 0-10, the pain intensity is 1\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 1\n- I have had a cough that produces colored or more abundant sputum than usual.\n- I have a sore throat.\n- I have nasal congestion or a clear runny nose.\n- My symptoms are more prominent at night.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have not traveled out of the country in the last 4 weeks.\n- My vaccinations are up to date.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:acute_pleurisy",
+          "diagnosis": "Acute Pleurisy",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P9F441CD29597C22E",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:musculoskeletal_chest_pain_e_g_costochondritis",
+          "diagnosis": "Musculoskeletal Chest Pain (e.g., Costochondritis)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P7F007CFCC90345A1",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "SURFACE:myocardial_infarction",
+          "diagnosis": "Myocardial Infarction",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P5BCAF2E044D19EC7",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "CANON:peritonsillar_abscess",
+          "diagnosis": "Peritonsillar abscess",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P6F2E3CB584AF76C0",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "SURFACE:community_acquired_bacterial_pneumonia",
+          "diagnosis": "Community-acquired bacterial pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P036F50AED3E81E6A",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "SURFACE:diabetic_ketoacidosis_dka_complicated_pneumonia",
+          "diagnosis": "Diabetic ketoacidosis (DKA)-complicated pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P0BC77E3E841DE48D",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "MESH:D010998",
+          "diagnosis": "Pleuritis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P8D32826F7382B239",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C04",
+          "C05",
+          "C02",
+          "C03",
+          "C08",
+          "C01",
+          "C07",
+          "C06"
+        ],
+        "order1": [
+          "C06",
+          "C07",
+          "C01",
+          "C08",
+          "C03",
+          "C02",
+          "C05",
+          "C04"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M01::control::case_72446::control::k2",
+      "match_id": "M01",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_72446",
+      "branch": "control",
+      "ground_truth": "Panic attack",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 2,
+      "patient_record": "Sex: F, Age: 47\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * a cramp\n  - The pain locations are:\n    * lower chest\n    * side of the chest(L)\n    * pubis\n    * breast(R)\n    * breast(L)\n- On a scale of 0-10, the pain intensity is 8\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 9\n- On a scale of 0-10, the pain's speed of onset is 6\n- I have significantly increased sweating.\n- I am experiencing shortness of breath or difficulty breathing in a significant way.\n- I am feeling nauseous or feel like vomiting.\n- I feel my heart is beating fast (racing), irregularly (missing a beat), or I feel palpitations.\n- I have recently had numbness, loss of sensation or tingling, in both arms and legs and around my mouth.\n\nAntecedents:\n---\n- I suffer from chronic anxiety.\n- I have asthma or have had to use a bronchodilator in the past.\n- I suffer from fibromyalgia.\n- I have had a head trauma.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "RELEASED:panic_attack",
+          "diagnosis": "Panic attack",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "SURFACE:fibromyalgia_flare_up",
+          "diagnosis": "Fibromyalgia Flare-Up",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P276FA9F8BD50943E",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C02"
+        ],
+        "order1": [
+          "C02",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C01",
+      "strict_correct_ids": [
+        "C01"
+      ]
+    },
+    {
+      "pool_id": "c2k::M01::control::case_72446::control::k8",
+      "match_id": "M01",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_72446",
+      "branch": "control",
+      "ground_truth": "Panic attack",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 8,
+      "patient_record": "Sex: F, Age: 47\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * a cramp\n  - The pain locations are:\n    * lower chest\n    * side of the chest(L)\n    * pubis\n    * breast(R)\n    * breast(L)\n- On a scale of 0-10, the pain intensity is 8\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 9\n- On a scale of 0-10, the pain's speed of onset is 6\n- I have significantly increased sweating.\n- I am experiencing shortness of breath or difficulty breathing in a significant way.\n- I am feeling nauseous or feel like vomiting.\n- I feel my heart is beating fast (racing), irregularly (missing a beat), or I feel palpitations.\n- I have recently had numbness, loss of sensation or tingling, in both arms and legs and around my mouth.\n\nAntecedents:\n---\n- I suffer from chronic anxiety.\n- I have asthma or have had to use a bronchodilator in the past.\n- I suffer from fibromyalgia.\n- I have had a head trauma.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "RELEASED:panic_attack",
+          "diagnosis": "Panic attack",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "MESH:D000789",
+          "diagnosis": "Unstable angina",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P080E4E562BA3A3A7",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "SURFACE:fibromyalgia_flare_up",
+          "diagnosis": "Fibromyalgia Flare-Up",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P276FA9F8BD50943E",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "CANON:anxiety_disorder_with_somatic_symptoms",
+          "diagnosis": "Anxiety disorder with somatic symptoms",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P6140120578E13B01",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "SURFACE:fibromyalgia_exacerbation",
+          "diagnosis": "Fibromyalgia Exacerbation",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PC901775016DBAD03",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "SURFACE:renal_colic",
+          "diagnosis": "Renal Colic",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P7A7677D424BFFA81",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "SURFACE:chronic_anxiety",
+          "diagnosis": "Chronic anxiety",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P70A98DD7C6CA6617",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "CANON:pneumothorax",
+          "diagnosis": "Pneumothorax",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P4D2705ACDA1E65B3",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C05",
+          "C06",
+          "C07",
+          "C04",
+          "C03",
+          "C01",
+          "C02",
+          "C08"
+        ],
+        "order1": [
+          "C08",
+          "C02",
+          "C01",
+          "C03",
+          "C04",
+          "C07",
+          "C06",
+          "C05"
+        ]
+      },
+      "strict_correct_id": "C01",
+      "strict_correct_ids": [
+        "C01"
+      ]
+    },
+    {
+      "pool_id": "c2k::M02::focal::case_111392::control::k2",
+      "match_id": "M02",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_111392",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 3,
+      "k": 2,
+      "patient_record": "Sex: M, Age: 33\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * sensitive\n  - The pain locations are:\n    * side of the chest(R)\n    * breast(R)\n    * posterior chest wall(L)\n- On a scale of 0-10, the pain intensity is 4\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 3\n- I have fever.\n- I have nasal congestion or a clear runny nose.\n- I am coughing.\n- My symptoms are more prominent at night.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:gastroesophageal_reflux_disease_gerd_with_esophagitis",
+          "diagnosis": "Gastroesophageal reflux disease (GERD) with esophagitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P84B891176C55A429",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C02"
+        ],
+        "order1": [
+          "C02",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M02::focal::case_111392::control::k8",
+      "match_id": "M02",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_111392",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 3,
+      "k": 8,
+      "patient_record": "Sex: M, Age: 33\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * sensitive\n  - The pain locations are:\n    * side of the chest(R)\n    * breast(R)\n    * posterior chest wall(L)\n- On a scale of 0-10, the pain intensity is 4\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 3\n- I have fever.\n- I have nasal congestion or a clear runny nose.\n- I am coughing.\n- My symptoms are more prominent at night.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:allergic_rhinitis_with_postnasal_drip",
+          "diagnosis": "Allergic rhinitis with postnasal drip",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PFBF953BD46A555B7",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "SURFACE:influenza",
+          "diagnosis": "Influenza",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PBE19D8BF0CEB5D9D",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:streptococcal_pneumonia",
+          "diagnosis": "Streptococcal Pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PDA9FF886C53BBB1B",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "SURFACE:esophageal_reflux_disease_gerd_flare",
+          "diagnosis": "Esophageal Reflux Disease (GERD) Flare",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P881807C48F8FADC2",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "SURFACE:gastroesophageal_reflux_disease_gerd_with_esophagitis",
+          "diagnosis": "Gastroesophageal reflux disease (GERD) with esophagitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P84B891176C55A429",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "MESH:D000542",
+          "diagnosis": "Hypersensitivity Pneumonitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P8220100EE878E35A",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "CANON:allergic_rhinitis_with_reactive_airway_changes",
+          "diagnosis": "Allergic rhinitis with reactive airway changes",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P97FEB3D466A5C108",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C04",
+          "C07",
+          "C08",
+          "C03",
+          "C05",
+          "C02",
+          "C01",
+          "C06"
+        ],
+        "order1": [
+          "C06",
+          "C01",
+          "C02",
+          "C05",
+          "C03",
+          "C08",
+          "C07",
+          "C04"
+        ]
+      },
+      "strict_correct_id": "C07",
+      "strict_correct_ids": [
+        "C07"
+      ]
+    },
+    {
+      "pool_id": "c2k::M02::control::case_116489::control::k2",
+      "match_id": "M02",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_116489",
+      "branch": "control",
+      "ground_truth": "Tuberculosis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 3,
+      "k": 2,
+      "patient_record": "Sex: M, Age: 53\nGeographical region: North America\n\nSymptoms:\n---\n- I am experiencing shortness of breath or difficulty breathing.\n- I have fever.\n- I have had involuntary weight loss over the last 3 months.\n- I am coughing.\n\nAntecedents:\n---\n- I am infected with the human immunodeficiency virus (HIV).\n- I am currently using intravenous drugs.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:influenza_pneumonia",
+          "diagnosis": "Influenza Pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P2020CFBF2ECAD410",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:tuberculosis",
+          "diagnosis": "Tuberculosis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C02"
+        ],
+        "order1": [
+          "C02",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M02::control::case_116489::control::k8",
+      "match_id": "M02",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_116489",
+      "branch": "control",
+      "ground_truth": "Tuberculosis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 3,
+      "k": 8,
+      "patient_record": "Sex: M, Age: 53\nGeographical region: North America\n\nSymptoms:\n---\n- I am experiencing shortness of breath or difficulty breathing.\n- I have fever.\n- I have had involuntary weight loss over the last 3 months.\n- I am coughing.\n\nAntecedents:\n---\n- I am infected with the human immunodeficiency virus (HIV).\n- I am currently using intravenous drugs.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:diabetic_ketoacidosis_with_secondary_pulmonary_involvement",
+          "diagnosis": "Diabetic ketoacidosis with secondary pulmonary involvement",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P1EEC7A9946E1B426",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "SURFACE:influenza_pneumonia",
+          "diagnosis": "Influenza Pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P2020CFBF2ECAD410",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:hiv_associated_malignancy",
+          "diagnosis": "HIV-associated malignancy",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PCD22BAF97B58402F",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "MESH:D008228",
+          "diagnosis": "Non-Hodgkin lymphoma",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PD3C7B299DA773034",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "SURFACE:acute_bronchitis_with_hemoptysis_e_g_secondary_to_hiv_related_immunosuppression",
+          "diagnosis": "Acute bronchitis with hemoptysis (e.g., secondary to HIV-related immunosuppression)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PF49EC58CC82A168B",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "RELEASED:tuberculosis",
+          "diagnosis": "Tuberculosis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "CANON:acute_exacerbation_of_chronic_obstructive_pulmonary_disease_copd_with_secondary_infection",
+          "diagnosis": "Acute exacerbation of chronic obstructive pulmonary disease (COPD) with secondary infection",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P6EF4E16FE39FB5E1",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "CANON:foreign_body_aspiration_with_secondary_infection_considered_due_to_sudden_onset_and_immunosuppression",
+          "diagnosis": "Foreign body aspiration with secondary infection (considered due to sudden onset and immunosuppression)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PC95463429633F36E",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C08",
+          "C07",
+          "C05",
+          "C04",
+          "C03",
+          "C01",
+          "C06"
+        ],
+        "order1": [
+          "C06",
+          "C01",
+          "C03",
+          "C04",
+          "C05",
+          "C07",
+          "C08",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C06",
+      "strict_correct_ids": [
+        "C06"
+      ]
+    },
+    {
+      "pool_id": "c2k::M03::focal::case_113919::control::k2",
+      "match_id": "M03",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_113919",
+      "branch": "control",
+      "ground_truth": "Ebola",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 3,
+      "k": 2,
+      "patient_record": "Sex: F, Age: 31\nGeographical region: North America\n\nSymptoms:\n---\n- I am experiencing shortness of breath or difficulty breathing.\n- I constantly feel fatigued and have non-restful sleep.\n- I have a sore throat.\n- I have diffuse (widespread) muscle pain.\n- I have noticed unusual bleeding or bruising.\n- I am coughing.\n\nAntecedents:\n---\n- I have been in contact with a person with similar symptoms in the past 2 weeks.\n- I have been in contact with someone infected with the Ebola virus in the last month.\n- I have traveled out of the country in the last 4 weeks to West Africa.",
+      "candidates": [
+        {
+          "concept_id": "CANON:rickettsial_infection",
+          "diagnosis": "Rickettsial Infection",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PB901795B01F64446",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:ebola",
+          "diagnosis": "Ebola",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M03::focal::case_113919::control::k8",
+      "match_id": "M03",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_113919",
+      "branch": "control",
+      "ground_truth": "Ebola",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 3,
+      "k": 8,
+      "patient_record": "Sex: F, Age: 31\nGeographical region: North America\n\nSymptoms:\n---\n- I am experiencing shortness of breath or difficulty breathing.\n- I constantly feel fatigued and have non-restful sleep.\n- I have a sore throat.\n- I have diffuse (widespread) muscle pain.\n- I have noticed unusual bleeding or bruising.\n- I am coughing.\n\nAntecedents:\n---\n- I have been in contact with a person with similar symptoms in the past 2 weeks.\n- I have been in contact with someone infected with the Ebola virus in the last month.\n- I have traveled out of the country in the last 4 weeks to West Africa.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:malaria",
+          "diagnosis": "Malaria",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PFCEBF9DAB1FBD848",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "SURFACE:dengue_fever",
+          "diagnosis": "Dengue fever",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P3D1A93BE92B29523",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "MESH:D006482",
+          "diagnosis": "Viral hemorrhagic fever",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PE8E0B66D5835F3AD",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "CANON:rickettsial_infection",
+          "diagnosis": "Rickettsial Infection",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PB901795B01F64446",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "CANON:malaria_severe_plasmodium_falciparum",
+          "diagnosis": "Malaria (severe, *Plasmodium falciparum*)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PDC68237A7FAE921C",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "RELEASED:ebola",
+          "diagnosis": "Ebola",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "SURFACE:toxic_shock_syndrome",
+          "diagnosis": "Toxic Shock Syndrome",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P2976ADB006727E82",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "MESH:D018410",
+          "diagnosis": "Bacterial pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P710E921A83AE3DA0",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C06",
+          "C04",
+          "C05",
+          "C03",
+          "C08",
+          "C02",
+          "C01",
+          "C07"
+        ],
+        "order1": [
+          "C07",
+          "C01",
+          "C02",
+          "C08",
+          "C03",
+          "C05",
+          "C04",
+          "C06"
+        ]
+      },
+      "strict_correct_id": "C06",
+      "strict_correct_ids": [
+        "C06"
+      ]
+    },
+    {
+      "pool_id": "c2k::M03::control::case_110719::control::k2",
+      "match_id": "M03",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_110719",
+      "branch": "control",
+      "ground_truth": "Influenza",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 2,
+      "k": 2,
+      "patient_record": "Sex: M, Age: 14\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * sensitive\n    * heavy\n    * exhausting\n  - The pain locations are:\n    * back of head\n    * back of the neck\n    * occiput\n    * pharynx\n    * temple(R)\n- On a scale of 0-10, the pain intensity is 8\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 8\n- The pain appeared gradually over hours (on a scale of 0-10, speed of onset is 2)\n- I have had significantly increased sweating.\n- I feel so tired that I am unable to do my usual activities.\n- I have had chills or shivers.\n- I have a rash.\n  - The rash is pink.\n  - The rash is swollen.\n  - The rash is located on:\n    * side of the neck(R)\n    * side of the neck(L)\n    * forehead\n  - On a scale of 0-10, the pain caused by the rash is 2\n  - The lesions are larger than 1cm.\n  - On a scale of 0-10, the itching is 3\n- I have diffuse (widespread) muscle pain.\n- I have had a loss of appetite or get full more quickly than usual.\n- I have nasal congestion or a clear runny nose.\n- I am coughing.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have not traveled out of the country in the last 4 weeks.\n- I am immunosuppressed.",
+      "candidates": [
+        {
+          "concept_id": "CANON:cytomegalovirus_infection",
+          "diagnosis": "Cytomegalovirus infection",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P04BF137774FDBB96",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:influenza",
+          "diagnosis": "Influenza",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C02"
+        ],
+        "order1": [
+          "C02",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M03::control::case_110719::control::k8",
+      "match_id": "M03",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_110719",
+      "branch": "control",
+      "ground_truth": "Influenza",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 2,
+      "k": 8,
+      "patient_record": "Sex: M, Age: 14\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * sensitive\n    * heavy\n    * exhausting\n  - The pain locations are:\n    * back of head\n    * back of the neck\n    * occiput\n    * pharynx\n    * temple(R)\n- On a scale of 0-10, the pain intensity is 8\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 8\n- The pain appeared gradually over hours (on a scale of 0-10, speed of onset is 2)\n- I have had significantly increased sweating.\n- I feel so tired that I am unable to do my usual activities.\n- I have had chills or shivers.\n- I have a rash.\n  - The rash is pink.\n  - The rash is swollen.\n  - The rash is located on:\n    * side of the neck(R)\n    * side of the neck(L)\n    * forehead\n  - On a scale of 0-10, the pain caused by the rash is 2\n  - The lesions are larger than 1cm.\n  - On a scale of 0-10, the itching is 3\n- I have diffuse (widespread) muscle pain.\n- I have had a loss of appetite or get full more quickly than usual.\n- I have nasal congestion or a clear runny nose.\n- I am coughing.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have not traveled out of the country in the last 4 weeks.\n- I am immunosuppressed.",
+      "candidates": [
+        {
+          "concept_id": "CANON:dehydration_headache",
+          "diagnosis": "Dehydration Headache",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PD96D9B03AC33344E",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "MESH:D018139",
+          "diagnosis": "Herpes simplex virus",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P3E6271BD175308CC",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:early_covid_19_infection",
+          "diagnosis": "Early COVID-19 infection",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P2D473EDD0C9652D5",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "SURFACE:herpangina",
+          "diagnosis": "Herpangina",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PBF9AF112A90764DE",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "CANON:tension_headache_with_secondary_fever_e_g_flu_like_symptoms",
+          "diagnosis": "Tension headache with secondary fever (e.g., flu-like symptoms)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P5E334017466E995F",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "CANON:cytomegalovirus_infection",
+          "diagnosis": "Cytomegalovirus infection",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P04BF137774FDBB96",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "RELEASED:influenza",
+          "diagnosis": "Influenza",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "MESH:D020325",
+          "diagnosis": "migraine with aura",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P7A08F44BE412E0EC",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C06",
+          "C04",
+          "C07",
+          "C02",
+          "C01",
+          "C03",
+          "C08",
+          "C05"
+        ],
+        "order1": [
+          "C05",
+          "C08",
+          "C03",
+          "C01",
+          "C02",
+          "C07",
+          "C04",
+          "C06"
+        ]
+      },
+      "strict_correct_id": "C07",
+      "strict_correct_ids": [
+        "C07"
+      ]
+    },
+    {
+      "pool_id": "c2k::M04::focal::case_113919::trap::k2",
+      "match_id": "M04",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_113919",
+      "branch": "trap",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 0.7142857142857143,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 2,
+      "patient_record": "Sex: F, Age: 31  \nGeographical region: North America  \n\nSymptoms:  \n---  \n- I am experiencing shortness of breath or difficulty breathing.  \n- I constantly feel fatigued and have non-restful sleep.  \n- I have a sore throat.  \n- I have diffuse (widespread) muscle pain.  \n- I have noticed a cough that produces colored or more abundant sputum than usual.  \n- I am coughing.  \n\nAntecedents:  \n---  \n- I have been in contact with a person with similar symptoms in the past 2 weeks.  \n- I have been in contact with someone infected with the Ebola virus in the last month.  \n- I have traveled out of the country in the last 4 weeks to West Africa.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:community_acquired_bacterial_pneumonia",
+          "diagnosis": "Community-acquired bacterial pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P036F50AED3E81E6A",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C02"
+        ],
+        "order1": [
+          "C02",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M04::focal::case_113919::trap::k8",
+      "match_id": "M04",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_113919",
+      "branch": "trap",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 0.7142857142857143,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 8,
+      "patient_record": "Sex: F, Age: 31  \nGeographical region: North America  \n\nSymptoms:  \n---  \n- I am experiencing shortness of breath or difficulty breathing.  \n- I constantly feel fatigued and have non-restful sleep.  \n- I have a sore throat.  \n- I have diffuse (widespread) muscle pain.  \n- I have noticed a cough that produces colored or more abundant sputum than usual.  \n- I am coughing.  \n\nAntecedents:  \n---  \n- I have been in contact with a person with similar symptoms in the past 2 weeks.  \n- I have been in contact with someone infected with the Ebola virus in the last month.  \n- I have traveled out of the country in the last 4 weeks to West Africa.",
+      "candidates": [
+        {
+          "concept_id": "CANON:submandibular_gland_infection",
+          "diagnosis": "Submandibular Gland Infection",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P8F5FED4FA9959C28",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "CANON:posterior_chest_wall_pain_syndrome",
+          "diagnosis": "Posterior chest wall pain syndrome",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P70B8B0C7820E1183",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:peritonsillar_abscess",
+          "diagnosis": "Peritonsillar abscess",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P6F2E3CB584AF76C0",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "SURFACE:community_acquired_bacterial_pneumonia",
+          "diagnosis": "Community-acquired bacterial pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P036F50AED3E81E6A",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "CANON:allergic_rhinitis",
+          "diagnosis": "Allergic Rhinitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P4A5DB7B319991D66",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "CANON:streptococcal_pneumonia",
+          "diagnosis": "Streptococcal Pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PDA9FF886C53BBB1B",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "MESH:D014397",
+          "diagnosis": "Pulmonary tuberculosis (less likely but possible given fever, cough, and underweight status)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PC59EC3685CAE3FA4",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C07",
+          "C01",
+          "C03",
+          "C02",
+          "C05",
+          "C06",
+          "C04",
+          "C08"
+        ],
+        "order1": [
+          "C08",
+          "C04",
+          "C06",
+          "C05",
+          "C02",
+          "C03",
+          "C01",
+          "C07"
+        ]
+      },
+      "strict_correct_id": "C06",
+      "strict_correct_ids": [
+        "C06"
+      ]
+    },
+    {
+      "pool_id": "c2k::M04::control::case_81882::trap::k2",
+      "match_id": "M04",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_81882",
+      "branch": "trap",
+      "ground_truth": "Pneumonia",
+      "preoutcome_rank_auc": 0.7142857142857143,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 2,
+      "patient_record": "Sex: M, Age: 0  \nGeographical region: North America  \n\nSymptoms:  \n---  \n- I have shortness of breath.  \n- I have fever.  \n- I have nasal congestion and a clear runny nose.  \n- I have a cough that produces colored or more abundant sputum than usual.  \n- My symptoms are more prominent at night.  \n\nAntecedents:  \n---  \n- I or a family member has had croup.  \n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:influenza_with_secondary_bacterial_sinusitis",
+          "diagnosis": "Influenza with secondary bacterial sinusitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PFA2D8AE195F25E4D",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:pneumonia",
+          "diagnosis": "Pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M04::control::case_81882::trap::k8",
+      "match_id": "M04",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_81882",
+      "branch": "trap",
+      "ground_truth": "Pneumonia",
+      "preoutcome_rank_auc": 0.7142857142857143,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 8,
+      "patient_record": "Sex: M, Age: 0  \nGeographical region: North America  \n\nSymptoms:  \n---  \n- I have shortness of breath.  \n- I have fever.  \n- I have nasal congestion and a clear runny nose.  \n- I have a cough that produces colored or more abundant sputum than usual.  \n- My symptoms are more prominent at night.  \n\nAntecedents:  \n---  \n- I or a family member has had croup.  \n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:influenza_with_secondary_bacterial_sinusitis",
+          "diagnosis": "Influenza with secondary bacterial sinusitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PFA2D8AE195F25E4D",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "CANON:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PDFD41A040D9DD056",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "RELEASED:pneumonia",
+          "diagnosis": "Pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "CANON:anorexia_nervosa",
+          "diagnosis": "Anorexia Nervosa",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P054D51D35F5DC09C",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "SURFACE:herpes_zoster_shingles_with_atypical_rash_distribution",
+          "diagnosis": "Herpes zoster (shingles) with atypical rash distribution",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P8D532D506EE7A700",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "MESH:D004697",
+          "diagnosis": "Bacterial endocarditis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P9FE3A2974D859D54",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "SURFACE:viral_infection",
+          "diagnosis": "Viral Infection",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P4EF26CEA41D5AEF2",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "CANON:koch_s_abscess",
+          "diagnosis": "Koch's Abscess",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PF70750CEDDC236C2",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C07",
+          "C03",
+          "C02",
+          "C08",
+          "C04",
+          "C05",
+          "C01",
+          "C06"
+        ],
+        "order1": [
+          "C06",
+          "C01",
+          "C05",
+          "C04",
+          "C08",
+          "C02",
+          "C03",
+          "C07"
+        ]
+      },
+      "strict_correct_id": "C03",
+      "strict_correct_ids": [
+        "C03"
+      ]
+    },
+    {
+      "pool_id": "c2k::M05::focal::case_115083::control::k2",
+      "match_id": "M05",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_115083",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 0.7142857142857143,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 2,
+      "patient_record": "Sex: M, Age: 11\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * burning\n  - The pain locations are:\n    * lower chest\n    * side of the chest(L)\n    * upper chest\n- On a scale of 0-10, the pain intensity is 1\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 6\n- I am coughing.\n- I have a cough that produces colored or more abundant sputum than usual.\n- I have a sore throat.\n- I have nasal congestion or a clear runny nose.\n- My symptoms are more prominent at night.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have chronic obstructive pulmonary disease (COPD).\n- I have not traveled out of the country in the last 4 weeks.\n- My vaccinations are up to date.",
+      "candidates": [
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "MESH:D006967",
+          "diagnosis": "Allergic reaction",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PBB3747CC7363E161",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C01",
+      "strict_correct_ids": [
+        "C01"
+      ]
+    },
+    {
+      "pool_id": "c2k::M05::focal::case_115083::control::k8",
+      "match_id": "M05",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_115083",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 0.7142857142857143,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 8,
+      "patient_record": "Sex: M, Age: 11\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * burning\n  - The pain locations are:\n    * lower chest\n    * side of the chest(L)\n    * upper chest\n- On a scale of 0-10, the pain intensity is 1\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 6\n- I am coughing.\n- I have a cough that produces colored or more abundant sputum than usual.\n- I have a sore throat.\n- I have nasal congestion or a clear runny nose.\n- My symptoms are more prominent at night.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have chronic obstructive pulmonary disease (COPD).\n- I have not traveled out of the country in the last 4 weeks.\n- My vaccinations are up to date.",
+      "candidates": [
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "CANON:acute_respiratory_distress_syndrome",
+          "diagnosis": "Acute Respiratory Distress Syndrome",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PBAB2AC38595E7A6B",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:chest_pain_due_to_copd_exacerbation",
+          "diagnosis": "chest pain due to COPD exacerbation",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P886E1603183B69AB",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "CANON:bronchiectasis_exacerbation",
+          "diagnosis": "Bronchiectasis exacerbation",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P82D18D1E95F766B9",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "CANON:infectious_exacerbation_of_copd",
+          "diagnosis": "Infectious exacerbation of COPD",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PB9D78D840DE7F390",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "CANON:pharyngitis",
+          "diagnosis": "Pharyngitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P1BB5FF73E4BC8CA1",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "MESH:D006967",
+          "diagnosis": "Allergic reaction",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PBB3747CC7363E161",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "MESH:D015269",
+          "diagnosis": "Mycobacterium avium complex",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P35A60F6E11E9276B",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C06",
+          "C02",
+          "C04",
+          "C07",
+          "C03",
+          "C01",
+          "C05",
+          "C08"
+        ],
+        "order1": [
+          "C08",
+          "C05",
+          "C01",
+          "C03",
+          "C07",
+          "C04",
+          "C02",
+          "C06"
+        ]
+      },
+      "strict_correct_id": "C01",
+      "strict_correct_ids": [
+        "C01"
+      ]
+    },
+    {
+      "pool_id": "c2k::M05::control::case_93712::control::k2",
+      "match_id": "M05",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_93712",
+      "branch": "control",
+      "ground_truth": "Spontaneous pneumothorax",
+      "preoutcome_rank_auc": 0.8571428571428571,
+      "preoutcome_difficulty_quartile": 2,
+      "k": 2,
+      "patient_record": "Sex: M, Age: 52\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * a knife stroke\n    * violent\n  - The pain locations are:\n    * lower chest\n    * side of the chest(L)\n    * upper chest\n    * breast(R)\n    * breast(L)\n- On a scale of 0-10, the pain intensity is 10\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 2\n- On a scale of 0-10, the speed of pain onset is 7\n- I am experiencing shortness of breath or difficulty breathing in a significant way.\n- I have symptoms that are increased with physical exertion but alleviated with rest.\n- I have pain that is increased when I breathe in deeply.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have chronic obstructive pulmonary disease (COPD).\n- One of my family members has had a pneumothorax.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:esophageal_rupture_boerhaave_syndrome",
+          "diagnosis": "Esophageal rupture (Boerhaave syndrome)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P6AA080CB9D3B82A6",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:spontaneous_pneumothorax",
+          "diagnosis": "Spontaneous pneumothorax",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M05::control::case_93712::control::k8",
+      "match_id": "M05",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_93712",
+      "branch": "control",
+      "ground_truth": "Spontaneous pneumothorax",
+      "preoutcome_rank_auc": 0.8571428571428571,
+      "preoutcome_difficulty_quartile": 2,
+      "k": 8,
+      "patient_record": "Sex: M, Age: 52\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * a knife stroke\n    * violent\n  - The pain locations are:\n    * lower chest\n    * side of the chest(L)\n    * upper chest\n    * breast(R)\n    * breast(L)\n- On a scale of 0-10, the pain intensity is 10\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 2\n- On a scale of 0-10, the speed of pain onset is 7\n- I am experiencing shortness of breath or difficulty breathing in a significant way.\n- I have symptoms that are increased with physical exertion but alleviated with rest.\n- I have pain that is increased when I breathe in deeply.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have chronic obstructive pulmonary disease (COPD).\n- One of my family members has had a pneumothorax.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:esophageal_rupture_boerhaave_syndrome",
+          "diagnosis": "Esophageal rupture (Boerhaave syndrome)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P6AA080CB9D3B82A6",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "CANON:stress_fracture",
+          "diagnosis": "Stress Fracture",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PAEA851F13BEFF95A",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:acute_exacerbation_of_copd_with_possible_pneumothorax_recurrence",
+          "diagnosis": "Acute exacerbation of COPD with possible pneumothorax recurrence",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PA5FF41B91E59CF03",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "CANON:anxiety_induced_hyperventilation_with_chest_wall_pain",
+          "diagnosis": "Anxiety-induced hyperventilation with chest wall pain",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PA9429E01DFA958E7",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "SURFACE:alcohol_induced_pancreatitis_with_pleural_irritation",
+          "diagnosis": "Alcohol-induced pancreatitis with pleural irritation",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PE8C54C73607066FB",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "CANON:myocardial_infarction",
+          "diagnosis": "Myocardial infarction",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PF965D42F89B07445",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "SURFACE:panic_disorder_with_chest_pain",
+          "diagnosis": "Panic Disorder with Chest Pain",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P618BC8A9FD8FD2AC",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "RELEASED:spontaneous_pneumothorax",
+          "diagnosis": "Spontaneous pneumothorax",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C08",
+          "C02",
+          "C01",
+          "C04",
+          "C06",
+          "C05",
+          "C07",
+          "C03"
+        ],
+        "order1": [
+          "C03",
+          "C07",
+          "C05",
+          "C06",
+          "C04",
+          "C01",
+          "C02",
+          "C08"
+        ]
+      },
+      "strict_correct_id": "C08",
+      "strict_correct_ids": [
+        "C08"
+      ]
+    },
+    {
+      "pool_id": "c2k::M06::focal::case_115306::trap::k2",
+      "match_id": "M06",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_115306",
+      "branch": "trap",
+      "ground_truth": "URTI",
+      "preoutcome_rank_auc": 0.5714285714285714,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 2,
+      "patient_record": "Sex: M, Age: 70  \nGeographical region: North America  \n\nSymptoms:  \n---  \n- I feel pain.  \n  - The pain is:  \n    * exhausting  \n  - The pain locations are:  \n    * back of the neck  \n    * side of the neck(R)  \n    * side of the neck(L)  \n    * top of the head  \n    * forehead  \n- On a scale of 0-10, the pain intensity is 2  \n- The pain radiates to these locations:  \n  * nowhere  \n- On a scale of 0-10, the pain's location precision is 3  \n- On a scale of 0-10, the speed of pain onset is 2  \n- I have significantly increased sweating.  \n- I feel so tired that I am unable to do my usual activities.  \n- I have a fever.  \n- The rash is swollen.  \n- The rash is located on the side of the neck(L).  \n- On a scale of 0-10, the pain caused by the rash is 2  \n- The rash is larger than 1cm.  \n- On a scale of 0-10, the itching is 5  \n- I have diffuse muscle pain.  \n- I have had a loss of appetite or get full more quickly than usual.  \n- I have nasal congestion or a clear runny nose.  \n- I am coughing.  \n\nAntecedents:  \n---  \n- I smoke cigarettes.  \n- I have not traveled out of the country in the last 4 weeks.  \n- I am immunosuppressed.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:tension_headache_with_secondary_symptoms",
+          "diagnosis": "Tension headache with secondary symptoms",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P5A81EA60D589D1AB",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:urti",
+          "diagnosis": "URTI",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M06::focal::case_115306::trap::k8",
+      "match_id": "M06",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_115306",
+      "branch": "trap",
+      "ground_truth": "URTI",
+      "preoutcome_rank_auc": 0.5714285714285714,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 8,
+      "patient_record": "Sex: M, Age: 70  \nGeographical region: North America  \n\nSymptoms:  \n---  \n- I feel pain.  \n  - The pain is:  \n    * exhausting  \n  - The pain locations are:  \n    * back of the neck  \n    * side of the neck(R)  \n    * side of the neck(L)  \n    * top of the head  \n    * forehead  \n- On a scale of 0-10, the pain intensity is 2  \n- The pain radiates to these locations:  \n  * nowhere  \n- On a scale of 0-10, the pain's location precision is 3  \n- On a scale of 0-10, the speed of pain onset is 2  \n- I have significantly increased sweating.  \n- I feel so tired that I am unable to do my usual activities.  \n- I have a fever.  \n- The rash is swollen.  \n- The rash is located on the side of the neck(L).  \n- On a scale of 0-10, the pain caused by the rash is 2  \n- The rash is larger than 1cm.  \n- On a scale of 0-10, the itching is 5  \n- I have diffuse muscle pain.  \n- I have had a loss of appetite or get full more quickly than usual.  \n- I have nasal congestion or a clear runny nose.  \n- I am coughing.  \n\nAntecedents:  \n---  \n- I smoke cigarettes.  \n- I have not traveled out of the country in the last 4 weeks.  \n- I am immunosuppressed.",
+      "candidates": [
+        {
+          "concept_id": "CANON:tension_headache_with_possible_flu_like_syndrome",
+          "diagnosis": "Tension Headache with Possible Flu-like Syndrome",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P5267FED66188B1E6",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "CANON:angina",
+          "diagnosis": "Angina",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P256BDC742C4D9FF9",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "SURFACE:middle_ear_infection_otitis_media",
+          "diagnosis": "Middle Ear Infection (Otitis Media)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PE414FB7F48CA3564",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "COND:21751",
+          "diagnosis": "Erythema migrans",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PE228A4CA50CF81C5",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "SURFACE:influenza_likely_viral_infection",
+          "diagnosis": "Influenza (likely viral infection)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P7304EF1864A6F7A8",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "CANON:temporomandibular_joint_tmj_dysfunction",
+          "diagnosis": "Temporomandibular joint (TMJ) dysfunction",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P96599ED23455CBC8",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "SURFACE:tension_headache_with_secondary_symptoms",
+          "diagnosis": "Tension headache with secondary symptoms",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P5A81EA60D589D1AB",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "RELEASED:urti",
+          "diagnosis": "URTI",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C03",
+          "C08",
+          "C07",
+          "C06",
+          "C01",
+          "C05",
+          "C04"
+        ],
+        "order1": [
+          "C04",
+          "C05",
+          "C01",
+          "C06",
+          "C07",
+          "C08",
+          "C03",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C08",
+      "strict_correct_ids": [
+        "C08"
+      ]
+    },
+    {
+      "pool_id": "c2k::M06::control::case_115084::trap::k2",
+      "match_id": "M06",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_115084",
+      "branch": "trap",
+      "ground_truth": "Tuberculosis",
+      "preoutcome_rank_auc": 0.5714285714285714,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 2,
+      "patient_record": "Sex: M, Age: 28\nGeographical region: North America\n\nSymptoms:\n---\n- I am coughing up blood.\n- I feel pain.\n  - The pain is:\n    * a knife stroke\n  - The pain locations are:\n    * lower chest\n- On a scale of 0-10, the pain intensity is 4\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 5\n- The pain appeared suddenly.\n- I have fever.\n- I have had chills or shivers.\n- I have a rash.\n  - The rash color is:\n    * pink\n  - The rash peels off.\n  - The rash is swollen.\n  - The affected regions are:\n    * cervical spine\n    * commissure(L)\n    * buttock(R)\n    * flank(R)\n    * shoulder(R)\n- On a scale of 0-10, the pain caused by the rash is 2\n- The lesions are not larger than 1cm.\n- I have no itching from the rash.\n- I have diffuse muscle pain.\n- I have had a loss of appetite or feel full more quickly than usual.\n- I am coughing.\n- My symptoms are more prominent at night.\n- Do you have a cough?\n\nAntecedents:\n---\n- I drink alcohol excessively or have an addiction to alcohol.\n- I smoke cigarettes.\n- I have had a stroke.\n- I have had pneumonia.\n- I have chronic obstructive pulmonary disease (COPD).\n- I have asthma or have had to use a bronchodilator in the past.\n- I have had surgery within the last month.\n- I am underweight (BMI less than 18.5).",
+      "candidates": [
+        {
+          "concept_id": "RELEASED:tuberculosis",
+          "diagnosis": "Tuberculosis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "CANON:hiv_associated_opportunistic_pneumonia",
+          "diagnosis": "HIV-associated Opportunistic Pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P9988D573039DE027",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C01",
+      "strict_correct_ids": [
+        "C01"
+      ]
+    },
+    {
+      "pool_id": "c2k::M06::control::case_115084::trap::k8",
+      "match_id": "M06",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_115084",
+      "branch": "trap",
+      "ground_truth": "Tuberculosis",
+      "preoutcome_rank_auc": 0.5714285714285714,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 8,
+      "patient_record": "Sex: M, Age: 28\nGeographical region: North America\n\nSymptoms:\n---\n- I am coughing up blood.\n- I feel pain.\n  - The pain is:\n    * a knife stroke\n  - The pain locations are:\n    * lower chest\n- On a scale of 0-10, the pain intensity is 4\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 5\n- The pain appeared suddenly.\n- I have fever.\n- I have had chills or shivers.\n- I have a rash.\n  - The rash color is:\n    * pink\n  - The rash peels off.\n  - The rash is swollen.\n  - The affected regions are:\n    * cervical spine\n    * commissure(L)\n    * buttock(R)\n    * flank(R)\n    * shoulder(R)\n- On a scale of 0-10, the pain caused by the rash is 2\n- The lesions are not larger than 1cm.\n- I have no itching from the rash.\n- I have diffuse muscle pain.\n- I have had a loss of appetite or feel full more quickly than usual.\n- I am coughing.\n- My symptoms are more prominent at night.\n- Do you have a cough?\n\nAntecedents:\n---\n- I drink alcohol excessively or have an addiction to alcohol.\n- I smoke cigarettes.\n- I have had a stroke.\n- I have had pneumonia.\n- I have chronic obstructive pulmonary disease (COPD).\n- I have asthma or have had to use a bronchodilator in the past.\n- I have had surgery within the last month.\n- I am underweight (BMI less than 18.5).",
+      "candidates": [
+        {
+          "concept_id": "RELEASED:tuberculosis",
+          "diagnosis": "Tuberculosis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "CANON:hiv_associated_opportunistic_pneumonia",
+          "diagnosis": "HIV-associated Opportunistic Pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P9988D573039DE027",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "MESH:D003453",
+          "diagnosis": "Cryptococcosis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P6E068C19DA707C5D",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "CANON:acute_exacerbation_of_chronic_obstructive_pulmonary_disease_copd_with_secondary_infection",
+          "diagnosis": "Acute exacerbation of chronic obstructive pulmonary disease (COPD) with secondary infection",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P6EF4E16FE39FB5E1",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "SURFACE:lung_malignancy_e_g_bronchogenic_carcinoma_with_hemoptysis",
+          "diagnosis": "Lung malignancy (e.g., bronchogenic carcinoma) with hemoptysis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P25CE74436B24E9AA",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "MESH:D015269",
+          "diagnosis": "Mycobacterium avium complex",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PB561BB8986A3B5F6",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "CANON:erysipelas",
+          "diagnosis": "Erysipelas",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P646237EB97AD6775",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "MESH:D018410",
+          "diagnosis": "Bacterial pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P923B9D68968E1BFA",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C06",
+          "C05",
+          "C08",
+          "C02",
+          "C07",
+          "C04",
+          "C03"
+        ],
+        "order1": [
+          "C03",
+          "C04",
+          "C07",
+          "C02",
+          "C08",
+          "C05",
+          "C06",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C01",
+      "strict_correct_ids": [
+        "C01"
+      ]
+    },
+    {
+      "pool_id": "c2k::M07::focal::case_117368::control::k2",
+      "match_id": "M07",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_117368",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 0.7142857142857143,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 2,
+      "patient_record": "Sex: F, Age: 66\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * sensitive\n    * burning\n  - The pain locations are:\n    * lower chest\n    * upper chest\n    * pharynx\n    * breast(L)\n- On a scale of 0-10, the pain intensity is 5\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 2\n- On a scale of 0-10, the pain's speed of onset is 1\n- I have fever.\n- I have nasal congestion or a clear runny nose.\n- I am coughing.\n- I have noticed a wheezing sound when I exhale.\n- My symptoms are more prominent at night.\n\nAntecedents:\n---\n- I have been diagnosed with chronic obstructive pulmonary disease (COPD).\n- I have not traveled out of the country in the last 4 weeks.\n- My vaccinations are up to date.",
+      "candidates": [
+        {
+          "concept_id": "CANON:lower_respiratory_tract_infection",
+          "diagnosis": "lower respiratory tract infection",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PFA4FE0705D48912C",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M07::focal::case_117368::control::k8",
+      "match_id": "M07",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_117368",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 0.7142857142857143,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 8,
+      "patient_record": "Sex: F, Age: 66\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * sensitive\n    * burning\n  - The pain locations are:\n    * lower chest\n    * upper chest\n    * pharynx\n    * breast(L)\n- On a scale of 0-10, the pain intensity is 5\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 2\n- On a scale of 0-10, the pain's speed of onset is 1\n- I have fever.\n- I have nasal congestion or a clear runny nose.\n- I am coughing.\n- I have noticed a wheezing sound when I exhale.\n- My symptoms are more prominent at night.\n\nAntecedents:\n---\n- I have been diagnosed with chronic obstructive pulmonary disease (COPD).\n- I have not traveled out of the country in the last 4 weeks.\n- My vaccinations are up to date.",
+      "candidates": [
+        {
+          "concept_id": "CANON:lower_respiratory_tract_infection",
+          "diagnosis": "lower respiratory tract infection",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PFA4FE0705D48912C",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "SURFACE:acute_viral_pharyngitis",
+          "diagnosis": "Acute Viral Pharyngitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P44E93D6486AD98E9",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:pulmonary_edema",
+          "diagnosis": "Pulmonary Edema",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PEDF6C6DE24BA6897",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "SURFACE:pharyngitis_with_possible_extension_to_chest",
+          "diagnosis": "Pharyngitis with Possible Extension to Chest",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PED404DFBECF87817",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "CANON:posterior_chest_wall_pain_syndrome",
+          "diagnosis": "Posterior chest wall pain syndrome",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P70B8B0C7820E1183",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "CANON:infectious_exacerbation_of_copd",
+          "diagnosis": "Infectious exacerbation of COPD",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PB9D78D840DE7F390",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "CANON:viral_pleurisy",
+          "diagnosis": "Viral pleurisy",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P96F32D664A1C45E3",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C05",
+          "C03",
+          "C06",
+          "C02",
+          "C08",
+          "C04",
+          "C07"
+        ],
+        "order1": [
+          "C07",
+          "C04",
+          "C08",
+          "C02",
+          "C06",
+          "C03",
+          "C05",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C07",
+      "strict_correct_ids": [
+        "C07"
+      ]
+    },
+    {
+      "pool_id": "c2k::M07::control::case_105365::control::k2",
+      "match_id": "M07",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_105365",
+      "branch": "control",
+      "ground_truth": "Pancreatic neoplasm",
+      "preoutcome_rank_auc": 0.7142857142857143,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 2,
+      "patient_record": "Sex: F, Age: 28\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * sensitive\n  - The pain locations are:\n    * flank(L)\n    * hypochondrium(L)\n    * belly\n    * epigastric\n- On a scale of 0-10, the pain intensity is 6\n- The pain radiates to these locations:\n  * thoracic spine\n- On a scale of 0-10, the pain's location precision is 5\n- On a scale of 0-10, the pain's speed of onset is 4\n- I constantly feel fatigued or have non-restful sleep.\n- I feel nauseous or like vomiting.\n- I have had an involuntary weight loss over the last 3 months.\n- I have pale stools and dark urine.\n\nAntecedents:\n---\n- I have chronic pancreatitis.\n- I have diabetes.\n- I am significantly overweight compared to people of the same height as me.\n- There are members of my family who have been diagnosed with pancreatic cancer.",
+      "candidates": [
+        {
+          "concept_id": "RELEASED:pancreatic_neoplasm",
+          "diagnosis": "Pancreatic neoplasm",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "SURFACE:pneumonia",
+          "diagnosis": "Pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PE55F167AF81ED874",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C01",
+      "strict_correct_ids": [
+        "C01"
+      ]
+    },
+    {
+      "pool_id": "c2k::M07::control::case_105365::control::k8",
+      "match_id": "M07",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_105365",
+      "branch": "control",
+      "ground_truth": "Pancreatic neoplasm",
+      "preoutcome_rank_auc": 0.7142857142857143,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 8,
+      "patient_record": "Sex: F, Age: 28\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * sensitive\n  - The pain locations are:\n    * flank(L)\n    * hypochondrium(L)\n    * belly\n    * epigastric\n- On a scale of 0-10, the pain intensity is 6\n- The pain radiates to these locations:\n  * thoracic spine\n- On a scale of 0-10, the pain's location precision is 5\n- On a scale of 0-10, the pain's speed of onset is 4\n- I constantly feel fatigued or have non-restful sleep.\n- I feel nauseous or like vomiting.\n- I have had an involuntary weight loss over the last 3 months.\n- I have pale stools and dark urine.\n\nAntecedents:\n---\n- I have chronic pancreatitis.\n- I have diabetes.\n- I am significantly overweight compared to people of the same height as me.\n- There are members of my family who have been diagnosed with pancreatic cancer.",
+      "candidates": [
+        {
+          "concept_id": "RELEASED:pancreatic_neoplasm",
+          "diagnosis": "Pancreatic neoplasm",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "SURFACE:pneumonia",
+          "diagnosis": "Pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PE55F167AF81ED874",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:peptic_ulcer_disease_pud",
+          "diagnosis": "Peptic Ulcer Disease (PUD)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PF2A253704D5D3E67",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "SURFACE:chronic_pancreatitis_exacerbation",
+          "diagnosis": "Chronic pancreatitis exacerbation",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P9EFDAC0395AE6E30",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "COND:19394",
+          "diagnosis": "Biliary Colic",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P45D2167C370E0ED2",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "CANON:acute_pancreatitis_exacerbation",
+          "diagnosis": "Acute pancreatitis exacerbation",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PFAE84D768EDE3626",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "CANON:biliary_tract_malignancy",
+          "diagnosis": "Biliary Tract Malignancy",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P90976C5B5F82F7F4",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "CANON:gastroesophageal_reflux_disease_gerd_with_complications",
+          "diagnosis": "Gastroesophageal reflux disease (GERD) with complications",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PE1A19C3FF51C2650",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C07",
+          "C04",
+          "C06",
+          "C02",
+          "C03",
+          "C08",
+          "C05"
+        ],
+        "order1": [
+          "C05",
+          "C08",
+          "C03",
+          "C02",
+          "C06",
+          "C04",
+          "C07",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C01",
+      "strict_correct_ids": [
+        "C01"
+      ]
+    },
+    {
+      "pool_id": "c2k::M08::focal::case_51401::control::k2",
+      "match_id": "M08",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_51401",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 2,
+      "patient_record": "Sex: F, Age: 43\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * burning\n  - The pain locations are:\n    * pharynx\n    * breast(L)\n- On a scale of 0-10, the pain intensity is 4\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 6\n- I have fever.\n- I have a sore throat.\n- I am coughing.\n- I have a cough that produces colored or more abundant sputum than usual.\n- I am wheezing when I exhale.\n- My symptoms are more prominent at night.\n- I have shortness of breath or difficulty breathing in a significant way.\n\nAntecedents:\n---\n- I have been diagnosed with chronic obstructive pulmonary disease (COPD).\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "CANON:posterior_chest_wall_pain_syndrome",
+          "diagnosis": "Posterior chest wall pain syndrome",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P70B8B0C7820E1183",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M08::focal::case_51401::control::k8",
+      "match_id": "M08",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_51401",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 8,
+      "patient_record": "Sex: F, Age: 43\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * burning\n  - The pain locations are:\n    * pharynx\n    * breast(L)\n- On a scale of 0-10, the pain intensity is 4\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 6\n- I have fever.\n- I have a sore throat.\n- I am coughing.\n- I have a cough that produces colored or more abundant sputum than usual.\n- I am wheezing when I exhale.\n- My symptoms are more prominent at night.\n- I have shortness of breath or difficulty breathing in a significant way.\n\nAntecedents:\n---\n- I have been diagnosed with chronic obstructive pulmonary disease (COPD).\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "CANON:pneumonia_due_to_tuberculosis",
+          "diagnosis": "Pneumonia due to tuberculosis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P82DA0B9EDD468A29",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "CANON:asthma_attack",
+          "diagnosis": "Asthma attack",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P2C392F25231B73A7",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:bacterial_sepsis",
+          "diagnosis": "Bacterial Sepsis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PB6D2F37231094188",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "CANON:posterior_chest_wall_pain_syndrome",
+          "diagnosis": "Posterior chest wall pain syndrome",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P70B8B0C7820E1183",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "MESH:D000098968",
+          "diagnosis": "Community-acquired pneumonia (bacterial, e.g., *Streptococcus pneumoniae*)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PCA62DFA2A564E920",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "CANON:peritonsillar_abscess_quinsy",
+          "diagnosis": "Peritonsillar abscess (quinsy)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P305F9E1BAF647D64",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "CANON:influenza_viral",
+          "diagnosis": "Influenza (viral)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P18A5F9D76210B3F1",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C03",
+          "C05",
+          "C01",
+          "C07",
+          "C06",
+          "C04",
+          "C08"
+        ],
+        "order1": [
+          "C08",
+          "C04",
+          "C06",
+          "C07",
+          "C01",
+          "C05",
+          "C03",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C06",
+      "strict_correct_ids": [
+        "C06"
+      ]
+    },
+    {
+      "pool_id": "c2k::M08::control::case_59987::control::k2",
+      "match_id": "M08",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_59987",
+      "branch": "control",
+      "ground_truth": "Spontaneous pneumothorax",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 2,
+      "patient_record": "Sex: M, Age: 6\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * heartbreaking\n    * a knife stroke\n    * violent\n  - The pain locations are:\n    * side of the chest(R)\n    * side of the chest(L)\n    * breast(R)\n    * breast(L)\n- On a scale of 0-10, the pain intensity is 7\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 4\n- On a scale of 0-10, the speed of pain onset is 8\n- I have chest pain even at rest.\n- I am experiencing shortness of breath or difficulty breathing in a significant way.\n- I have pain that is increased when I breathe in deeply.\n\nAntecedents:\n---\n- I have had a spontaneous pneumothorax.\n- I smoke cigarettes.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "CANON:pericarditis",
+          "diagnosis": "Pericarditis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P7E9601559D1DFE3D",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:spontaneous_pneumothorax",
+          "diagnosis": "Spontaneous pneumothorax",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C02"
+        ],
+        "order1": [
+          "C02",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M08::control::case_59987::control::k8",
+      "match_id": "M08",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_59987",
+      "branch": "control",
+      "ground_truth": "Spontaneous pneumothorax",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 8,
+      "patient_record": "Sex: M, Age: 6\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * heartbreaking\n    * a knife stroke\n    * violent\n  - The pain locations are:\n    * side of the chest(R)\n    * side of the chest(L)\n    * breast(R)\n    * breast(L)\n- On a scale of 0-10, the pain intensity is 7\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 4\n- On a scale of 0-10, the speed of pain onset is 8\n- I have chest pain even at rest.\n- I am experiencing shortness of breath or difficulty breathing in a significant way.\n- I have pain that is increased when I breathe in deeply.\n\nAntecedents:\n---\n- I have had a spontaneous pneumothorax.\n- I smoke cigarettes.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "CANON:coronary_artery_disease_e_g_acute_coronary_syndrome_with_atypical_presentation",
+          "diagnosis": "Coronary artery disease (e.g., acute coronary syndrome) with atypical presentation",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P069D41E830E3C9E0",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "CANON:myocardial_infarction_mi",
+          "diagnosis": "Myocardial Infarction (MI)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PD443666A03A9EC94",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:pericarditis",
+          "diagnosis": "Pericarditis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P7E9601559D1DFE3D",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "SURFACE:musculoskeletal_chest_wall_pain_e_g_intercostal_neuralgia",
+          "diagnosis": "Musculoskeletal chest wall pain (e.g., intercostal neuralgia)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P5073375F277943C0",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "CANON:acute_exacerbation_of_copd_with_pleural_irritation",
+          "diagnosis": "Acute exacerbation of COPD with pleural irritation",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P79106C97C73F8A2F",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "CANON:stress_fracture",
+          "diagnosis": "Stress Fracture",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PAEA851F13BEFF95A",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "RELEASED:spontaneous_pneumothorax",
+          "diagnosis": "Spontaneous pneumothorax",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "COND:2238",
+          "diagnosis": "Pleuritic pain",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PC9149C21EC3F4C4F",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C08",
+          "C04",
+          "C06",
+          "C07",
+          "C03",
+          "C02",
+          "C05"
+        ],
+        "order1": [
+          "C05",
+          "C02",
+          "C03",
+          "C07",
+          "C06",
+          "C04",
+          "C08",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C07",
+      "strict_correct_ids": [
+        "C07"
+      ]
+    },
+    {
+      "pool_id": "c2k::M09::focal::case_7340::control::k2",
+      "match_id": "M09",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_7340",
+      "branch": "control",
+      "ground_truth": "Acute pulmonary edema",
+      "preoutcome_rank_auc": 0.7142857142857143,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 2,
+      "patient_record": "Sex: M, Age: 55\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * tedious\n    * sensitive\n    * tugging\n    * heavy\n  - The pain locations are:\n    * lower chest\n    * ankle(L)\n    * side of the chest(R)\n    * upper chest\n    * calf(R)\n- On a scale of 0-10, the pain intensity is 4\n- The pain radiates to these locations:\n  * biceps(R)\n  * biceps(L)\n  * jaw\n  * shoulder(R)\n  * shoulder(L)\n- On a scale of 0-10, the pain's location precision is 3\n- On a scale of 0-10, the speed of pain onset is 4\n- I am experiencing shortness of breath or difficulty breathing in a significant way.\n- I have swelling in one or more areas of my body.\n  - The swelling is located at:\n    * ankle(R)\n    * ankle(L)\n    * calf(R)\n    * tibia(R)\n    * tibia(L)\n- I have noticed new fatigue, generalized and vague discomfort, diffuse muscle aches, or a change in my general well-being.\n\nAntecedents:\n---\n- I have had fluid in my lungs.\n- I currently undergo dialysis.\n- I have high blood pressure or take medications to treat high blood pressure.\n- I have had a heart attack or have angina (chest pain).\n- I have heart failure.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "CANON:myocarditis",
+          "diagnosis": "Myocarditis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PB008377CA7ADDBFC",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:acute_pulmonary_edema",
+          "diagnosis": "Acute pulmonary edema",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C02"
+        ],
+        "order1": [
+          "C02",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M09::focal::case_7340::control::k8",
+      "match_id": "M09",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_7340",
+      "branch": "control",
+      "ground_truth": "Acute pulmonary edema",
+      "preoutcome_rank_auc": 0.7142857142857143,
+      "preoutcome_difficulty_quartile": 1,
+      "k": 8,
+      "patient_record": "Sex: M, Age: 55\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * tedious\n    * sensitive\n    * tugging\n    * heavy\n  - The pain locations are:\n    * lower chest\n    * ankle(L)\n    * side of the chest(R)\n    * upper chest\n    * calf(R)\n- On a scale of 0-10, the pain intensity is 4\n- The pain radiates to these locations:\n  * biceps(R)\n  * biceps(L)\n  * jaw\n  * shoulder(R)\n  * shoulder(L)\n- On a scale of 0-10, the pain's location precision is 3\n- On a scale of 0-10, the speed of pain onset is 4\n- I am experiencing shortness of breath or difficulty breathing in a significant way.\n- I have swelling in one or more areas of my body.\n  - The swelling is located at:\n    * ankle(R)\n    * ankle(L)\n    * calf(R)\n    * tibia(R)\n    * tibia(L)\n- I have noticed new fatigue, generalized and vague discomfort, diffuse muscle aches, or a change in my general well-being.\n\nAntecedents:\n---\n- I have had fluid in my lungs.\n- I currently undergo dialysis.\n- I have high blood pressure or take medications to treat high blood pressure.\n- I have had a heart attack or have angina (chest pain).\n- I have heart failure.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "CANON:myocarditis",
+          "diagnosis": "Myocarditis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PB008377CA7ADDBFC",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "CANON:aortic_dissection",
+          "diagnosis": "Aortic dissection",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P955550C425B0DC4E",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "COND:8193",
+          "diagnosis": "Acute laryngitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P387CBD98E1026513",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "RELEASED:acute_pulmonary_edema",
+          "diagnosis": "Acute pulmonary edema",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "SURFACE:chronic_rhinosinusitis",
+          "diagnosis": "Chronic rhinosinusitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P58FF6AD0ACEE9247",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "SURFACE:chronic_kidney_disease_related_symptoms",
+          "diagnosis": "Chronic Kidney Disease Related Symptoms",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P0A9228228A597007",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "CANON:angina_pectoris",
+          "diagnosis": "Angina Pectoris",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P534A04741F0C34B7",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "CANON:stable_angina_with_possible_new_ischemic_episode",
+          "diagnosis": "Stable angina with possible new ischemic episode",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P22FB21704507B238",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C05",
+          "C04",
+          "C07",
+          "C06",
+          "C02",
+          "C08",
+          "C03",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C03",
+          "C08",
+          "C02",
+          "C06",
+          "C07",
+          "C04",
+          "C05"
+        ]
+      },
+      "strict_correct_id": "C04",
+      "strict_correct_ids": [
+        "C04"
+      ]
+    },
+    {
+      "pool_id": "c2k::M09::control::case_17054::control::k2",
+      "match_id": "M09",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_17054",
+      "branch": "control",
+      "ground_truth": "Pericarditis",
+      "preoutcome_rank_auc": 0.8571428571428571,
+      "preoutcome_difficulty_quartile": 2,
+      "k": 2,
+      "patient_record": "Sex: M, Age: 72\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * a knife stroke\n    * sharp\n  - The pain locations are:\n    * lower chest\n    * upper chest\n    * breast(R)\n- On a scale of 0-10, the pain intensity is 10\n- The pain radiates to these locations:\n  * thoracic spine\n  * posterior chest wall(R)\n- On a scale of 0-10, the pain's location precision is 2\n- On a scale of 0-10, the speed of pain onset is 7\n- I am experiencing shortness of breath or difficulty breathing in a significant way.\n- I have pain that is increased when I breathe in deeply.\n\nAntecedents:\n---\n- I have had a viral infection recently.\n- I have traveled out of the country in the last 4 weeks to North America.",
+      "candidates": [
+        {
+          "concept_id": "RELEASED:pericarditis",
+          "diagnosis": "Pericarditis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "SURFACE:myocardial_infarction",
+          "diagnosis": "Myocardial Infarction",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P4CD8F05153990311",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C02"
+        ],
+        "order1": [
+          "C02",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C01",
+      "strict_correct_ids": [
+        "C01"
+      ]
+    },
+    {
+      "pool_id": "c2k::M09::control::case_17054::control::k8",
+      "match_id": "M09",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_17054",
+      "branch": "control",
+      "ground_truth": "Pericarditis",
+      "preoutcome_rank_auc": 0.8571428571428571,
+      "preoutcome_difficulty_quartile": 2,
+      "k": 8,
+      "patient_record": "Sex: M, Age: 72\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * a knife stroke\n    * sharp\n  - The pain locations are:\n    * lower chest\n    * upper chest\n    * breast(R)\n- On a scale of 0-10, the pain intensity is 10\n- The pain radiates to these locations:\n  * thoracic spine\n  * posterior chest wall(R)\n- On a scale of 0-10, the pain's location precision is 2\n- On a scale of 0-10, the speed of pain onset is 7\n- I am experiencing shortness of breath or difficulty breathing in a significant way.\n- I have pain that is increased when I breathe in deeply.\n\nAntecedents:\n---\n- I have had a viral infection recently.\n- I have traveled out of the country in the last 4 weeks to North America.",
+      "candidates": [
+        {
+          "concept_id": "MESH:D059352",
+          "diagnosis": "Musculoskeletal pain",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P50D951856D93EB25",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:pericarditis",
+          "diagnosis": "Pericarditis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:myocardial_infarction_mi",
+          "diagnosis": "Myocardial Infarction (MI)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PF45BC41C3E6DE238",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "CANON:anxiety",
+          "diagnosis": "Anxiety",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PF7CA9E189C92452F",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "SURFACE:pulmonary_embolism_considered_due_to_pleuritic_pain_and_dyspnea_post_viral",
+          "diagnosis": "Pulmonary embolism (considered due to pleuritic pain and dyspnea post-viral)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P6B01CFD4EF518AF3",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "CANON:atrial_fibrillation",
+          "diagnosis": "Atrial fibrillation",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PE98110A84579F052",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "SURFACE:myocardial_infarction",
+          "diagnosis": "Myocardial Infarction",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P4CD8F05153990311",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "CANON:aortic_dissection",
+          "diagnosis": "Aortic Dissection",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PE7E6D74138412D4C",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C03",
+          "C07",
+          "C08",
+          "C05",
+          "C02",
+          "C04",
+          "C06",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C06",
+          "C04",
+          "C02",
+          "C05",
+          "C08",
+          "C07",
+          "C03"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M10::focal::case_7581::control::k2",
+      "match_id": "M10",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_7581",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 2,
+      "patient_record": "Sex: F, Age: 47\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * burning\n  - The pain locations are:\n    * side of the chest(R)\n    * breast(R)\n- On a scale of 0-10, the pain intensity is 1\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 7\n- I have a cough that produces colored or more abundant sputum than usual.\n- I have a sore throat.\n- I have nasal congestion or a clear runny nose.\n- I am wheezing when I exhale.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have not traveled out of the country in the last 4 weeks.\n- My vaccinations are up to date.",
+      "candidates": [
+        {
+          "concept_id": "CANON:rheumatoid_arthritis_associated_interstitial_lung_disease",
+          "diagnosis": "Rheumatoid arthritis-associated interstitial lung disease",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PAA3DC34A630489D0",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M10::focal::case_7581::control::k8",
+      "match_id": "M10",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_7581",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 8,
+      "patient_record": "Sex: F, Age: 47\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * burning\n  - The pain locations are:\n    * side of the chest(R)\n    * breast(R)\n- On a scale of 0-10, the pain intensity is 1\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 7\n- I have a cough that produces colored or more abundant sputum than usual.\n- I have a sore throat.\n- I have nasal congestion or a clear runny nose.\n- I am wheezing when I exhale.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have not traveled out of the country in the last 4 weeks.\n- My vaccinations are up to date.",
+      "candidates": [
+        {
+          "concept_id": "CANON:rheumatoid_arthritis_associated_interstitial_lung_disease",
+          "diagnosis": "Rheumatoid arthritis-associated interstitial lung disease",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PAA3DC34A630489D0",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "SURFACE:chest_wall_myofascial_pain_syndrome",
+          "diagnosis": "Chest Wall Myofascial Pain Syndrome",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P811FCB8D9B169181",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:acute_bacterial_pneumonia",
+          "diagnosis": "Acute bacterial pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P514DF858614C211A",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "MESH:D014397",
+          "diagnosis": "Pulmonary tuberculosis (less likely but possible given fever, cough, and underweight status)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PC59EC3685CAE3FA4",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "COND:9706",
+          "diagnosis": "Dental Abscess",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P7F358B0C5BA4690C",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "MESH:D010998",
+          "diagnosis": "Pleuritis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P8D32826F7382B239",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "CANON:bacterial_sepsis",
+          "diagnosis": "Bacterial Sepsis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PB6D2F37231094188",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C08",
+          "C04",
+          "C07",
+          "C06",
+          "C01",
+          "C03",
+          "C05"
+        ],
+        "order1": [
+          "C05",
+          "C03",
+          "C01",
+          "C06",
+          "C07",
+          "C04",
+          "C08",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C06",
+      "strict_correct_ids": [
+        "C06"
+      ]
+    },
+    {
+      "pool_id": "c2k::M10::control::case_59081::control::k2",
+      "match_id": "M10",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_59081",
+      "branch": "control",
+      "ground_truth": "SLE",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 2,
+      "patient_record": "Sex: M, Age: 30\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * sensitive\n  - The pain locations are:\n    * back of the neck\n    * ankle(R)\n    * ankle(L)\n    * shoulder(R)\n    * shoulder(L)\n- On a scale of 0-10, the pain intensity is 7\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 6\n- I have shortness of breath or difficulty breathing in a significant way.\n- I constantly feel fatigued or have non-restful sleep.\n- I have a rash.\n  - The rash is:\n    * red\n  - The rash is swollen.\n  - The rash is larger than 1cm.\n  - The affected region is located at: cheek(L)\n  - On a scale of 0-10, the itching severity is 1\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I am consulting because I have high blood pressure.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "CANON:chronic_rhinosinusitis",
+          "diagnosis": "Chronic rhinosinusitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PA6CE2DAA4229B52A",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "RELEASED:sle",
+          "diagnosis": "SLE",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C02",
+          "C01"
+        ],
+        "order1": [
+          "C01",
+          "C02"
+        ]
+      },
+      "strict_correct_id": "C02",
+      "strict_correct_ids": [
+        "C02"
+      ]
+    },
+    {
+      "pool_id": "c2k::M10::control::case_59081::control::k8",
+      "match_id": "M10",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_59081",
+      "branch": "control",
+      "ground_truth": "SLE",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 8,
+      "patient_record": "Sex: M, Age: 30\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * sensitive\n  - The pain locations are:\n    * back of the neck\n    * ankle(R)\n    * ankle(L)\n    * shoulder(R)\n    * shoulder(L)\n- On a scale of 0-10, the pain intensity is 7\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 6\n- I have shortness of breath or difficulty breathing in a significant way.\n- I constantly feel fatigued or have non-restful sleep.\n- I have a rash.\n  - The rash is:\n    * red\n  - The rash is swollen.\n  - The rash is larger than 1cm.\n  - The affected region is located at: cheek(L)\n  - On a scale of 0-10, the itching severity is 1\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I am consulting because I have high blood pressure.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:folliculitis",
+          "diagnosis": "Folliculitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P8F662BBECF2E1A6B",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "SURFACE:panic_disorder",
+          "diagnosis": "Panic Disorder",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P654DC57D6336E978",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:anaphylaxis",
+          "diagnosis": "Anaphylaxis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P84522291901B4052",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "CANON:pericarditis_recurrence",
+          "diagnosis": "Pericarditis Recurrence",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PAD197ADFE3B56EEB",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "CANON:chronic_rhinosinusitis",
+          "diagnosis": "Chronic rhinosinusitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PA6CE2DAA4229B52A",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "CANON:polymyalgia_rheumatica",
+          "diagnosis": "Polymyalgia Rheumatica",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PA8255F30B7D648E9",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "MESH:D013958",
+          "diagnosis": "Thyroid storm (Hypothyroidism with skin and muscle symptoms)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P293D0C2CE1C44A09",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "RELEASED:sle",
+          "diagnosis": "SLE",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C05",
+          "C07",
+          "C08",
+          "C01",
+          "C03",
+          "C02",
+          "C04",
+          "C06"
+        ],
+        "order1": [
+          "C06",
+          "C04",
+          "C02",
+          "C03",
+          "C01",
+          "C08",
+          "C07",
+          "C05"
+        ]
+      },
+      "strict_correct_id": "C08",
+      "strict_correct_ids": [
+        "C08"
+      ]
+    },
+    {
+      "pool_id": "c2k::M11::focal::case_99358::control::k2",
+      "match_id": "M11",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_99358",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 2,
+      "patient_record": "Sex: M, Age: 3\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * burning\n  - The pain locations are:\n    * lower chest\n    * side of the chest(R)\n    * pharynx\n    * posterior chest wall(R)\n- On a scale of 0-10, the pain intensity is 1\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 4\n- I am experiencing shortness of breath or difficulty breathing in a significant way.\n- I have a cough that produces colored or more abundant sputum than usual.\n- I have nasal congestion or a clear runny nose.\n- I am coughing.\n- I have noticed a wheezing sound when I exhale.\n- My symptoms are more prominent at night.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have chronic obstructive pulmonary disease (COPD).\n- I have not traveled out of the country in the last 4 weeks.\n- My vaccinations are up to date.",
+      "candidates": [
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "CANON:esophageal_spasm",
+          "diagnosis": "Esophageal spasm",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P89ADE7EE0305323E",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C02"
+        ],
+        "order1": [
+          "C02",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C01",
+      "strict_correct_ids": [
+        "C01"
+      ]
+    },
+    {
+      "pool_id": "c2k::M11::focal::case_99358::control::k8",
+      "match_id": "M11",
+      "regime": "mixed_only_focal",
+      "role": "focal",
+      "case_id": "case_99358",
+      "branch": "control",
+      "ground_truth": "Bronchitis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 8,
+      "patient_record": "Sex: M, Age: 3\nGeographical region: North America\n\nSymptoms:\n---\n- I feel pain.\n  - The pain is:\n    * burning\n  - The pain locations are:\n    * lower chest\n    * side of the chest(R)\n    * pharynx\n    * posterior chest wall(R)\n- On a scale of 0-10, the pain intensity is 1\n- The pain radiates to these locations:\n  * nowhere\n- On a scale of 0-10, the pain's location precision is 4\n- I am experiencing shortness of breath or difficulty breathing in a significant way.\n- I have a cough that produces colored or more abundant sputum than usual.\n- I have nasal congestion or a clear runny nose.\n- I am coughing.\n- I have noticed a wheezing sound when I exhale.\n- My symptoms are more prominent at night.\n\nAntecedents:\n---\n- I smoke cigarettes.\n- I have chronic obstructive pulmonary disease (COPD).\n- I have not traveled out of the country in the last 4 weeks.\n- My vaccinations are up to date.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:occupational_lung_disease",
+          "diagnosis": "Occupational Lung Disease",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P38523124DFCE3788",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "SURFACE:pharyngitis_with_possible_extension_to_chest",
+          "diagnosis": "Pharyngitis with Possible Extension to Chest",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PED404DFBECF87817",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "CANON:pulmonary_exacerbation_of_cystic_fibrosis",
+          "diagnosis": "Pulmonary exacerbation of cystic fibrosis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P2646B8B15E4DAA05",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "RELEASED:bronchitis",
+          "diagnosis": "Bronchitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "CANON:esophageal_spasm",
+          "diagnosis": "Esophageal spasm",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P89ADE7EE0305323E",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "SURFACE:pneumonia_in_the_left_lung",
+          "diagnosis": "Pneumonia in the Left Lung",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P197FD10AF8944241",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "CANON:pneumonia",
+          "diagnosis": "Pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P7B77AC61094AC47C",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "CANON:bacterial_sepsis",
+          "diagnosis": "Bacterial Sepsis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PB6D2F37231094188",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C06",
+          "C03",
+          "C07",
+          "C08",
+          "C05",
+          "C01",
+          "C04",
+          "C02"
+        ],
+        "order1": [
+          "C02",
+          "C04",
+          "C01",
+          "C05",
+          "C08",
+          "C07",
+          "C03",
+          "C06"
+        ]
+      },
+      "strict_correct_id": "C04",
+      "strict_correct_ids": [
+        "C04"
+      ]
+    },
+    {
+      "pool_id": "c2k::M11::control::case_70555::control::k2",
+      "match_id": "M11",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_70555",
+      "branch": "control",
+      "ground_truth": "Tuberculosis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 2,
+      "patient_record": "Sex: F, Age: 60\nGeographical region: North America\n\nSymptoms:\n---\n- I am experiencing shortness of breath or difficulty breathing.\n- I have fever.\n- I have had involuntary weight loss over the last 3 months.\n- I am coughing.\n\nAntecedents:\n---\n- I take corticosteroids.\n- I am currently using intravenous drugs.\n- I have diabetes.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "RELEASED:tuberculosis",
+          "diagnosis": "Tuberculosis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "CANON:bronchiolitis",
+          "diagnosis": "Bronchiolitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P08AF7CC218144F94",
+          "candidate_id": "C02"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C02"
+        ],
+        "order1": [
+          "C02",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C01",
+      "strict_correct_ids": [
+        "C01"
+      ]
+    },
+    {
+      "pool_id": "c2k::M11::control::case_70555::control::k8",
+      "match_id": "M11",
+      "regime": "difficulty_matched_both_available_control",
+      "role": "control",
+      "case_id": "case_70555",
+      "branch": "control",
+      "ground_truth": "Tuberculosis",
+      "preoutcome_rank_auc": 1.0,
+      "preoutcome_difficulty_quartile": 4,
+      "k": 8,
+      "patient_record": "Sex: F, Age: 60\nGeographical region: North America\n\nSymptoms:\n---\n- I am experiencing shortness of breath or difficulty breathing.\n- I have fever.\n- I have had involuntary weight loss over the last 3 months.\n- I am coughing.\n\nAntecedents:\n---\n- I take corticosteroids.\n- I am currently using intravenous drugs.\n- I have diabetes.\n- I have not traveled out of the country in the last 4 weeks.",
+      "candidates": [
+        {
+          "concept_id": "SURFACE:pulmonary_aspiration",
+          "diagnosis": "Pulmonary aspiration",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P2049748D455EA116",
+          "candidate_id": "C01"
+        },
+        {
+          "concept_id": "CANON:infectious_pneumonia",
+          "diagnosis": "Infectious Pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "PD97FF08A696AA894",
+          "candidate_id": "C02"
+        },
+        {
+          "concept_id": "RELEASED:tuberculosis",
+          "diagnosis": "Tuberculosis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": true,
+          "a0_relation": "EXACT_OR_SYNONYM",
+          "candidate_id": "C03"
+        },
+        {
+          "concept_id": "SURFACE:diabetic_ketoacidosis_dka_with_pulmonary_edema",
+          "diagnosis": "Diabetic ketoacidosis (DKA) with pulmonary edema",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P11A809C1654B6C15",
+          "candidate_id": "C04"
+        },
+        {
+          "concept_id": "CANON:bronchiolitis",
+          "diagnosis": "Bronchiolitis",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P08AF7CC218144F94",
+          "candidate_id": "C05"
+        },
+        {
+          "concept_id": "SURFACE:lung_abscess_anaerobic_bacterial",
+          "diagnosis": "Lung abscess (anaerobic bacterial)",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P3A45CBA8B8CD4ADF",
+          "candidate_id": "C06"
+        },
+        {
+          "concept_id": "SURFACE:croup",
+          "diagnosis": "Croup",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P3458E4389C8EA66F",
+          "candidate_id": "C07"
+        },
+        {
+          "concept_id": "SURFACE:pneumocystis_jiroveci_pneumonia",
+          "diagnosis": "Pneumocystis Jiroveci Pneumonia",
+          "rationale": "Candidate diagnosis under consideration.",
+          "strict_correct": false,
+          "a0_relation": "NOT_EQUIVALENT",
+          "a0_pair_id": "P3F876E737B391036",
+          "candidate_id": "C08"
+        }
+      ],
+      "orders": {
+        "order0": [
+          "C01",
+          "C05",
+          "C08",
+          "C06",
+          "C04",
+          "C07",
+          "C02",
+          "C03"
+        ],
+        "order1": [
+          "C03",
+          "C02",
+          "C07",
+          "C04",
+          "C06",
+          "C08",
+          "C05",
+          "C01"
+        ]
+      },
+      "strict_correct_id": "C03",
+      "strict_correct_ids": [
+        "C03"
+      ]
+    }
+  ]
+}

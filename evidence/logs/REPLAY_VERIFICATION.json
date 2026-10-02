@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "analyses": 12,
+  "numerical_tolerance": 1e-10,
+  "network_calls": 0,
+  "scope": "Recorded-output numerical replication, not renewed clinical adjudication"
+}

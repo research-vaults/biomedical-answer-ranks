@@ -1,0 +1,616 @@
+{
+  "normalization": "NFKC_casefold_ampersand_punctuation_collapse",
+  "labels": [
+    {
+      "canonical": "Acute COPD exacerbation / infection",
+      "aliases": [
+        "Acute COPD exacerbation / infection",
+        "COPD exacerbation",
+        "acute exacerbation of COPD",
+        "AECOPD"
+      ],
+      "normalized_aliases": [
+        "acute copd exacerbation infection",
+        "acute exacerbation of copd",
+        "aecopd",
+        "copd exacerbation"
+      ]
+    },
+    {
+      "canonical": "Acute dystonic reactions",
+      "aliases": [
+        "Acute dystonic reactions"
+      ],
+      "normalized_aliases": [
+        "acute dystonic reactions"
+      ]
+    },
+    {
+      "canonical": "Acute laryngitis",
+      "aliases": [
+        "Acute laryngitis"
+      ],
+      "normalized_aliases": [
+        "acute laryngitis"
+      ]
+    },
+    {
+      "canonical": "Acute otitis media",
+      "aliases": [
+        "Acute otitis media",
+        "AOM"
+      ],
+      "normalized_aliases": [
+        "acute otitis media",
+        "aom"
+      ]
+    },
+    {
+      "canonical": "Acute pulmonary edema",
+      "aliases": [
+        "Acute pulmonary edema"
+      ],
+      "normalized_aliases": [
+        "acute pulmonary edema"
+      ]
+    },
+    {
+      "canonical": "Acute rhinosinusitis",
+      "aliases": [
+        "Acute rhinosinusitis",
+        "acute sinusitis"
+      ],
+      "normalized_aliases": [
+        "acute rhinosinusitis",
+        "acute sinusitis"
+      ]
+    },
+    {
+      "canonical": "Allergic sinusitis",
+      "aliases": [
+        "Allergic sinusitis"
+      ],
+      "normalized_aliases": [
+        "allergic sinusitis"
+      ]
+    },
+    {
+      "canonical": "Anaphylaxis",
+      "aliases": [
+        "Anaphylaxis"
+      ],
+      "normalized_aliases": [
+        "anaphylaxis"
+      ]
+    },
+    {
+      "canonical": "Anemia",
+      "aliases": [
+        "Anemia"
+      ],
+      "normalized_aliases": [
+        "anemia"
+      ]
+    },
+    {
+      "canonical": "Atrial fibrillation",
+      "aliases": [
+        "Atrial fibrillation",
+        "AF",
+        "AFib"
+      ],
+      "normalized_aliases": [
+        "af",
+        "afib",
+        "atrial fibrillation"
+      ]
+    },
+    {
+      "canonical": "Boerhaave",
+      "aliases": [
+        "Boerhaave"
+      ],
+      "normalized_aliases": [
+        "boerhaave"
+      ]
+    },
+    {
+      "canonical": "Bronchiectasis",
+      "aliases": [
+        "Bronchiectasis"
+      ],
+      "normalized_aliases": [
+        "bronchiectasis"
+      ]
+    },
+    {
+      "canonical": "Bronchiolitis",
+      "aliases": [
+        "Bronchiolitis"
+      ],
+      "normalized_aliases": [
+        "bronchiolitis"
+      ]
+    },
+    {
+      "canonical": "Bronchitis",
+      "aliases": [
+        "Bronchitis"
+      ],
+      "normalized_aliases": [
+        "bronchitis"
+      ]
+    },
+    {
+      "canonical": "Bronchospasm / acute asthma exacerbation",
+      "aliases": [
+        "Bronchospasm / acute asthma exacerbation",
+        "acute asthma exacerbation",
+        "bronchospasm"
+      ],
+      "normalized_aliases": [
+        "acute asthma exacerbation",
+        "bronchospasm",
+        "bronchospasm acute asthma exacerbation"
+      ]
+    },
+    {
+      "canonical": "Chagas",
+      "aliases": [
+        "Chagas"
+      ],
+      "normalized_aliases": [
+        "chagas"
+      ]
+    },
+    {
+      "canonical": "Chronic rhinosinusitis",
+      "aliases": [
+        "Chronic rhinosinusitis",
+        "chronic sinusitis"
+      ],
+      "normalized_aliases": [
+        "chronic rhinosinusitis",
+        "chronic sinusitis"
+      ]
+    },
+    {
+      "canonical": "Cluster headache",
+      "aliases": [
+        "Cluster headache"
+      ],
+      "normalized_aliases": [
+        "cluster headache"
+      ]
+    },
+    {
+      "canonical": "Croup",
+      "aliases": [
+        "Croup"
+      ],
+      "normalized_aliases": [
+        "croup"
+      ]
+    },
+    {
+      "canonical": "Ebola",
+      "aliases": [
+        "Ebola"
+      ],
+      "normalized_aliases": [
+        "ebola"
+      ]
+    },
+    {
+      "canonical": "Epiglottitis",
+      "aliases": [
+        "Epiglottitis"
+      ],
+      "normalized_aliases": [
+        "epiglottitis"
+      ]
+    },
+    {
+      "canonical": "GERD",
+      "aliases": [
+        "GERD",
+        "gastroesophageal reflux disease",
+        "acid reflux"
+      ],
+      "normalized_aliases": [
+        "acid reflux",
+        "gastroesophageal reflux disease",
+        "gerd"
+      ]
+    },
+    {
+      "canonical": "Guillain-Barré syndrome",
+      "aliases": [
+        "Guillain-Barré syndrome"
+      ],
+      "normalized_aliases": [
+        "guillain barr syndrome"
+      ]
+    },
+    {
+      "canonical": "HIV (initial infection)",
+      "aliases": [
+        "HIV (initial infection)",
+        "acute HIV infection",
+        "primary HIV infection"
+      ],
+      "normalized_aliases": [
+        "acute hiv infection",
+        "hiv initial infection",
+        "primary hiv infection"
+      ]
+    },
+    {
+      "canonical": "Influenza",
+      "aliases": [
+        "Influenza"
+      ],
+      "normalized_aliases": [
+        "influenza"
+      ]
+    },
+    {
+      "canonical": "Inguinal hernia",
+      "aliases": [
+        "Inguinal hernia"
+      ],
+      "normalized_aliases": [
+        "inguinal hernia"
+      ]
+    },
+    {
+      "canonical": "Myasthenia gravis",
+      "aliases": [
+        "Myasthenia gravis"
+      ],
+      "normalized_aliases": [
+        "myasthenia gravis"
+      ]
+    },
+    {
+      "canonical": "Myocarditis",
+      "aliases": [
+        "Myocarditis"
+      ],
+      "normalized_aliases": [
+        "myocarditis"
+      ]
+    },
+    {
+      "canonical": "PSVT",
+      "aliases": [
+        "PSVT",
+        "paroxysmal supraventricular tachycardia",
+        "SVT"
+      ],
+      "normalized_aliases": [
+        "paroxysmal supraventricular tachycardia",
+        "psvt",
+        "svt"
+      ]
+    },
+    {
+      "canonical": "Pancreatic neoplasm",
+      "aliases": [
+        "Pancreatic neoplasm",
+        "pancreatic cancer"
+      ],
+      "normalized_aliases": [
+        "pancreatic cancer",
+        "pancreatic neoplasm"
+      ]
+    },
+    {
+      "canonical": "Panic attack",
+      "aliases": [
+        "Panic attack"
+      ],
+      "normalized_aliases": [
+        "panic attack"
+      ]
+    },
+    {
+      "canonical": "Pericarditis",
+      "aliases": [
+        "Pericarditis"
+      ],
+      "normalized_aliases": [
+        "pericarditis"
+      ]
+    },
+    {
+      "canonical": "Pneumonia",
+      "aliases": [
+        "Pneumonia"
+      ],
+      "normalized_aliases": [
+        "pneumonia"
+      ]
+    },
+    {
+      "canonical": "Possible NSTEMI / STEMI",
+      "aliases": [
+        "Possible NSTEMI / STEMI",
+        "NSTEMI",
+        "STEMI",
+        "NSTEMI/STEMI"
+      ],
+      "normalized_aliases": [
+        "nstemi",
+        "nstemi stemi",
+        "possible nstemi stemi",
+        "stemi"
+      ]
+    },
+    {
+      "canonical": "Pulmonary embolism",
+      "aliases": [
+        "Pulmonary embolism",
+        "PE"
+      ],
+      "normalized_aliases": [
+        "pe",
+        "pulmonary embolism"
+      ]
+    },
+    {
+      "canonical": "Pulmonary neoplasm",
+      "aliases": [
+        "Pulmonary neoplasm",
+        "lung cancer",
+        "lung neoplasm"
+      ],
+      "normalized_aliases": [
+        "lung cancer",
+        "lung neoplasm",
+        "pulmonary neoplasm"
+      ]
+    },
+    {
+      "canonical": "SLE",
+      "aliases": [
+        "SLE",
+        "systemic lupus erythematosus"
+      ],
+      "normalized_aliases": [
+        "sle",
+        "systemic lupus erythematosus"
+      ]
+    },
+    {
+      "canonical": "Sarcoidosis",
+      "aliases": [
+        "Sarcoidosis"
+      ],
+      "normalized_aliases": [
+        "sarcoidosis"
+      ]
+    },
+    {
+      "canonical": "Scombroid food poisoning",
+      "aliases": [
+        "Scombroid food poisoning"
+      ],
+      "normalized_aliases": [
+        "scombroid food poisoning"
+      ]
+    },
+    {
+      "canonical": "Spontaneous pneumothorax",
+      "aliases": [
+        "Spontaneous pneumothorax"
+      ],
+      "normalized_aliases": [
+        "spontaneous pneumothorax"
+      ]
+    },
+    {
+      "canonical": "Spontaneous rib fracture",
+      "aliases": [
+        "Spontaneous rib fracture"
+      ],
+      "normalized_aliases": [
+        "spontaneous rib fracture"
+      ]
+    },
+    {
+      "canonical": "Stable angina",
+      "aliases": [
+        "Stable angina"
+      ],
+      "normalized_aliases": [
+        "stable angina"
+      ]
+    },
+    {
+      "canonical": "Tuberculosis",
+      "aliases": [
+        "Tuberculosis"
+      ],
+      "normalized_aliases": [
+        "tuberculosis"
+      ]
+    },
+    {
+      "canonical": "URTI",
+      "aliases": [
+        "URTI",
+        "upper respiratory tract infection",
+        "upper respiratory infection",
+        "URI"
+      ],
+      "normalized_aliases": [
+        "upper respiratory infection",
+        "upper respiratory tract infection",
+        "uri",
+        "urti"
+      ]
+    },
+    {
+      "canonical": "Unstable angina",
+      "aliases": [
+        "Unstable angina"
+      ],
+      "normalized_aliases": [
+        "unstable angina"
+      ]
+    },
+    {
+      "canonical": "Viral pharyngitis",
+      "aliases": [
+        "Viral pharyngitis"
+      ],
+      "normalized_aliases": [
+        "viral pharyngitis"
+      ]
+    }
+  ],
+  "lookup": {
+    "acute copd exacerbation infection": "Acute COPD exacerbation / infection",
+    "copd exacerbation": "Acute COPD exacerbation / infection",
+    "acute exacerbation of copd": "Acute COPD exacerbation / infection",
+    "aecopd": "Acute COPD exacerbation / infection",
+    "acute dystonic reactions": "Acute dystonic reactions",
+    "acute laryngitis": "Acute laryngitis",
+    "acute otitis media": "Acute otitis media",
+    "aom": "Acute otitis media",
+    "acute pulmonary edema": "Acute pulmonary edema",
+    "acute rhinosinusitis": "Acute rhinosinusitis",
+    "acute sinusitis": "Acute rhinosinusitis",
+    "allergic sinusitis": "Allergic sinusitis",
+    "anaphylaxis": "Anaphylaxis",
+    "anemia": "Anemia",
+    "atrial fibrillation": "Atrial fibrillation",
+    "af": "Atrial fibrillation",
+    "afib": "Atrial fibrillation",
+    "boerhaave": "Boerhaave",
+    "bronchiectasis": "Bronchiectasis",
+    "bronchiolitis": "Bronchiolitis",
+    "bronchitis": "Bronchitis",
+    "bronchospasm acute asthma exacerbation": "Bronchospasm / acute asthma exacerbation",
+    "acute asthma exacerbation": "Bronchospasm / acute asthma exacerbation",
+    "bronchospasm": "Bronchospasm / acute asthma exacerbation",
+    "chagas": "Chagas",
+    "chronic rhinosinusitis": "Chronic rhinosinusitis",
+    "chronic sinusitis": "Chronic rhinosinusitis",
+    "cluster headache": "Cluster headache",
+    "croup": "Croup",
+    "ebola": "Ebola",
+    "epiglottitis": "Epiglottitis",
+    "gerd": "GERD",
+    "gastroesophageal reflux disease": "GERD",
+    "acid reflux": "GERD",
+    "guillain barr syndrome": "Guillain-Barré syndrome",
+    "hiv initial infection": "HIV (initial infection)",
+    "acute hiv infection": "HIV (initial infection)",
+    "primary hiv infection": "HIV (initial infection)",
+    "influenza": "Influenza",
+    "inguinal hernia": "Inguinal hernia",
+    "myasthenia gravis": "Myasthenia gravis",
+    "myocarditis": "Myocarditis",
+    "psvt": "PSVT",
+    "paroxysmal supraventricular tachycardia": "PSVT",
+    "svt": "PSVT",
+    "pancreatic neoplasm": "Pancreatic neoplasm",
+    "pancreatic cancer": "Pancreatic neoplasm",
+    "panic attack": "Panic attack",
+    "pericarditis": "Pericarditis",
+    "pneumonia": "Pneumonia",
+    "possible nstemi stemi": "Possible NSTEMI / STEMI",
+    "nstemi": "Possible NSTEMI / STEMI",
+    "stemi": "Possible NSTEMI / STEMI",
+    "nstemi stemi": "Possible NSTEMI / STEMI",
+    "pulmonary embolism": "Pulmonary embolism",
+    "pe": "Pulmonary embolism",
+    "pulmonary neoplasm": "Pulmonary neoplasm",
+    "lung cancer": "Pulmonary neoplasm",
+    "lung neoplasm": "Pulmonary neoplasm",
+    "sle": "SLE",
+    "systemic lupus erythematosus": "SLE",
+    "sarcoidosis": "Sarcoidosis",
+    "scombroid food poisoning": "Scombroid food poisoning",
+    "spontaneous pneumothorax": "Spontaneous pneumothorax",
+    "spontaneous rib fracture": "Spontaneous rib fracture",
+    "stable angina": "Stable angina",
+    "tuberculosis": "Tuberculosis",
+    "urti": "URTI",
+    "upper respiratory tract infection": "URTI",
+    "upper respiratory infection": "URTI",
+    "uri": "URTI",
+    "unstable angina": "Unstable angina",
+    "viral pharyngitis": "Viral pharyngitis",
+    "gastro oesophageal reflux disease": "GERD",
+    "a fib": "Atrial fibrillation",
+    "s v t": "PSVT",
+    "acute exacerbation of c o p d": "Acute COPD exacerbation / infection"
+  },
+  "adversarial_tests": {
+    "accepted": [
+      {
+        "input": "gastro-oesophageal reflux disease",
+        "expected": "GERD",
+        "resolved": "GERD"
+      },
+      {
+        "input": "a.fib",
+        "expected": "Atrial fibrillation",
+        "resolved": "Atrial fibrillation"
+      },
+      {
+        "input": "S.V.T.",
+        "expected": "PSVT",
+        "resolved": "PSVT"
+      },
+      {
+        "input": "upper-respiratory infection",
+        "expected": "URTI",
+        "resolved": "URTI"
+      },
+      {
+        "input": "systemic lupus erythematosus",
+        "expected": "SLE",
+        "resolved": "SLE"
+      },
+      {
+        "input": "acute exacerbation of c.o.p.d.",
+        "expected": "Acute COPD exacerbation / infection",
+        "resolved": "Acute COPD exacerbation / infection"
+      }
+    ],
+    "rejected": [
+      {
+        "input": "Bronchitus",
+        "resolved": null
+      },
+      {
+        "input": "Pnuemonia",
+        "resolved": null
+      },
+      {
+        "input": "pulmonary edema",
+        "resolved": null
+      },
+      {
+        "input": "asthma",
+        "resolved": null
+      },
+      {
+        "input": "heart attack",
+        "resolved": null
+      },
+      {
+        "input": "sinusitis",
+        "resolved": null
+      },
+      {
+        "input": "HIV",
+        "resolved": null
+      }
+    ]
+  }
+}

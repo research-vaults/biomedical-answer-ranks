@@ -1,0 +1,282 @@
+{
+  "original_frozen_strict": {
+    "version": "original_frozen",
+    "endpoint": "strict",
+    "refinement_classes": [],
+    "source_coded_interpretation": false,
+    "promoted_pairs": [],
+    "clinical_correctness_validated": false
+  },
+  "original_frozen_inclusive": {
+    "version": "original_frozen",
+    "endpoint": "inclusive",
+    "refinement_classes": [],
+    "source_coded_interpretation": false,
+    "promoted_pairs": [],
+    "clinical_correctness_validated": false
+  },
+  "corrected_v4_inclusive": {
+    "version": "corrected_v4",
+    "endpoint": "inclusive",
+    "refinement_classes": [],
+    "source_coded_interpretation": false,
+    "promoted_pairs": [],
+    "clinical_correctness_validated": false
+  },
+  "corrected_v4_strict": {
+    "version": "corrected_v4",
+    "endpoint": "strict",
+    "refinement_classes": [],
+    "source_coded_interpretation": false,
+    "promoted_pairs": [],
+    "clinical_correctness_validated": false
+  },
+  "refinement_temporal": {
+    "version": "corrected_v4",
+    "endpoint": "strict",
+    "refinement_classes": [
+      "temporal"
+    ],
+    "source_coded_interpretation": false,
+    "promoted_pairs": [
+      "P96C0A831AF55FBE7",
+      "P5F9ED69ADC91AC79",
+      "P99183422222E00F0",
+      "P492123DAEEA41471",
+      "P41F466D1E9F9CA23",
+      "P4E402DA8EB788ACF",
+      "P739DBFFBAE5B2DCF",
+      "P3B7A76B3AA0D1CB5",
+      "PF631EBB24833D28F",
+      "P40AF0DADEDA8CBC3",
+      "P226E66310A691BA2",
+      "P3BA6F78D37663771",
+      "PF652148E49354B70",
+      "P33C7F22AA3A31DC3",
+      "P5F1B3A9CD5125B6A"
+    ],
+    "clinical_correctness_validated": false
+  },
+  "refinement_etiologic": {
+    "version": "corrected_v4",
+    "endpoint": "strict",
+    "refinement_classes": [
+      "etiologic"
+    ],
+    "source_coded_interpretation": false,
+    "promoted_pairs": [
+      "PDDDC653B407843A6",
+      "P4289F23F4153C1D8",
+      "P62ADC1DAA8C5D9B9",
+      "PA9EAD1E38BA69A81",
+      "P0902DAFBCCF02B61",
+      "PB13FABCCEFD033C5",
+      "PAA1354A103C5680E",
+      "PA9E1B891A87FA320"
+    ],
+    "clinical_correctness_validated": false
+  },
+  "refinement_severity_or_site": {
+    "version": "corrected_v4",
+    "endpoint": "strict",
+    "refinement_classes": [
+      "severity_or_site"
+    ],
+    "source_coded_interpretation": false,
+    "promoted_pairs": [
+      "P2657DBFD40718129"
+    ],
+    "clinical_correctness_validated": false
+  },
+  "refinement_temporal_etiologic": {
+    "version": "corrected_v4",
+    "endpoint": "strict",
+    "refinement_classes": [
+      "etiologic",
+      "temporal"
+    ],
+    "source_coded_interpretation": false,
+    "promoted_pairs": [
+      "P96C0A831AF55FBE7",
+      "P797228DED18E8AD4",
+      "P5F9ED69ADC91AC79",
+      "P99183422222E00F0",
+      "PDDDC653B407843A6",
+      "P492123DAEEA41471",
+      "P4289F23F4153C1D8",
+      "P62ADC1DAA8C5D9B9",
+      "P41F466D1E9F9CA23",
+      "PA9EAD1E38BA69A81",
+      "P4E402DA8EB788ACF",
+      "P739DBFFBAE5B2DCF",
+      "P3B7A76B3AA0D1CB5",
+      "PF631EBB24833D28F",
+      "P0902DAFBCCF02B61",
+      "P40AF0DADEDA8CBC3",
+      "P226E66310A691BA2",
+      "P3BA6F78D37663771",
+      "PB13FABCCEFD033C5",
+      "PF652148E49354B70",
+      "P33C7F22AA3A31DC3",
+      "PAA1354A103C5680E",
+      "P5F1B3A9CD5125B6A",
+      "PA9E1B891A87FA320",
+      "P590F88CEE0ED0EF0"
+    ],
+    "clinical_correctness_validated": false
+  },
+  "refinement_temporal_severity_or_site": {
+    "version": "corrected_v4",
+    "endpoint": "strict",
+    "refinement_classes": [
+      "severity_or_site",
+      "temporal"
+    ],
+    "source_coded_interpretation": false,
+    "promoted_pairs": [
+      "P96C0A831AF55FBE7",
+      "P5F9ED69ADC91AC79",
+      "P2657DBFD40718129",
+      "P99183422222E00F0",
+      "P492123DAEEA41471",
+      "P41F466D1E9F9CA23",
+      "P4E402DA8EB788ACF",
+      "P739DBFFBAE5B2DCF",
+      "P3B7A76B3AA0D1CB5",
+      "PF631EBB24833D28F",
+      "P2BCF883EBEAA813C",
+      "P40AF0DADEDA8CBC3",
+      "P226E66310A691BA2",
+      "P3BA6F78D37663771",
+      "PF652148E49354B70",
+      "P33C7F22AA3A31DC3",
+      "P5F1B3A9CD5125B6A"
+    ],
+    "clinical_correctness_validated": false
+  },
+  "refinement_etiologic_severity_or_site": {
+    "version": "corrected_v4",
+    "endpoint": "strict",
+    "refinement_classes": [
+      "etiologic",
+      "severity_or_site"
+    ],
+    "source_coded_interpretation": false,
+    "promoted_pairs": [
+      "P2657DBFD40718129",
+      "PDDDC653B407843A6",
+      "P4289F23F4153C1D8",
+      "P62ADC1DAA8C5D9B9",
+      "PA9EAD1E38BA69A81",
+      "P0902DAFBCCF02B61",
+      "PB13FABCCEFD033C5",
+      "PAA1354A103C5680E",
+      "PA9E1B891A87FA320"
+    ],
+    "clinical_correctness_validated": false
+  },
+  "refinement_temporal_etiologic_severity_or_site": {
+    "version": "corrected_v4",
+    "endpoint": "strict",
+    "refinement_classes": [
+      "etiologic",
+      "severity_or_site",
+      "temporal"
+    ],
+    "source_coded_interpretation": false,
+    "promoted_pairs": [
+      "P96C0A831AF55FBE7",
+      "P797228DED18E8AD4",
+      "P5F9ED69ADC91AC79",
+      "P2657DBFD40718129",
+      "P99183422222E00F0",
+      "PDDDC653B407843A6",
+      "P492123DAEEA41471",
+      "P4289F23F4153C1D8",
+      "P62ADC1DAA8C5D9B9",
+      "P41F466D1E9F9CA23",
+      "PA9EAD1E38BA69A81",
+      "P4E402DA8EB788ACF",
+      "P739DBFFBAE5B2DCF",
+      "P3B7A76B3AA0D1CB5",
+      "PF631EBB24833D28F",
+      "P2BCF883EBEAA813C",
+      "P0902DAFBCCF02B61",
+      "P40AF0DADEDA8CBC3",
+      "P226E66310A691BA2",
+      "P3BA6F78D37663771",
+      "PB13FABCCEFD033C5",
+      "PF652148E49354B70",
+      "P33C7F22AA3A31DC3",
+      "PAA1354A103C5680E",
+      "P5F1B3A9CD5125B6A",
+      "PA9E1B891A87FA320",
+      "P590F88CEE0ED0EF0"
+    ],
+    "clinical_correctness_validated": false
+  },
+  "source_coded_target_only": {
+    "version": "corrected_v4",
+    "endpoint": "strict",
+    "refinement_classes": [],
+    "source_coded_interpretation": true,
+    "promoted_pairs": [
+      "P09B16F5795C91534",
+      "P22F818E4AA433276",
+      "PBC308A4BB120D32A",
+      "PFE1E7A4CD4E053F1",
+      "P81FE01922A08584F",
+      "P40E5E658CBA1EFB9",
+      "P226E66310A691BA2",
+      "PEBF0E149A77C5081"
+    ],
+    "clinical_correctness_validated": false
+  },
+  "source_coded_plus_all_refinements": {
+    "version": "corrected_v4",
+    "endpoint": "strict",
+    "refinement_classes": [
+      "etiologic",
+      "severity_or_site",
+      "temporal"
+    ],
+    "source_coded_interpretation": true,
+    "promoted_pairs": [
+      "P96C0A831AF55FBE7",
+      "P09B16F5795C91534",
+      "P797228DED18E8AD4",
+      "P22F818E4AA433276",
+      "P5F9ED69ADC91AC79",
+      "PBC308A4BB120D32A",
+      "P2657DBFD40718129",
+      "P99183422222E00F0",
+      "PDDDC653B407843A6",
+      "PFE1E7A4CD4E053F1",
+      "P492123DAEEA41471",
+      "P4289F23F4153C1D8",
+      "P62ADC1DAA8C5D9B9",
+      "P81FE01922A08584F",
+      "P41F466D1E9F9CA23",
+      "PA9EAD1E38BA69A81",
+      "P4E402DA8EB788ACF",
+      "P739DBFFBAE5B2DCF",
+      "P40E5E658CBA1EFB9",
+      "P3B7A76B3AA0D1CB5",
+      "PF631EBB24833D28F",
+      "P2BCF883EBEAA813C",
+      "P0902DAFBCCF02B61",
+      "P40AF0DADEDA8CBC3",
+      "P226E66310A691BA2",
+      "P3BA6F78D37663771",
+      "PB13FABCCEFD033C5",
+      "PF652148E49354B70",
+      "PEBF0E149A77C5081",
+      "P33C7F22AA3A31DC3",
+      "PAA1354A103C5680E",
+      "P5F1B3A9CD5125B6A",
+      "PA9E1B891A87FA320",
+      "P590F88CEE0ED0EF0"
+    ],
+    "clinical_correctness_validated": false
+  }
+}

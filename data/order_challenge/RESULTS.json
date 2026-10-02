@@ -1,0 +1,265 @@
+{
+  "status": "COMPLETE_RETAIN_ALL",
+  "missing_choices": 0,
+  "results": {
+    "refinement": {
+      "gemini_joint": {
+        "original": {
+          "estimate": -0.14756944444444445,
+          "ci95": [
+            -0.31597222222222215,
+            0.0034722222222222147
+          ],
+          "n_pairs": 24
+        },
+        "alternate_order": {
+          "estimate": -0.2934027777777778,
+          "ci95": [
+            -0.4305555555555556,
+            -0.17708333333333334
+          ],
+          "n_pairs": 24
+        },
+        "alternate_shuffle": {
+          "estimate": -0.07118055555555557,
+          "ci95": [
+            -0.23958333333333334,
+            0.12152777777777778
+          ],
+          "n_pairs": 24
+        },
+        "alternate_order_minus_original": {
+          "estimate": -0.14583333333333334,
+          "ci95": [
+            -0.2708333333333333,
+            -0.020833333333333332
+          ],
+          "n_pairs": 24
+        },
+        "alternate_shuffle_minus_original": {
+          "estimate": 0.0763888888888889,
+          "ci95": [
+            -0.11458333333333333,
+            0.2864583333333333
+          ],
+          "n_pairs": 24
+        }
+      },
+      "llama8_joint": {
+        "original": {
+          "estimate": -0.10590277777777779,
+          "ci95": [
+            -0.25,
+            0.04166666666666666
+          ],
+          "n_pairs": 24
+        },
+        "alternate_order": {
+          "estimate": -0.14756944444444445,
+          "ci95": [
+            -0.28472222222222227,
+            -0.005208333333333354
+          ],
+          "n_pairs": 24
+        },
+        "alternate_shuffle": {
+          "estimate": -0.0920138888888889,
+          "ci95": [
+            -0.29687499999999994,
+            0.13541666666666663
+          ],
+          "n_pairs": 24
+        },
+        "alternate_order_minus_original": {
+          "estimate": -0.041666666666666664,
+          "ci95": [
+            -0.16666666666666666,
+            0.0625
+          ],
+          "n_pairs": 24
+        },
+        "alternate_shuffle_minus_original": {
+          "estimate": 0.013888888888888893,
+          "ci95": [
+            -0.13020833333333334,
+            0.17534722222222224
+          ],
+          "n_pairs": 24
+        }
+      }
+    },
+    "strict": {
+      "gemini_joint": {
+        "original": {
+          "estimate": -0.13368055555555555,
+          "ci95": [
+            -0.2465277777777778,
+            -0.02256944444444445
+          ],
+          "n_pairs": 24
+        },
+        "alternate_order": {
+          "estimate": -0.2586805555555556,
+          "ci95": [
+            -0.3645833333333333,
+            -0.15104166666666666
+          ],
+          "n_pairs": 24
+        },
+        "alternate_shuffle": {
+          "estimate": -0.10416666666666667,
+          "ci95": [
+            -0.234375,
+            0.02604166666666666
+          ],
+          "n_pairs": 24
+        },
+        "alternate_order_minus_original": {
+          "estimate": -0.125,
+          "ci95": [
+            -0.20833333333333334,
+            -0.041666666666666664
+          ],
+          "n_pairs": 24
+        },
+        "alternate_shuffle_minus_original": {
+          "estimate": 0.029513888888888895,
+          "ci95": [
+            -0.11458333333333333,
+            0.17534722222222224
+          ],
+          "n_pairs": 24
+        }
+      },
+      "llama8_joint": {
+        "original": {
+          "estimate": -0.11284722222222222,
+          "ci95": [
+            -0.2725694444444444,
+            0.03993055555555555
+          ],
+          "n_pairs": 24
+        },
+        "alternate_order": {
+          "estimate": -0.15451388888888892,
+          "ci95": [
+            -0.2899305555555556,
+            -0.024305555555555563
+          ],
+          "n_pairs": 24
+        },
+        "alternate_shuffle": {
+          "estimate": -0.10416666666666667,
+          "ci95": [
+            -0.27777777777777785,
+            0.08680555555555554
+          ],
+          "n_pairs": 24
+        },
+        "alternate_order_minus_original": {
+          "estimate": -0.041666666666666664,
+          "ci95": [
+            -0.16666666666666666,
+            0.08333333333333333
+          ],
+          "n_pairs": 24
+        },
+        "alternate_shuffle_minus_original": {
+          "estimate": 0.008680555555555547,
+          "ci95": [
+            -0.11458333333333333,
+            0.13198784722222476
+          ],
+          "n_pairs": 24
+        }
+      }
+    },
+    "exact_reference": {
+      "gemini_joint": {
+        "original": {
+          "estimate": -0.13368055555555555,
+          "ci95": [
+            -0.2465277777777778,
+            -0.02256944444444445
+          ],
+          "n_pairs": 24
+        },
+        "alternate_order": {
+          "estimate": -0.2795138888888889,
+          "ci95": [
+            -0.3958333333333333,
+            -0.16319444444444445
+          ],
+          "n_pairs": 24
+        },
+        "alternate_shuffle": {
+          "estimate": -0.08333333333333333,
+          "ci95": [
+            -0.22569444444444442,
+            0.06076388888888889
+          ],
+          "n_pairs": 24
+        },
+        "alternate_order_minus_original": {
+          "estimate": -0.14583333333333334,
+          "ci95": [
+            -0.25,
+            -0.0625
+          ],
+          "n_pairs": 24
+        },
+        "alternate_shuffle_minus_original": {
+          "estimate": 0.05034722222222223,
+          "ci95": [
+            -0.1111111111111111,
+            0.22222222222222224
+          ],
+          "n_pairs": 24
+        }
+      },
+      "llama8_joint": {
+        "original": {
+          "estimate": -0.11284722222222222,
+          "ci95": [
+            -0.2725694444444444,
+            0.03993055555555555
+          ],
+          "n_pairs": 24
+        },
+        "alternate_order": {
+          "estimate": -0.15451388888888892,
+          "ci95": [
+            -0.2899305555555556,
+            -0.024305555555555563
+          ],
+          "n_pairs": 24
+        },
+        "alternate_shuffle": {
+          "estimate": -0.10416666666666667,
+          "ci95": [
+            -0.27777777777777785,
+            0.08680555555555554
+          ],
+          "n_pairs": 24
+        },
+        "alternate_order_minus_original": {
+          "estimate": -0.041666666666666664,
+          "ci95": [
+            -0.16666666666666666,
+            0.08333333333333333
+          ],
+          "n_pairs": 24
+        },
+        "alternate_shuffle_minus_original": {
+          "estimate": 0.008680555555555547,
+          "ci95": [
+            -0.11458333333333333,
+            0.13198784722222476
+          ],
+          "n_pairs": 24
+        }
+      }
+    }
+  },
+  "interpretation": "24-pair conditional robustness, not fresh independent confirmation; pointwise intervals; original TRUE reused for alternate shuffle"
+}

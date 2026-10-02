@@ -1,0 +1,16 @@
+# Common-pool ordinal-support results
+
+Prospective controlled diagnostic on reused cases; not confirmation of original natural-count J. Four designated98.75% intervals; sensitivities and secondary contrasts retain their labels.
+
+|Dataset/scoring/selector|J_norm|98.75% interval|H forward−hidden|M forward−hidden|
+|---|---:|---|---:|---:|
+|medeinst|refinement|gemini|0.0781|[-0.005208333333333333, 0.16666666666666666]|0.0729|0.0391|
+|medeinst|refinement|llama|0.0885|[0.03125, 0.15104166666666666]|0.1068|0.0807|
+|medeinst|strict|gemini|0.0755|[0.0, 0.15364583333333334]|0.0703|0.0599|
+|medeinst|strict|llama|0.0833|[0.03125, 0.140625]|0.0911|0.0755|
+|medeinst|exact_reference|gemini|0.0781|[0.0078125, 0.15364583333333334]|0.0807|0.0651|
+|medeinst|exact_reference|llama|0.0781|[0.026041666666666668, 0.13541666666666666]|0.0911|0.0729|
+|medx|native_key|gemini|0.0781|[-0.02734375, 0.1796875]|0.0469|0.0234|
+|medx|native_key|llama|0.0781|[-0.01953125, 0.18359375]|0.0547|0.0352|
+
+Valid choices 6400/6400. Missing outcomes remain zero with envelopes and complete-case sensitivity. Costs and raw payloads are in RUN_MANIFEST.json and CALLS.jsonl. Clinical-map uncertainty is not removed by these intervals.

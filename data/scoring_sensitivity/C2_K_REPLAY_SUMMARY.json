@@ -1,0 +1,586 @@
+{
+  "original_frozen_strict": {
+    "original_11_matches_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "original_11_matches_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    },
+    "retrospectively_retained_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "retrospectively_retained_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    }
+  },
+  "original_frozen_inclusive": {
+    "original_11_matches_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "original_11_matches_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    },
+    "retrospectively_retained_top_correct": {
+      "n_rows": 0,
+      "status": "NO_DEFINED_MATCHES"
+    },
+    "retrospectively_retained_rank_auc": {
+      "n_rows": 0,
+      "status": "NO_DEFINED_MATCHES"
+    }
+  },
+  "corrected_v4_inclusive": {
+    "original_11_matches_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "original_11_matches_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    },
+    "retrospectively_retained_top_correct": {
+      "n_cases": 1,
+      "n_rows": 1,
+      "did": {
+        "estimate": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    "retrospectively_retained_rank_auc": {
+      "n_cases": 1,
+      "n_rows": 1,
+      "did": {
+        "estimate": 0.7857142857142856,
+        "ci95": [
+          0.7857142857142856,
+          0.7857142857142856
+        ]
+      }
+    }
+  },
+  "corrected_v4_strict": {
+    "original_11_matches_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "original_11_matches_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    },
+    "retrospectively_retained_top_correct": {
+      "n_cases": 10,
+      "n_rows": 10,
+      "did": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.3,
+          0.3
+        ]
+      }
+    },
+    "retrospectively_retained_rank_auc": {
+      "n_cases": 10,
+      "n_rows": 10,
+      "did": {
+        "estimate": 0.02857142857142857,
+        "ci95": [
+          -0.12857142857142853,
+          0.2285714285714285
+        ]
+      }
+    }
+  },
+  "refinement_temporal": {
+    "original_11_matches_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "original_11_matches_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    },
+    "retrospectively_retained_top_correct": {
+      "n_cases": 2,
+      "n_rows": 2,
+      "did": {
+        "estimate": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    "retrospectively_retained_rank_auc": {
+      "n_cases": 2,
+      "n_rows": 2,
+      "did": {
+        "estimate": 0.4642857142857142,
+        "ci95": [
+          0.1428571428571428,
+          0.7857142857142856
+        ]
+      }
+    }
+  },
+  "refinement_etiologic": {
+    "original_11_matches_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "original_11_matches_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    },
+    "retrospectively_retained_top_correct": {
+      "n_cases": 10,
+      "n_rows": 10,
+      "did": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.3,
+          0.3
+        ]
+      }
+    },
+    "retrospectively_retained_rank_auc": {
+      "n_cases": 10,
+      "n_rows": 10,
+      "did": {
+        "estimate": 0.02857142857142857,
+        "ci95": [
+          -0.12857142857142853,
+          0.2285714285714285
+        ]
+      }
+    }
+  },
+  "refinement_severity_or_site": {
+    "original_11_matches_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "original_11_matches_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    },
+    "retrospectively_retained_top_correct": {
+      "n_cases": 10,
+      "n_rows": 10,
+      "did": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.3,
+          0.3
+        ]
+      }
+    },
+    "retrospectively_retained_rank_auc": {
+      "n_cases": 10,
+      "n_rows": 10,
+      "did": {
+        "estimate": 0.02857142857142857,
+        "ci95": [
+          -0.12857142857142853,
+          0.2285714285714285
+        ]
+      }
+    }
+  },
+  "refinement_temporal_etiologic": {
+    "original_11_matches_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "original_11_matches_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    },
+    "retrospectively_retained_top_correct": {
+      "n_cases": 2,
+      "n_rows": 2,
+      "did": {
+        "estimate": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    "retrospectively_retained_rank_auc": {
+      "n_cases": 2,
+      "n_rows": 2,
+      "did": {
+        "estimate": 0.4642857142857142,
+        "ci95": [
+          0.1428571428571428,
+          0.7857142857142856
+        ]
+      }
+    }
+  },
+  "refinement_temporal_severity_or_site": {
+    "original_11_matches_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "original_11_matches_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    },
+    "retrospectively_retained_top_correct": {
+      "n_cases": 2,
+      "n_rows": 2,
+      "did": {
+        "estimate": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    "retrospectively_retained_rank_auc": {
+      "n_cases": 2,
+      "n_rows": 2,
+      "did": {
+        "estimate": 0.4642857142857142,
+        "ci95": [
+          0.1428571428571428,
+          0.7857142857142856
+        ]
+      }
+    }
+  },
+  "refinement_etiologic_severity_or_site": {
+    "original_11_matches_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "original_11_matches_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    },
+    "retrospectively_retained_top_correct": {
+      "n_cases": 10,
+      "n_rows": 10,
+      "did": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.3,
+          0.3
+        ]
+      }
+    },
+    "retrospectively_retained_rank_auc": {
+      "n_cases": 10,
+      "n_rows": 10,
+      "did": {
+        "estimate": 0.02857142857142857,
+        "ci95": [
+          -0.12857142857142853,
+          0.2285714285714285
+        ]
+      }
+    }
+  },
+  "refinement_temporal_etiologic_severity_or_site": {
+    "original_11_matches_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "original_11_matches_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    },
+    "retrospectively_retained_top_correct": {
+      "n_cases": 2,
+      "n_rows": 2,
+      "did": {
+        "estimate": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    "retrospectively_retained_rank_auc": {
+      "n_cases": 2,
+      "n_rows": 2,
+      "did": {
+        "estimate": 0.4642857142857142,
+        "ci95": [
+          0.1428571428571428,
+          0.7857142857142856
+        ]
+      }
+    }
+  },
+  "source_coded_target_only": {
+    "original_11_matches_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "original_11_matches_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    },
+    "retrospectively_retained_top_correct": {
+      "n_cases": 10,
+      "n_rows": 10,
+      "did": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.3,
+          0.3
+        ]
+      }
+    },
+    "retrospectively_retained_rank_auc": {
+      "n_cases": 10,
+      "n_rows": 10,
+      "did": {
+        "estimate": 0.02857142857142857,
+        "ci95": [
+          -0.12857142857142853,
+          0.2285714285714285
+        ]
+      }
+    }
+  },
+  "source_coded_plus_all_refinements": {
+    "original_11_matches_top_correct": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.045454545454545456,
+        "ci95": [
+          -0.2727272727272727,
+          0.3181818181818182
+        ]
+      }
+    },
+    "original_11_matches_rank_auc": {
+      "n_cases": 11,
+      "n_rows": 11,
+      "did": {
+        "estimate": 0.032467532467532464,
+        "ci95": [
+          -0.11038961038961036,
+          0.21428571428571425
+        ]
+      }
+    },
+    "retrospectively_retained_top_correct": {
+      "n_cases": 2,
+      "n_rows": 2,
+      "did": {
+        "estimate": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    "retrospectively_retained_rank_auc": {
+      "n_cases": 2,
+      "n_rows": 2,
+      "did": {
+        "estimate": 0.4642857142857142,
+        "ci95": [
+          0.1428571428571428,
+          0.7857142857142856
+        ]
+      }
+    }
+  }
+}

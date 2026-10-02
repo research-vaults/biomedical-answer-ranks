@@ -1,0 +1,14 @@
+{
+  "status": "PASS_RAW_RECONSTRUCTION_NOT_ACCEPTANCE_CERTIFICATE",
+  "generator_valid_texts": 1777,
+  "selector_valid_texts": 1024,
+  "all_selector_slots_retained": 1024,
+  "pool_support_reconstructions": 256,
+  "paired_content_and_tuple_checks": 512,
+  "primary_J_reconstructed": {
+    "gemini": -0.09635416666666667,
+    "llama": 0.013020833333333329
+  },
+  "absolute_cells_reconstructed": 16,
+  "record_scope": "Historical verification of original research records, preserved as evidence; not a claim that sanitized files retain original byte hashes."
+}

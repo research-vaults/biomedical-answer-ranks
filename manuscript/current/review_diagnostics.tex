@@ -1,0 +1,108 @@
+\subsection{Additional fixed-ballot controls}\label{app:irv}
+
+These exploratory analyses were specified after the original outcomes and review were read, before their calculations. All 720 native and 256 Health questions, both banks, shared calls and empty failures remain. Fifty thousand whole-question bootstrap draws use seed 20260919 plus the source sample size; native draws preserve the three task sizes. We average banks before resampling. New analyses never replace a registered primary. Unless adjusted explicitly, intervals are pointwise 95\%; Bonferroni percentile intervals have nominal, not finite-sample guaranteed, familywise coverage.
+
+\paragraph{Instant-runoff voting.}
+The candidate universe is the union of nonempty lists. Count each ballot's first remaining candidate; stop at a strict majority of nonexhausted ballots or one remaining candidate. Otherwise eliminate one of the tied least-supported candidates uniformly and recurse. We average all elimination branches exactly with rational arithmetic. Exhausted ballots abstain; an initially empty election scores zero. This neutral variant adapts ranked voting \citep{wang2025ranked}, without asserting identity with its implementation or comparing tie percentages across datasets. Absolute accuracies have pointwise intervals. The three contrasts per source (mixed minus H, H IRV minus first-choice, M IRV minus first-choice) form a six-endpoint family.
+\begin{table}[htbp]\centering\small
+\caption{IRV accuracy and contrasts, in percentage points. Absolute H/M rows use pointwise intervals; difference rows use six-endpoint-adjusted intervals.}
+\label{tab:irv}
+\begin{tabular}{llr}
+\toprule
+Source & Quantity & Estimate [interval]\\
+\midrule
+MedXpertQA & $H_G$ & $35.11\ [31.74,38.50]$\\
+MedXpertQA & $M_{44}$ & $26.19\ [23.44,28.98]$\\
+MedXpertQA & $M_{44}$-$H_G$ & $-8.92\ [-11.87,-5.99]$\\
+MedXpertQA & $H_G$ IRV-first & $-0.10\ [-0.64,0.42]$\\
+MedXpertQA & $M_{44}$ IRV-first & $-0.07\ [-0.90,0.74]$\\
+Health & $H_G$ & $68.85\ [63.18,74.32]$\\
+Health & $M_{44}$ & $68.21\ [63.09,73.24]$\\
+Health & $M_{44}$-$H_G$ & $-0.63\ [-4.59,3.27]$\\
+Health & $H_G$ IRV-first & $0.03\ [-0.26,0.39]$\\
+Health & $M_{44}$ IRV-first & $0.54\ [0.00,1.32]$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+IRV preserves the negative native allocation difference. None of its changes from first-choice voting has a strictly positive adjusted lower bound. Thus the existing first-choice result does not depend on omitting this elimination rule.
+
+\subsection{Preference transfer with a self-transfer control}\label{app:rank_transfer}
+
+For donor pool $D$, candidate $k$ receives score $w_D(k)=\sum_{\ell\in D:k\in\ell}1/r_\ell(k)$. In each recipient list, identify positions whose candidates occur anywhere in $D$ and sort only those candidates by descending $w_D$; SHA256 of the option identifier breaks exact score ties. Unmatched candidates retain their positions; every list keeps its membership, length and empty-slot status. The operator sees no gold label. Apply it once with the recipient itself as donor and once with the other allocation as donor, then score first-choice voting. This self-transfer control separates donor choice from the effect of pooling ranks at all. Table~\ref{tab:rank_transfer} reports all four cross-minus-self contrasts with one four-endpoint family.
+
+Gemma and mixed donors share four calls. Cross-transfer is consequently not an independent-donor experiment, and using the donor's full eight-call pool requires information outside the recipient's original pool. It is a diagnostic intervention, not an eight-call deployable method or a unique decomposition of candidate quality and lineage. Native mixed accuracy rises from 25.07\% under its own pooled ranks to 33.61\% under Gemma's, still below original Gemma first-choice at 35.21\%. Health provides an unresolved boundary rather than evidence that the effect is equal across sources.
+
+\subsection{Availability, selection efficiency and limits of prediction}\label{app:selection_bound}
+
+Let $v$ be the probability a pool contains the correct key and $s$ the probability of a correct final selection conditional on its availability. A pool-restricted selector satisfies $F=vs\leq v=1-\beta$. This standard oracle ceiling \citep{chen2026cofailure} does not constrain a synthesizer allowed to create new answers. To beat reference accuracy $a$, the selector needs $s>a/v$; this is impossible if $a>v$. We use each source's original H first-choice accuracy for $a$. The availability denominator includes all recorded shortlist candidates, not only each call's first answer. Selection efficiency is a ratio of pooled expected successes to pooled availability, averaging banks within question. Whole-question bootstrap resampling recomputes numerator, denominator and reference together. Fractional bank averages are not independent Bernoulli trials, so a pooled Clopper--Pearson interval would be inappropriate.
+\begin{table}[htbp]\centering\small
+\caption{Pool co-failure, conditional selection success and success required to beat original Gemma first-choice, all in percent with pointwise 95\% paired question-bootstrap intervals. A lower co-failure rate need not yield better selection.}
+\label{tab:selection_bound}
+\begin{tabular}{llrrr}
+\toprule
+Source & Policy & $\beta$ & $s$ & $a/v$\\
+\midrule
+MedXpertQA & $H_G$ & $10.35\ [8.33,12.50]$ & $39.28\ [35.61,42.91]$ & $39.28\ [35.61,42.91]$\\
+MedXpertQA & $M_{44}$ & $7.85\ [6.11,9.72]$ & $28.50\ [25.49,31.56]$ & $38.21\ [34.61,41.78]$\\
+Health & $H_G$ & $3.71\ [1.56,6.05]$ & $71.47\ [65.85,76.91]$ & $71.47\ [65.85,76.91]$\\
+Health & $M_{44}$ & $2.15\ [0.59,3.91]$ & $69.16\ [64.02,74.20]$ & $70.33\ [64.70,75.82]$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The mixed pool's larger availability is not the limiting ceiling on either source: its realized selection efficiency is below the threshold. This instantiates the availability--selection distinction in \citet{maryanskyy2026selection}, without assuming equal homogeneous performance across populations or substituting the separate LLM-selector cohorts. Satisfying the bound on the same scored ballots is algebra, not an out-of-sample prediction, and these thresholds do not forecast a new selector's accuracy.
+
+\paragraph{Why concentration alone does not identify the rule contrast.}
+Even the full first-vote histogram leaves membership voting undetermined. Let $g$ be correct and repeat each of two length-two lists four times. Pools $([g,a],[b,a])$ and $([g,b],[b,g])$ have the same first-vote histogram (four $g$, four $b$), per-call accuracy $1/2$, list length two, budget eight and first-vote concentration $1/2$. Inclusion accuracy is respectively zero and $1/2$, although first-choice accuracy is $1/2$ in both. Moreover, H consisting of eight $[b,a]$ lists is more first-vote concentrated than the first mixed pool above, yet its interaction $C$ is $-1/2$, not positive. Lower ranks and their joint distribution matter. Exact rescue/damage accounting \citep{ali2026lift} and delegation flip conditions \citep{sakai2026delegation} address specified rules; they do not justify a universal sign theorem from these summaries or turn a same-ballot identity into prediction.
+
+\subsection{Conditional patterns and a marginal-preserving reference}\label{app:conditional}
+
+Concentration is the largest H first-choice count divided by eight scheduled calls, averaged over banks. The bins below were fixed before this calculation but after reading the original results. Inclusion-tie presence means a tie in either bank. Resampling retains whole questions and recomputes each stratum mean; replicates containing no question in a sparse stratum are omitted for that stratum and their counts are saved. These output-defined, overlapping descriptions are not prespecified moderators or a prospective rule. In particular, almost all questions have an inclusion tie, limiting its discrimination.
+\begin{table}[htbp]\centering\small
+\caption{Output-defined strata; $C$ and pointwise intervals in percentage points. Groups overlap across concentration and tie classifications; small strata do not establish moderation.}
+\label{tab:conditional}
+\begin{tabular}{llrr}
+\toprule
+Source & Stratum & Questions & $C$ [95\%]\\
+\midrule
+MedXpertQA & $c\leq .5$ & 48 & $2.07\ [-7.66,11.20]$\\
+MedXpertQA & $.5<c\leq .75$ & 171 & $11.67\ [5.89,17.57]$\\
+MedXpertQA & $c>.75$ & 501 & $9.01\ [6.70,11.32]$\\
+MedXpertQA & H inclusion tie & 714 & $8.97\ [6.78,11.19]$\\
+MedXpertQA & H no inclusion tie & 6 & $33.33\ [-8.33,75.00]$\\
+Health & $c\leq .5$ & 5 & $-5.00\ [-50.69,46.67]$\\
+Health & $.5<c\leq .75$ & 17 & $6.42\ [-8.08,23.56]$\\
+Health & $c>.75$ & 234 & $6.36\ [3.02,9.66]$\\
+Health & H inclusion tie & 256 & $6.14\ [2.82,9.45]$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{A marginal-preserving reference.}
+We normalize option IDs by a cyclic shift making the correct key zero, then independently permute complete lists across questions within task, bank and scheduled slot. Shared H/M slots retain the same shuffled list. This preserves each slot's empirical correct-rank, list-length, failure and normalized wrong-rank distribution exactly, while destroying cross-call dependence and question-difficulty alignment. We use 512 permutations, seed 2026091901 plus sample size. Because incorrect options have different meanings across questions, this is a synthetic dependence/difficulty reference, not a semantics-preserving intervention or a clinical null. Its ranges are permutation reference ranges, not confidence intervals for population effects.
+\begin{table}[htbp]\centering\small
+\caption{Observed values and slot-marginal-preserving reference (percent or percentage points for $C$). Null ranges describe 512 shuffled corpora.}
+\label{tab:marginal_null}
+\begin{tabular}{llrrr}
+\toprule
+Source & Quantity & Observed & Null mean & Null 95\% range\\
+\midrule
+Health & H availability & 96.29 & 100.00 & [100.00,100.00]\\
+Health & M availability & 97.85 & 100.00 & [100.00,100.00]\\
+Health & H inclusion ties & 99.02 & 12.24 & [9.77,14.69]\\
+Health & M inclusion ties & 95.70 & 11.94 & [9.57,14.45]\\
+Health & $C$ & 6.14 & 0.58 & [-1.79,2.93]\\
+MedXpertQA & H availability & 89.65 & 100.00 & [100.00,100.00]\\
+MedXpertQA & M availability & 92.15 & 100.00 & [99.93,100.00]\\
+MedXpertQA & H inclusion ties & 95.21 & 31.71 & [29.43,33.90]\\
+MedXpertQA & M inclusion ties & 89.17 & 34.19 & [31.81,36.46]\\
+MedXpertQA & $C$ & 9.18 & 7.94 & [5.75,10.45]\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The near-complete null availability and sharply reduced ties show that these observed patterns are not forced by slot marginals alone. However, $C$ remains positive on average under the native null. Neither its positivity nor the raw positive/zero/negative counts alone identify a mechanism. The archive reports all three sign counts under the null. Original Native288 findings remain separate; this later two-model diagnostic does not retrospectively redefine them.
+
+\paragraph{Scope of screening evidence.}
+An earlier unequal-budget analysis used 16 calls for vote-margin confidence and 24 for cross-policy agreement. Margin reduced mean retained error on both sources; agreement improved Health but was unresolved on native questions. These results cannot establish an equal-budget advantage. The matched-budget comparison in Section~\ref{app:screening} retains the same four-call predictions and compares four additional Gemma versus Llama calls. The earlier curves and procedure remain in the archival version and ballot-diagnostics replay.

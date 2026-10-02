@@ -1,0 +1,288 @@
+\documentclass{article}
+\usepackage[dblblindworkshop]{neurips_2026}
+\workshoptitle{Agentic AI for Biological Discovery: Toward Closed-Loop Life-Science Intelligence}
+\usepackage{graphicx,booktabs,array,amsmath,amssymb,hyperref,url}
+% Disable link annotations: pdfTeX/lineno otherwise crashes at split links.
+% Printed citations and cross-references remain unchanged; official style is unmodified.
+\hypersetup{draft}
+\hyphenation{consensus}
+\title{Discarding Answer Ranks Changes the Case for Mixing Biomedical LLMs}
+\author{Anonymous authors}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Should a biomedical reasoning system spend eight calls on one model or several? When calls return ranked shortlists, counting every answer equally can weaken the one-model reference and make mixing look better by comparison. We hold these lists fixed in a 288-question, four-model study. Counting every shortlisted answer rather than only the first shifts the mixed-minus-Gemma accuracy gap by $9.72$ percentage points (95\% confidence interval $[5.29,14.21]$). Using ranks to resolve inclusion ties accounts for $7.62$ points; the remaining contrast is unresolved. This relative shift need not mean that mixing gives better answers. In a separate prespecified 720-question MedXpertQA test, mixing Gemma and Llama3.3-70B loses $8.95$ points $[-11.16,-6.75]$ against development-selected Gemma first-choice voting. The mixture already has lower per-call accuracy. On 256 MMLU-Pro Health questions, mixing improves inclusion-vote accuracy by $5.00$ points, yet remains far below the selected first-choice policy. On Health, first-choice voting also exceeds a ceiling for selectors restricted to listed answers that use only which calls mention them and favor no answer label. Discarding ranks changes the apparent benefit of mixing; these comparisons do not isolate quality-independent diversity.
+\end{abstract}
+
+\section{Introduction}
+
+A biomedical reasoning system can spend its call budget on one model or several. When each call returns a ranked list, the final answer depends on both which models are called (\emph{allocation}) and how their lists are combined (\emph{aggregation}). Together, these choices define a \emph{policy}.
+
+Mentioning an answer is not preferring it. A model may repeatedly list the correct answer first and the same alternatives below it. Counting every appearance treats those alternatives as equally supported. A mixture can then look relatively favorable because aggregation has weakened the one-model reference, not because mixing has produced a better decision. Ranked clinical collectives likewise distinguish consideration sets from decisions \citep{zoller2025collectives}.
+
+We test this possibility by holding responses fixed within each allocation and changing whether aggregation retains ranks. Five-answer inclusion extends top-two approval \citep[Appendix~C]{wang2025ranked}, but discards more information and uses uniform ties. This diagnoses information loss, not the published procedure's validity.
+
+We separate three questions: does changing the rule make mixing look more favorable, does mixing beat repeated sampling under that rule, and does it beat a strong policy chosen before testing? We study two biomedical benchmarks with official answer keys; clinical-name mapping is exploratory. The models are not quality matched, and patient care is outside the evaluation.
+
+\section{Related Work}
+Self-MoA shows that weaker partners can dilute strong-model sampling \citep{li2026selfmoa}. Capability, debate and composition studies likewise motivate strong homogeneous baselines \citep{kim2026capable,smit2024mad,wang2026sampling,abdulaal2025balancing}. Diversity can help executable-patch recovery \citep{zhang2025diversity}, while voting and communication differ \citep{choi2025debate}. Unlike a dilution comparison, our fixed-response intervention tests unequal losses imposed by aggregation.
+
+Ranked Voting based Self-Consistency varies rules and list length \citep{wang2025ranked}; clinical aggregation supplies biomedical precedents \citep{barabucci2024combining,yuan2026mixed,zoller2025collectives,kumthekar2025second}. Reverse-anchored aggregation adds Bayesian evidence \citep{chen2026backwardanchor}. We supply no external evidence or new rule: we measure inherited rules' effects on fixed responses. Dependence studies \citep{jiang2025hivemind,kim2025correlated,eriksson2026norms,kuai2026dependence} motivate this question without establishing useful diversity from similarity alone.
+
+Having a correct candidate and selecting it are different achievements \citep{ji2026candidate,hu2026oracle,li2026agreement}. The selection-bottleneck account predicts how accurate a selector must be for diversity to help, assuming approximately stable homogeneous-team performance \citep{maryanskyy2026selection}. Fusion-of-N instead combines complementary content into a new answer \citep{khairi2026fusion}; biomedical aggregation and capability-controlled audits also test downstream outcomes \citep{chen2026medsyn,kim2026diversityaudit}. Our distinction is between two final-answer rules on identical ballots and, separately, performance against a development-selected policy.
+
+Quality-compatible selection in Determine-Then-Ensemble and DFPE, matched-quality fusion, and tool diversity in TUMIX can benefit mixing \citep{yao2025determine,cohen2026dfpe,chen2026cofailure,chen2026tumix}. Our models are not quality matched; changing ranks while retaining candidates does not isolate lineage.
+
+\section{Methods}
+
+We compare eight calls to one model with eight calls spread across models, holding each allocation's responses fixed across rules. MedXpertQA \citep{zuo2025medxpertqa} and MMLU-Pro Health use official answer keys (\emph{native keys}), withheld from model prompts. MedEinst is a historically prespecified secondary study, interpreted as exploratory because clinical-name mappings remain unresolved.
+
+A \emph{call} produces one five-answer list. A \emph{bank} is a replicate batch of calls for one question, shared across allocations as specified below. Central studies use two banks with distinct hashed seeds. We score each allocation and rule within each bank, then average the two scores into one question-level observation. MedEinst also averages control and misleading-evidence record \emph{branches} within each pair. Banks and branches are not independent cases.
+
+The 1,264 central questions form three studies: a 288-question rule test (Native288), a 720-question selected-policy confirmation (Native720), and a 256-question test on MMLU-Pro Health (Health256). Native288/Native720 use MedXpertQA; all three cohorts have native keys. Table~\ref{tab:identification} separates these from development and secondary tests.
+
+\begin{table}[t]
+\centering\small
+\caption{Study map: 1,760 unique units (240 MedEinst pairs, 1,200 MedXpertQA and 320 Health questions). Pilots/retired assignments excluded; reused subsets add no cases. H/$H_G$: eight Gemma calls; M: two/model across four models; $H_L$: eight Llama3.3-70B calls; $M_{44}$: four from each.}
+\label{tab:identification}
+\begin{tabular}{>{\raggedright\arraybackslash}p{.26\linewidth}>{\raggedright\arraybackslash}p{.21\linewidth}>{\raggedright\arraybackslash}p{.42\linewidth}}
+\toprule
+Source / distinct cases & Allocation & Role and reuse\\
+\midrule
+Native288 / 288 new & Four-model H/M & Initial rule test: does the gap change? Primary $C$.\\
+Native720 / 720 new & $H_G,H_L,M_{44}$ & Policy confirmation: does mixing beat Gemma? Primary $\theta$.\\
+Health256 / 256 new & $H_G,H_L,M_{44}$ & Source transport: does $C$ persist? Primary $C_G$; utility secondary.\\
+MedEinst / 240 pairs & Four-model H/M & Disjoint: 48 development, 96 representation, 96 selector.\\
+Earlier native / 128 & Four-model H/M & Selector test; predictor training. Its 48-case subset selects the later two-model policy.\\
+Direct-answer / 128 new & $H_G,M_{44}$ & 64 native, 64 Health; one-answer versus five-answer prompts.\\
+Common pool / reused & Four-model H/M & Earlier 96 MedEinst + 128 native selector cases; support reversal.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Paired allocation.}
+In Native288, the homogeneous allocation H uses eight Gemma calls. The mixed allocation M reuses two and adds two each from Llama8B, Ministral14B and Qwen14B: 14 lists support two eight-call policies per bank. Earlier per-call accuracy selected Gemma. MedEinst development \citep{chen2026medeinst} used synthetic DDXPlus records \citep{tchango2022ddxplus} (Appendix~\ref{app:support_screens}).
+
+Repeated answers vote across calls; within-call duplicates count only at their best rank. LLM selectors see each candidate once with its best-ranked occurrence's rationale and deterministic hash ties. Content, pool size and quality can differ across allocations. Calls, not tokens or dollars, are matched.
+
+\paragraph{Generation and selection settings.}
+Both allocations use identical system/user prompt templates and decoding: temperature 1, top-$p=.9$, a 384-token cap and a request for five answers with rationales of at most 18 words. Selectors use temperature 0 and top-$p=1$. Hashed seeds pair conditions without guaranteeing provider determinism. No retrieval or tools are used.
+
+Original generators are Gemma4-26B-A4B-IT \citep{google2026gemma4card}, Llama3.1-8B-Instruct \citep{meta2024llama31card}, Ministral-14B-2512 \citep{mistral2025ministralcard} and Qwen2.5-14B-Instruct \citep{qwen2024card}. Selectors are Gemini2.5-Flash-Lite \citep{google2025flashlitecard} and Llama3.1-8B; Gemma3-12B is development-only. Serving settings are documented in Appendix~\ref{app:repro}; endpoint names do not pin every revision.
+
+\paragraph{Selection rules.}
+Inclusion votes for every listed candidate; first-choice votes only for the top answer. Reciprocal rank (RR) weights rank $r$ by $1/r$; Borda weights ranks 1--5 by 5--1. Tie-aware frequency counts inclusion votes, then uses RR to resolve equal counts. All select a final answer, rather than measuring availability.
+
+For remaining ties, we score the expected accuracy of choosing uniformly among tied winners: one correct answer among three tied receives $1/3$. In contrast, \citet{wang2025ranked} use token log probabilities for open models or another model decision for closed models. First-choice replay applies self-consistency \citep{wang2023selfconsistency} to lists; a separate direct-answer test checks the prompt boundary. Only LLM selectors read case text and rationales.
+
+For a worked illustration, let five calls return [A,B,C,D,E] and three return [B,A,C,D,E], with A correct. Inclusion gives every candidate eight votes and expected accuracy $1/5$. First-choice counts are A:5, B:3, so A wins. RR gives A $5+3/2=6.5$ and B $5/2+3=5.5$; it selects A both as a full rule and as an inclusion tie breaker. Borda also selects A, with 37 versus B's 35 points. All four rank-using decisions are correct on these same eight lists. Candidate availability is 100\% throughout. This constructed example explains the rules, not the size of an empirical effect.
+
+\paragraph{Estimands and uncertainty.}
+Let $F_{p,r}$ denote final accuracy for allocation $p$ under rule $r$. We ask how changing the rule changes the mixed-minus-homogeneous accuracy difference.
+
+The primary measure for the rule comparison is
+\begin{equation}
+C=(F_{M,\mathrm{incl5}}-F_{H,\mathrm{incl5}})-(F_{M,\mathrm{first}}-F_{H,\mathrm{first}}).
+\label{eq:C}
+\end{equation}
+Thus a positive $C$ means that mixing is relatively more favorable under inclusion than first-choice voting. It can reflect a smaller loss under inclusion, rather than an accuracy gain. Absolute accuracies and the two allocation differences are therefore reported alongside $C$. Unless another target is specified, an \emph{unresolved} contrast has a confidence interval containing zero; this does not establish no effect.
+
+The prespecified sample contains 288 unused MedXpertQA items: 96 each in Diagnosis, Treatment and Basic Science. A separate 96-pair MedEinst test also excludes prior IDs and matching inputs. Native $C$ is the sole primary. We bootstrap questions 50,000 times within task, keeping conditions, shared calls and banks together; MedEinst resamples whole pairs. These intervals describe variation across questions under the observed banks, not across fresh full-generation runs. Percentile intervals condition on answer keys or scoring maps; pointwise intervals do not adjust for multiple comparisons. Five points is a prespecified benchmark target, not a clinically justified benefit threshold; the separate five-point half-width target defines precision. Terminal failures remain empty after one retry and contribute no votes; an all-empty allocation scores zero. Their cases remain in the analysis. The largest source/model terminal-failure rate is 3.73\%, below the prespecified 5\% failure limit (Appendix~\ref{app:representation}).
+
+\paragraph{Frozen final-decision design.}
+On 48 development questions, Llama3.3-70B \citep{meta2024llama33card} accuracy was 22.14\% versus Gemma's 29.69\%: above the 20\% competence floor and within ten points, not quality equivalent. Comparing two homogeneous allocations under five rules selected eight Gemma calls with first-choice voting.
+
+Before new outputs, we froze 720 unused native questions (240/task), two banks, eight calls to Gemma ($H_G$), eight to Llama3.3-70B ($H_L$) and their four-plus-four mixture ($M_{44}$): 16 unique calls/bank with the same five-answer contract. The sole primary estimand, $\theta=F_{M_{44},\mathrm{first}}-F_{H_G,\mathrm{first}}$, is first-choice accuracy of the mixture minus that of Gemma. We estimate uncertainty with 50,000 task-stratified whole-case resamples. The benchmark improvement target is $+5$ points; the precision target is a three-point interval half-width. Both $C$ contrasts are secondary. The mixture uses the first four scheduled slots from each model, retaining failures rather than selecting successful calls.
+
+Thus $\theta$ compares policies; $C$ compares their gaps under different rules. A uniformly sampled Gemma slot averages 34.48\% accuracy and approximately \$0.00010/question, versus 35.21\% and \$0.00078 for eight-call voting. Both use the same ranked-list contract.
+
+Health transport freezes 256 hash-selected MMLU-Pro Health questions \citep{wang2024mmlupro} from 506 eligible ten-option items, excluding normalized overlaps. It uses the same allocations, two banks (8,192 scheduled call slots), native keys and DeepInfra/Novita serving. Primary $C_G$ ($C$ against Gemma) uses 50,000 whole-question draws with a five-point half-width target; utility is secondary against unchanged Gemma. Source and serving changes prevent source-only attribution. New saved-output controls use 20,000 paired question resamples and separately declared exploratory families; they do not replace frozen primary tests or their intervals.
+
+\paragraph{Data provenance and scoring.}
+Pilots and retired cases are excluded (Appendix~\ref{app:native720}). Native scoring credits the selected option's match to the official key, not the truth of its rationale. It measures recovery of one keyed answer, not how many distinct hypotheses are scientifically valid. MedEinst strict scoring credits synonymous names; refinement scoring adds whitelisted timing, cause, severity or site differences. Acute Bronchitis against Bronchitis receives refinement credit; Pleuritis against Spontaneous pneumothorax remains unresolved. Of 1,770 development terminology relations, 675 remain flagged. Neither mappings nor native keys establish clinical truth (Appendix~\ref{app:mapping}).
+
+\section{Results}
+\subsection{Does changing the rule change the comparison?}
+
+\begin{table}[t]
+\centering\small
+\caption{Final accuracy (\%), averaging two banks; MedEinst also averages branches under the original frozen refinement mapping. Native288/MedEinst96 use H/M; Health256 uses $H_G/M_{44}$. Uniform ties and empty failures are retained.}
+\label{tab:representation_absolute}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & \multicolumn{2}{c}{Native288} & \multicolumn{2}{c}{MedEinst} & \multicolumn{2}{c}{Health}\\
+Rule & H & M & H & M & $H_G$ & $M_{44}$\\
+\midrule
+Inclusion frequency & 18.68 & 17.45 & 16.89 & 13.87 & 23.48 & 28.48\\
+First choice & 29.86 & 18.91 & 30.56 & 22.69 & 68.82 & 67.68\\
+Frequency + RR ties & 29.51 & 20.66 & 30.47 & 15.76 & 69.04 & 68.07\\
+Reciprocal rank & 29.69 & 19.97 & 31.08 & 22.72 & 69.04 & 68.26\\
+Borda & 29.17 & 20.98 & 31.64 & 20.57 & 69.53 & 68.55\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In the four-model, 288-question study, mixing loses less under inclusion than first-choice voting. Its accuracy gap against repeated Gemma sampling is $-1.23$ points $[-3.91,1.50]$ under inclusion, versus $-10.95$ $[-15.55,-6.39]$ under first-choice. The difference between these gaps is the primary result: $C=+9.72$ percentage points (95\% CI $[5.29,14.21]$), above the prespecified five-point margin. This changes the allocation comparison, not its sign. The other three rules also favor H (Table~\ref{tab:representation_absolute}).
+
+Both banks give positive effects (9.36/10.08 points, positive intervals). Removing failed-call questions leaves $C=8.86\ [3.32,14.49]$ on 193 questions; the primary retains failures.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/CENTRAL_TIES.pdf}
+\caption{Why the allocation comparison changes: $C=T+U$. Here $T$ is how much more H gains than M when ranks resolve inclusion ties; $U$ is the contrast remaining afterward. Native288 mixes four models; Native720/Health mix Gemma and Llama3.3-70B. Points and paired pointwise 95\% intervals use a common exploratory 20,000-question-bootstrap replay, preserving task strata and averaging banks. All remainders remain unresolved after six-component adjustment (Appendix~\ref{app:review_followthrough}).}
+\label{fig:representation}
+\end{figure}
+
+MedEinst's secondary contrast is $4.85\ [.77,9.08]$ points under the implemented refinement mapping. That implementation credited ten newly unresolved relation types contrary to the protocol prose; zeroing them gives $4.93\ [.87,9.17]$, while strict synonyms give $6.10\ [2.01,10.38]$. All 96 pairs contain unresolved relations. Assigning each unresolved relation type a consistent correctness status gives a worst-case range of $[-26.34,29.85]$. This varies scoring assumptions, not sampled questions, and is not clinical adjudication. The native-key results do not depend on this map (Appendix~\ref{app:representation}).
+
+\subsection{Does mixing beat the selected policy?}
+On 720 new questions, mixed first-choice voting reaches 26.26\% accuracy, versus 35.21\% for the development-selected Gemma policy (Table~\ref{tab:competent}). The primary difference is $\theta=-8.95$ points $[-11.16,-6.75]$: mixing loses, rather than meeting the prespecified five-point benefit. Both banks agree in direction ($-9.24$ and $-8.67$ points). The interval half-width, 2.21 points, meets the three-point precision target. All 111 terminal failures among 23,040 scheduled call slots remain empty; native option order is unchanged. The manifest contains 23,449 attempts including retries.
+
+Nevertheless, the earlier rule-dependent comparison persists against Gemma: secondary $C=9.18\ [6.98,11.43]$. Against the weaker Llama reference it is $-1.96\ [-3.94,0.01]$. A positive rule interaction and a negative final-policy result can therefore coexist.
+
+Across 1,440 question--bank records, mixed pools contain the key at any rank in 1,327 (92.15\%), versus Gemma's 1,291 (89.65\%). But first-choice voting cannot select an answer ranked below first in every list. The key is ranked first somewhere in only 709 mixed records (49.24\%) and 671 Gemma records (46.60\%).
+
+Among these eligible records, conditional selection success is 53.34\% for mixing and 75.57\% for Gemma: expected correct selections divided by the respective eligible counts, with fractional credit for uniform ties. Questions, not bank records, remain the inference units. Greater access need not yield better decisions. The eligible sets differ, so these conditional rates do not isolate selector skill on identical inputs (Appendix~\ref{app:selection_bound}).
+
+The post-hoc task breakdown gives negative $\theta$ and positive $C$ in Diagnosis, Treatment and Basic Science after six-contrast adjustment (Appendix~\ref{app:native720}).
+
+\begin{table}[t]
+\centering\small
+\caption{720-question confirmation, averaging banks; accuracy/availability in percent, ties uniform. $H_G$: eight Gemma calls; $H_L$: eight Llama3.3-70B calls; $M_{44}$: four each. Resources: mean per-question policy totals including retries. Only $\theta$ is primary ($+5$pp benefit margin). Question-bootstrap intervals retain banks/task strata. Per-call accuracy and aggregation-lift contrasts are exploratory.}
+\label{tab:competent}
+\begin{tabular}{lrrr}
+\toprule
+Rule or resource & $H_G$ & $H_L$ & $M_{44}$\\
+\midrule
+Inclusion frequency & 19.49 & 15.38 & 19.71\\
+First choice & 35.21 & 19.97 & 26.26\\
+Frequency + RR ties & 34.34 & 20.03 & 25.83\\
+Reciprocal rank & 34.65 & 19.97 & 24.86\\
+Borda & 35.13 & 19.76 & 25.06\\
+Per-call first-choice & 34.48 & 20.17 & 27.17\\
+All-rank key availability & 89.65 & 78.26 & 92.15\\
+Input tokens & 4,687.4 & 4,328.1 & 4,512.1\\
+Output tokens & 1,192.6 & 642.0 & 916.8\\
+Cost (USD) & 0.00078 & 0.00131 & 0.00104\\
+\midrule
+\multicolumn{2}{l}{$M_{44}-H_G$ (percentage points)} & Estimate & 95\% CI\\
+\multicolumn{2}{l}{Final first-choice $\theta$ (primary)} & $-8.95$ & $[-11.16,-6.75]$\\
+\multicolumn{2}{l}{Per-call accuracy $\Delta q$} & $-7.31$ & $[-8.85,-5.76]$\\
+\multicolumn{2}{l}{Aggregation lift $\Delta L$} & $-1.64$ & $[-2.89,-.41]$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Excluding failed-call questions leaves $\theta=-8.35\ [-10.62,-6.09]$ on 648 cases. Costs include retries and count shared calls once per policy.
+
+The native deficit survives other tie choices. Replaying published Borda and reciprocal-rank code on these same lists gives mixed-minus-Gemma differences of $-9.10$ and $-9.51$ points, respectively (six-contrast adjusted intervals exclude zero); Health remains unresolved. Even resolving all rank-score ties in mixing's favor and against Gemma leaves Native720 deficits of at least $7.92$ points for Borda and $8.12$ for reciprocal rank. These are fixed-output bounds, not confidence limits or achievable policies. This tests aggregation components, not the source paper's generation procedure (Appendix~\ref{app:public_ties}).
+
+How much of this deficit precedes voting? Let $q_p$ be average per-call first-choice accuracy, including failures, and $L_p=F_{p,\mathrm{first}}-q_p$ the gain from aggregation. Gemma gains $35.21-34.48=0.73$ points (paired 95\% CI $[-.01,1.49]$); mixing changes by $26.26-27.17=-0.91$ $[-1.82,.03]$. Neither gain is resolved. With $\Delta$ denoting mixed minus Gemma, $\theta=\Delta q+\Delta L=-7.31-1.64=-8.95$: most of the deficit is already present in per-call accuracy. The remaining $-1.64$ compares aggregation gains, but subtraction does not match model quality or isolate diversity's causal effect (Figure~\ref{fig:explanations}). These baselines use stored five-answer slots, not new direct answers. Against weaker Llama, mixing instead gains $6.30\ [4.50,8.13]$ points, with unresolved lift difference $-.70\ [-1.71,.32]$.
+
+\paragraph{Transport at higher answer accuracy.}
+Health supplies a genuine within-rule gain: mixing raises inclusion-vote accuracy from 23.48\% to 28.48\%, a $5.00$-point improvement $[3.58,6.43]$. But both are far below the selected Gemma first-choice policy's 68.82\% accuracy. Under first-choice voting, the mixed-minus-Gemma difference is unresolved at $-1.14\ [-4.20,1.95]$; this is not evidence of equivalence.
+
+The resulting primary rule contrast, $C_G=6.14\ [2.84,9.45]$ points, reproduces the positive direction on a second source, without establishing an effect above five points. Per-call model accuracies are 68.73\% and 64.70\%, still not matched. All 55 failures remain in the primary; excluding affected questions retains a positive interval (Appendix~\ref{app:health}).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/ABSOLUTE_POLICY.pdf}
+\caption{Absolute policy performance, averaging banks within question. Left/middle: final accuracy and pointwise 95\% question-bootstrap intervals. Right: mixed policies versus selected $H_G$ first-choice, with exploratory Bonferroni-adjusted intervals across 28 policy--source comparisons. Unresolved differences do not establish equivalence.}
+\label{fig:absolute_policy}
+\end{figure}
+
+\subsection{What explains the differences?}
+
+We next test how ties, informative ranks and agreement on wrong answers affect the comparison. These analyses reuse the three cohorts, not independent cases. Changing the cutoff tests how many ranks count; shuffling and transfer test the information in their order while retaining candidates. The ceiling and wrong-option relabeling use answer keys. Cross-transfer needs twelve calls; other empirical replays retain eight per policy.
+
+On Native288, resolving inclusion ties with RR raises H accuracy from 18.68\% to 29.51\%, but M accuracy only from 17.45\% to 20.66\%. Gemma recovers 10.83 points, versus 3.21 for mixing. This unequal rescue gives $T=7.62$ $[3.54,11.81]$ of the $9.72$-point contrast. After this repair, the remaining change in the mixed-minus-Gemma gap relative to first-choice voting is $U=2.10$ $[-.80,5.03]$: $C=T+U$. Inclusion ties affect 94.3\% of H decisions and 66.8\% of M decisions. In the later cohorts, they obscure a correct unanimous Gemma first choice in at least one bank on 184/720 native and 166/256 Health questions.
+
+The same decomposition gives $T=8.73$ and $U=.45$ points on Native720, and $T=5.98$ and $U=.16$ on Health (Figure~\ref{fig:representation}). Here $C$ also equals the loss from discarding ranks in H minus the loss in M. Resolving inclusion ties removes most of the point-estimated contrast, but an unresolved remainder does not establish zero effect. MedEinst's negative remainder is mapping-conditional (Appendix~\ref{app:review_followthrough}).
+
+Is this only a consequence of counting all five answers? An exploratory replay approves just the first two. On Health, H/M accuracy is 51.56/58.04\% with uniform ties, but 69.43/68.26\% when full-list RR resolves tied counts. Mixing's $6.48$-point advantage becomes an unresolved $-1.17\ [-4.79,2.44]$. The cutoff-two counterpart of $C$ is $7.62\ [2.96,12.21]$ on Health, but unresolved on Native288 ($3.79\ [-.41,7.93]$) and Native720 ($2.28\ [-.45,5.05]$), with three-contrast adjustment. This is a cutoff change on existing five-answer outputs, not fresh two-answer generation or the published tie procedure (Appendix~\ref{app:cutoff}).
+
+Tie rescue uses ranks, but does their ordering carry useful information? Randomly reordering each list keeps candidates, calls and failures fixed but damages both policies: Native720 accuracy falls from 35.21\% to 16.71\% for Gemma and from 26.26\% to 16.19\% for the mixture. Gemma loses more, reducing its advantage from 8.95 to .52 points. Figure~\ref{fig:explanations}c shows the paired gap change and unresolved Health result. Preferences matter beyond membership, but randomization is not a remedy or a quality control. Intervals adjust across eight endpoints and condition on simulated means (Appendix~\ref{app:rank_information}).
+
+Could a better membership-only rule recover the lost information? Such a rule sees which calls list each answer, but not its text or rank. A label-neutral selector merely renames its output probabilities when candidates are renamed. In the worked example, all five candidates occur in all eight calls. Swapping A with any alternative leaves this input unchanged, so accuracy cannot exceed $1/5$. Generally, if the keyed answer (\emph{gold}) appears in exactly the same calls as $k-1$ alternatives, their selection probabilities must be equal and sum to at most one. Each is therefore at most $1/k$; the ceiling is zero if gold is absent and selection is restricted to listed candidates. This argument requires no independent-error assumption. Computing the ceiling uses gold; a usable selector need not attain it.
+
+On Health, the mean ceiling is 30.28\% for Gemma and 38.42\% for mixing, versus first-choice accuracies 68.82\% and 67.68\%. The excesses are $38.54\ [28.86,47.46]$ and $29.25\ [19.84,37.83]$ points (eight-comparison adjustment). Native720 has no such aggregate separation (Figure~\ref{fig:information}). The limit concerns restricted inputs, not biomedical competence. Health accuracy with ranks exceeds it; selectors reading questions, answers, rationales or token probabilities lie outside the bound.
+
+Does agreement on wrong answers matter even at fixed correctness? Applying the same wrong-option permutation across models preserves their agreement and leaves all policy accuracies unchanged. Separate permutations for each question/model instead change cross-model agreement. Each fixes gold and is shared across that model's calls and both banks, preserving correct ranks, failures and homogeneous scores. Over 256 synthetic relabelings, $C$ increases by 11.08 points $[9.74,12.44]$ on Native720 and 15.52 $[13.55,17.37]$ on Health (ten-contrast adjustment); first-choice mixing changes by only .21 and .04 points. Wrong-answer alignment therefore changes the inclusion comparison with correctness fixed. This gold-informed intervention breaks option semantics: it diagnoses the rule, not a usable aggregation method (Appendix~\ref{app:review_followthrough}).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/INFORMATION_CONTROLS.pdf}
+\caption{What membership loses and wrong-answer agreement changes. (a,b) Gold-informed symmetry ceilings for selectors seeing total mention counts or which calls mention each answer, compared with observed first-choice accuracy. Bars are point estimates; paired differences and adjusted intervals are in Appendix~\ref{app:review_followthrough}. (c) Change in $C$ after model-specific wrong-option relabeling, with question-bootstrap intervals adjusted over ten contrasts and conditioned on 256-draw means. These are not permutation reference ranges or fresh confirmation.}
+\label{fig:information}
+\end{figure}
+
+Removing ranks can hurt; transferring them tests whether another allocation's preferences can help without adding candidates. We sum reciprocal-rank scores across a donor pool, then reorder donor-present candidates within each recipient list. If the donor contains A, C and E from [A,B,C,D,E], scoring C above A above E, the list becomes [C,B,A,D,E]. Unmatched candidates stay in place; no answer key is used. First-choice voting selects from these reordered lists. Comparing the recipient's own pool as donor (self-transfer) with the other allocation (cross-transfer) controls for changes caused by pooling ranks itself.
+
+On Native720, cross-transfer improves mixed accuracy by 8.54 points and reduces Gemma accuracy by 9.10, relative to self-transfer (Table~\ref{tab:rank_transfer}). Both Health contrasts remain unresolved. Cross-transfer uses twelve unique calls per bank because the allocations share four. Averaging over a shared random ordering of tied donor scores retains the Native720 effects ($-9.08/+8.63$ points); using mention counts instead of donor ranks does not. This supports a role for donor ranks under this operator, without isolating lineage. At eight calls, four Llama proposals with four Gemma donor calls reach 32.40\%, versus 35.21\% for eight Gemma calls. None of four exploratory allocations beats that reference on either source (Appendix~\ref{app:budget_donor}).
+
+\begin{table}[t]
+\centering\small
+\caption{Rank transfer on fixed candidate sets. Recipient accuracy after self/cross transfer is percent; cross-minus-self is percentage points with intervals adjusted over four contrasts. Original Gemma/mixed accuracies: 35.21/26.26 on Native720, 68.82/67.68 on Health256. Using the recipient's own ranks controls for reranking alone.}
+\label{tab:rank_transfer}
+\begin{tabular}{llrrr}
+\toprule
+Source & Recipient & Own ranks & Other ranks & Change [adjusted 95\%]\\
+\midrule
+Native720 & Gemma &34.69&25.59&$-9.10\ [-12.47,-5.80]$\\
+& Mixed &25.07&33.61&$8.54\ [5.35,11.74]$\\
+Health256 & Gemma &68.95&69.14&$.20\ [-4.69,4.88]$\\
+& Mixed &69.04&68.36&$-.68\ [-5.57,4.30]$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Robustness and secondary analyses}
+
+\paragraph{Generation and allocation checks.}
+A frozen test asks whether requesting a shortlist changes the mixed-minus-Gemma accuracy gap. It requests one answer ($K1$) or five ($K5$) on 128 new questions, 64/source. Both use first-choice voting, the same models, banks, eight calls and token cap. Primary $R=\theta_{K5}-\theta_{K1}$ compares these gaps, averaging sources equally. With 50,000 within-source paired resamples, $R=+2.73\ [-.78,6.45]$ points is unresolved. Its 3.61-point half-width misses the pilot-based three-point target.
+
+Direct-answer mixing still loses on native questions: $\theta=-12.50\ [-19.53,-5.47]$; Health is unresolved at $-3.91\ [-10.16,2.34]$ (both secondary). The native loss extends beyond shortlists, but its size is not proven unchanged. Rationale count also changes, so reasoning effort is not isolated (Appendix~\ref{app:contract}).
+
+
+Separately, partner checks reuse Native288: four Gemma calls versus two Gemma and two Llama, Ministral or Qwen calls. Each partner gives a positive rule contrast but a negative first-choice gap; no inclusion gain resolves after nine-contrast adjustment. This is neither independent nor quality-matched confirmation (Appendix~\ref{app:partner_composition}).
+
+Expanding development selection to all 15 allocation--rule combinations again selects $H_G$ first-choice. None of 28 source-specific comparisons beats it with a positive adjusted lower bound (Appendices~\ref{app:allocation_budget} and~\ref{app:review_followthrough}).
+
+
+
+
+
+
+
+\paragraph{Secondary LLM-selector tests.}\label{sec:support_boundaries}
+
+Earlier support-count shuffling and order reversal did not establish a native-key benefit \citep{chen2026routinggap}. On eight of 128 native questions, only the mixed pool contained the correct answer; neither selector chose it (Appendix~\ref{app:selector_detail}).
+
+\section{Discussion and Limitations}
+
+Inclusion favors mixing relatively by discarding more useful Gemma ranks. Health mixing improves inclusion accuracy, yet neither inclusion policy approaches selected first-choice voting. Against that reference, mixing loses on Native720 and is unresolved on Health.
+
+Compare complete policies against a competent reference chosen before testing, reporting absolute accuracy, per-call quality and costs. On Native720, eight Gemma calls have no resolved gain over one stored five-answer call.
+
+Five-answer inclusion with uniform ties is especially lossy; approving two answers attenuates native contrasts. Component replay strengthens the native deficit. The direct-answer test changes generation, not the fixed-list rule; its unresolved result establishes neither format invariance nor persistence under a published procedure. Testing that procedure requires its generation and tie resolution, not more direct-answer calls. Whether the interaction survives remains open; failed transport would limit practical scope. Balanced option presentations remain untested.
+
+Neither correctness-preserving relabeling nor per-call subtraction isolates a training-lineage effect. Sampling intervals exclude mapping uncertainty, key errors, contamination and serving variation. Evidence covers two native-key benchmarks and one synthetic-record source, not quality-equivalent populations. Voting and abstention results establish neither clinical safety nor a deployment threshold.
+
+\section{Conclusion}
+
+Discarding ranks disproportionately damages the homogeneous reference; resolving ties removes most of the point-estimated interaction. On Health, rank-based accuracy exceeds a ceiling for selectors that see only which calls mention each answer and favor no label. Yet mixing loses against selected first-choice voting on Native720 and is unresolved on Health. Comparing complete policies separates this information-loss diagnosis from an ensemble improvement claim.
+
+\clearpage
+\bibliography{references}
+\bibliographystyle{plainnat}
+\clearpage
+\appendix
+\section*{Reproducibility Statement}
+The accompanying anonymous replay archive reconstructs the original primary contrast, absolute rule accuracies, depth curves and negative predictor, the 720-case decision analysis, the 256-case Health analysis, the 128-case output-contract primary, exploratory joint policy selection and allocation--budget curves with one offline command. It includes stripped native ballots, scored MedEinst pools, frozen inputs and checksums, without question text or credentials. Eight checks compute exact votes, case-bootstrap intervals, paired quality/lift accounting and the conditional empirical-list reference. This reproduces inference on stored outputs; it does not regenerate hosted outputs or adjudicate clinical labels. Methods, Results and Appendices~\ref{app:representation}--\ref{app:allocation_budget} specify the boundaries.
+
+\section*{AI Use Statement}
+Generative AI assisted literature search, hypothesis refinement, experimental design, code implementation, deterministic terminology-rule development, statistical analysis, interpretation, figures and manuscript drafting. During the benchmark experiments, models generated the answer candidates and selections described in Methods. Numerical checks are documented in Appendix~\ref{app:repro}; they do not replace human review or clinical adjudication. The authors retain responsibility for the submitted work.
+
+\input{appendix}
+\end{document}

@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE",
+  "phase": "selection",
+  "expected": 1536,
+  "valid": 1536,
+  "attempts": 1536,
+  "cost_usd": 0.34382072000000025,
+  "cap_usd": 0.36,
+  "stop": null,
+  "calls_sha256": "8467d44495ee3e60f093c1518c6533adb5c372ca93ebb5980c1eeb934fbddf90"
+}

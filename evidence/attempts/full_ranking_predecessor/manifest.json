@@ -1,0 +1,17 @@
+{
+  "format": "sanitized-evidence-gzip-shards-v1",
+  "logical_name": "full_ranking_predecessor.jsonl",
+  "logical_bytes": 3674841,
+  "logical_sha256": "4754f1346245f9af04a3f8d033faad424324b6a4c80b9f3087db7bb013f9cd60",
+  "chunk_bytes": 4194304,
+  "parts": [
+    {
+      "file": "part-000000.gz",
+      "compressed_bytes": 489484,
+      "compressed_sha256": "0e153cd75ecba88562abe0e8dd35f2f5ad59ae1aa896ab91a20e1c0e39283503",
+      "logical_bytes": 3674841,
+      "logical_sha256": "4754f1346245f9af04a3f8d033faad424324b6a4c80b9f3087db7bb013f9cd60"
+    }
+  ],
+  "privacy_note": "Compression is not anonymization; scan the logical content before and after packing."
+}

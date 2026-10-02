@@ -1,0 +1,191 @@
+{
+  "status": "PASS",
+  "C": {
+    "native|native_key": {
+      "estimate": 0.09719328703703704,
+      "ci95": [
+        0.05292245370370371,
+        0.1421303530092593
+      ]
+    },
+    "medeinst|refinement": {
+      "estimate": 0.0484592013888889,
+      "ci95": [
+        0.007725694444444456,
+        0.09079861111111114
+      ]
+    },
+    "medeinst|strict": {
+      "estimate": 0.06104600694444446,
+      "ci95": [
+        0.020138888888888897,
+        0.1037760416666667
+      ]
+    },
+    "medeinst|exact_reference": {
+      "estimate": 0.06104600694444446,
+      "ci95": [
+        0.020138888888888897,
+        0.1037760416666667
+      ]
+    }
+  },
+  "predictor": {
+    "mse": {
+      "constant": 0.14814018532081885,
+      "quality_count": 0.1461067446974378,
+      "plus_tie_gap": 0.14610645072988915
+    },
+    "paired_mse_reduction": {
+      "estimate": 2.939675486271305e-07,
+      "ci95": [
+        -0.0029044096267290516,
+        0.002961295589723572
+      ]
+    }
+  }
+}
+{
+  "status": "PASS_MAPPING_AND_COMPLETE_CASE_SENSITIVITY",
+  "mapping": {
+    "implemented_frozen_refinement": {
+      "estimate": 0.048459201388888894,
+      "ci95": [
+        0.007725694444444442,
+        0.09079861111111111
+      ],
+      "n_cases": 96
+    },
+    "new_unresolved_zero_credit": {
+      "estimate": 0.049327256944444446,
+      "ci95": [
+        0.008658311631944448,
+        0.09171006944444444
+      ],
+      "n_cases": 96
+    },
+    "all_strict_unresolved_zero_credit": {
+      "estimate": 0.06104600694444443,
+      "ci95": [
+        0.020138888888888887,
+        0.10377604166666665
+      ],
+      "n_cases": 96
+    }
+  },
+  "complete_case": {
+    "native": {
+      "kept_cases": 193,
+      "excluded_cases": 95,
+      "C": 0.08860103626943006,
+      "ci95_whole_case": [
+        0.033160621761658036,
+        0.14486183074265976
+      ],
+      "task_counts": {
+        "Treatment": 62,
+        "Basic Science": 65,
+        "Diagnosis": 66
+      }
+    },
+    "medeinst": {
+      "kept_cases": 88,
+      "excluded_cases": 8,
+      "C": 0.046235795454545474,
+      "ci95_whole_case": [
+        0.0028409090909091075,
+        0.0915488873106061
+      ],
+      "task_counts": {
+        "paired clinical case": 88
+      }
+    }
+  },
+  "limitations": "Mapping flags and exact signed case coefficients are exported from the frozen relation audit; this checks their arithmetic, not clinical correctness. Complete-case selection is post-outcome and does not replace the primary population."
+}
+{
+  "status": "PASS_INDEPENDENT_EXACT_BALLOT_AND_CASE_BOOTSTRAP_REPLAY",
+  "primary": {
+    "estimate": -0.08952546296296297,
+    "ci95": [
+      -0.11163194444444445,
+      -0.06747685185185186
+    ]
+  },
+  "allocation_C": {
+    "HG": {
+      "estimate": 0.09177083333333334,
+      "ci95": [
+        0.06976822916666665,
+        0.11425954861111115
+      ]
+    },
+    "HL": {
+      "estimate": -0.01964120370370371,
+      "ci95": [
+        -0.03938657407407408,
+        0.00011603009259260468
+      ]
+    }
+  },
+  "n_cases": 720,
+  "n_unique_calls": 23040
+}
+PASS_RAW_BALLOTS_15_ESTIMATES_30_CI_ENDPOINTS_TWO_JOINT_COVARIANCES
+{
+  "status": "PASS_INDEPENDENT_COUNTER_AND_ARRAY_REPLAY",
+  "cohorts": {
+    "288": {
+      "case_vectors_checked": 288,
+      "metrics_per_case": 25,
+      "reference_draws_per_case": 4096,
+      "max_absolute_errors": {
+        "observed": 2.220446049250313e-16,
+        "reference": 3.441691376337985e-14
+      },
+      "displayed_C_difference": 0.002437821645586933,
+      "displayed_C_difference_ci95": [
+        -0.012044903689589773,
+        0.017127655372419143
+      ],
+      "terminal_empty_slots": 140
+    },
+    "720": {
+      "case_vectors_checked": 720,
+      "metrics_per_case": 42,
+      "reference_draws_per_case": 4096,
+      "max_absolute_errors": {
+        "observed": 1.249000902703301e-16,
+        "reference": 3.441691376337985e-14
+      },
+      "displayed_C_difference": 0.004451271339700908,
+      "displayed_C_difference_ci95": [
+        -0.0031557542306388984,
+        0.012116175757515934
+      ],
+      "terminal_empty_slots": 111
+    }
+  },
+  "new_model_calls": 0,
+  "interpretation": "Conditional descriptive reference; no independence/causal test."
+}
+{
+  "status": "PASS_HEALTH_PRIMARY_SECONDARY_AND_15_RULE_CELLS",
+  "n_cases": 256,
+  "primary_C": {
+    "estimate": 0.06139322916666666,
+    "ci95": [
+      0.028449707031250004,
+      0.09449869791666665
+    ]
+  },
+  "secondary_theta": {
+    "estimate": -0.011393229166666666,
+    "ci95": [
+      -0.04200032552083329,
+      0.01953125
+    ]
+  },
+  "scope": "Fixed educational Health subset; stored-output inference only, no clinical adjudication or new model calls"
+}
+PASS_ALL_FIVE_OFFLINE_REPLAYS

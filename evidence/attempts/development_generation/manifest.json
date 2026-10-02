@@ -1,0 +1,17 @@
+{
+  "format": "sanitized-evidence-gzip-shards-v1",
+  "logical_name": "development_generation.jsonl",
+  "logical_bytes": 2444218,
+  "logical_sha256": "9791fccbb7e289c548f933ed1790d7292a06abaa7b34bd627c0a6cb76d1e1374",
+  "chunk_bytes": 4194304,
+  "parts": [
+    {
+      "file": "part-000000.gz",
+      "compressed_bytes": 302718,
+      "compressed_sha256": "3c02a2977e337e4e8d26b997d5c75e6be2f6a22a633967eba73bec1ff9df1cdd",
+      "logical_bytes": 2444218,
+      "logical_sha256": "9791fccbb7e289c548f933ed1790d7292a06abaa7b34bd627c0a6cb76d1e1374"
+    }
+  ],
+  "privacy_note": "Compression is not anonymization; scan the logical content before and after packing."
+}

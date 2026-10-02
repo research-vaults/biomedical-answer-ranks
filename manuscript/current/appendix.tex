@@ -1,0 +1,414 @@
+\section*{Guide to the supplementary evidence}
+The native-key protocols, alternative aggregation rules and information controls support the main claims. Secondary selector studies and scoring limitations are distinguished from independent confirmation.
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{.55\linewidth}>{\raggedright\arraybackslash}p{.37\linewidth}}
+\toprule
+Question or evidence & Where to look\\
+\midrule
+Rule contrast, tie explanation, 288 native questions & Section~\ref{app:representation}\\
+Selected-policy loss, 720 native questions & Section~\ref{app:native720}\\
+Health gain versus stronger policy & Section~\ref{app:health}\\
+One-answer versus five-answer generation & Section~\ref{app:contract}\\
+Policy, budget and partner sensitivities & Sections~\ref{app:joint_policy}, \ref{app:allocation_budget}, \ref{app:partner_composition}\\
+IRV, rank transfer and conditional diagnostics & Sections~\ref{app:irv}--\ref{app:conditional}\\
+Membership ceilings, wrong-option controls and equal-budget screening & Section~\ref{app:review_followthrough}\\
+Notation and replay instructions & Section~\ref{app:reader_card}\\
+Clinical mapping and worst-case uncertainty & Sections~\ref{app:mapping}, \ref{app:representation}\\
+Held-out predictor specification & Section~\ref{app:readability_detail}\\
+Secondary selector interventions & Section~\ref{app:selector_detail}\\
+Reproduction resources and serving limits & Section~\ref{app:repro}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\section{Representation and native-answer confirmation protocols}\label{app:representation}
+\subsection{Original 288-question representation study}
+The representation question was selected after inspecting the earlier banks. Its separate protocol was frozen on 9 September 2026 before any new generation. Let $A_r=F_{M,r}-F_{H,r}$ for TRUE support and define the sole primary $C=A_{\mathrm{inclusion},5}-A_{\mathrm{first}}$. Native-key MedXpertQA is primary; MedEinst is a separate prespecified transport. The study does not generate new LLM-selector decisions. It tests transformations of saved five-answer lists, not prompting for one versus five answers.
+
+\paragraph{Case selection.}
+We exclude 3,902 previously used MedEinst IDs and 128 native IDs, normalized input matches and duplicate eligible inputs. Native sampling takes 96 hash-ranked questions in each of Diagnosis, Treatment and Basic Science. From 1,481 eligible MedEinst pairs, we select 32 short, 32 medium and 32 long pairs by hash rank, requiring each pair to differ by one line. This replaces the initially planned two-block frequency/length-balanced sample, whose second block was infeasible; the change preceded all model calls. The final sample is length-balanced but not transition-frequency-balanced: it contains 90 high-, five medium- and one low-frequency pairs. Neither historical IDs nor normalized inputs overlap with the analyzed sample.
+
+\paragraph{Sampling and failures.}
+Each case has two new banks, with independent request identities/seeds; provider determinism and independent internal randomness are not guaranteed. Per branch/bank, H takes eight Gemma calls and M shares its first two plus two calls to each other generator, giving 14 unique calls. There are $14\times2\times(288+2\times96)=13,440$ scheduled identities. Generators use the same five-answer contract, temperature 1, top-$p=.9$ and 384-token cap. Gemma, Llama and Ministral use OpenRouter; Qwen uses the official Qwen2.5-14B-Instruct checkpoint in BF16 through vLLM 0.10.2/transformers 4.55.2. An exact weight-revision hash was not returned. Every invalid slot receives at most one identical-payload retry; first valid output is retained and terminal failures remain empty. The protocol requires terminal failures to remain at or below 5\% in each source/model cell. All eight cells satisfy this threshold; the highest rate is 3.73\% (native Llama), with denominators in Table~\ref{tab:failure_cells}. Independent banks are averaged within case, and MedEinst branches within pair, before inference.
+
+\paragraph{Rules and statistics.}
+First-choice, inclusion, reciprocal rank, RR restricted to inclusion ties and truncated Borda are specified in the main text. Each call contributes once per normalized candidate at its best rank. Borda weights are $5,4,3,2,1$, with zero for absent candidates. Unresolved ties use expected uniform correctness. Transition accounting couples ties through a common uniform random candidate priority; unchanged winner sets cannot manufacture disagreements. The tie component is the H-minus-M accuracy gain from replacing inclusion by tie-aware frequency; subtracting it from $C$ leaves the tie-aware-versus-first allocation contrast. This is an accounting identity, not a mediation estimate.
+
+The desired 95\% interval half-width was five percentage points. Old case-level standard deviations .41535 native and .24058 MedEinst imply approximate requirements of 266 and 89 cases under $n=(1.96s/.05)^2$; fixed 288/96 preserve task/length balance. No reduction was assumed from averaging banks. The primary uses 50,000 task-stratified native case bootstraps, seed 202609091733; MedEinst resamples whole pairs. Depths 2--4, other rules, bank differences, flips and decomposition are secondary pointwise summaries. Uncertainty conditions on benchmark keys or the frozen deterministic refinement/strict/exact-reference mapping algorithm, not clinical adjudication.
+
+\paragraph{One held-out prediction check.}
+A ridge predictor of case-level $C$ is fit only on the earlier native128. Its fixed rival inputs are M-minus-H candidate count divided by ten and rank-one vote concentration; an enriched model adds the H-minus-M inclusion-tie indicator. Inputs are standardized on training cases, ridge coefficient is one and the intercept is the training mean. This specification was frozen after new generation began but before fresh correctness was analyzed. It is a secondary held-out check, not pregeneration registration. The single comparison is paired fresh-native MSE reduction from adding the tie gap, with 50,000 task-stratified bootstrap resamples. A constant old-training-mean predictor is also retained. Prediction does not establish causal competence adjustment or an improved allocation policy.
+
+\paragraph{Local reproduction.}
+The exact protocol is \path{Protocols/REPRESENTATION_CONFIRMATION_2026_09_09.md}; schedules, raw attempts, source hashes, frozen dependencies and operational manifests are under \path{runs/representation_confirmation_2026_09_09/}. From the complete local project, run \path{code/representation_confirmation_20260909.py} with argument \texttt{analyze}, then \path{code/verify_representation_confirmation_20260909.py}; these consume stored outputs. The independent verifier reconstructs native options, rational-valued votes, all ten absolute rule/allocation cells, case/bank contrasts and the primary interval from raw output text. It does not adjudicate MedEinst labels. The saved-model prediction is evaluated with \path{code/predict_representation_boundary_20260909.py evaluate}. Do not run \texttt{setup}, \texttt{execute} or \texttt{freeze} to reproduce the saved analysis. The earlier rule integration and current figures are under \path{runs/maintrack_strengthening_2026_09_09/}. Dataset question text and credentials are not part of the manuscript-source archive.
+
+\paragraph{Operational sensitivity.}
+The saved-attempt audit verifies all 13,440 scheduled identities, at most two attempts per identity, identical retry payloads, and retention of the first valid output. A post-outcome complete-case sensitivity excludes any case with a failed generation: native $n=193$ gives $C=8.86$ points (95\% CI $[3.32,14.49]$); MedEinst $n=88$ gives $4.62$ $[.28,9.15]$. These exclude 95 native cases and eight pairs, change the sampled population and native task mixture, and do not replace the primary with empty failures retained. Retained native counts are 66 Diagnosis, 62 Treatment and 65 Basic Science. These sensitivity intervals use 50,000 unstratified whole-case resamples with seed 202609091733; the primary remains task-stratified. No additional calls were collected.
+
+\paragraph{Mapping implementation and protocol discrepancy.}
+The fresh transport map contains 3,607 candidate--reference relation types: 2,401 new and 1,206 reused. Of 2,846 strict-unresolved types, 2,388 are new. The frozen code also applies a separate refinement whitelist, crediting 24 strict-unresolved types (ten new, 14 reused). This conflicts with the protocol prose that newly unresolved relations remain uncredited. We preserve the original protocol, code and results and report the discrepancy: setting all new unresolved relations to zero gives $C=4.93$ points (95\% CI $[.87,9.17]$), compared with the implemented $4.85$ $[.77,9.08]$. Setting all strict-unresolved relations to zero gives $6.10$ $[2.01,10.38]$, identical here to strict/literal scoring. These fixed-rule checks leave the direction intact; they do not resolve arbitrary clinical relabeling.
+
+The 3,607 types occur in 12,487 candidate--pool incidences; 6,760 incidences are unresolved. All 96 pairs contain unresolved candidates. The 24 refinement credits affect the case-level contrast in 19 pairs, and 171 unresolved types have nonzero overall contrast coefficients. A shared-relation binary stress bound is $[-26.34,29.85]$ points; this is a deterministic worst-case envelope, not a confidence interval or medically plausible adjudication. The native primary uses official option keys and is unaffected. The incidence and sensitivity audit is reproduced by \path{code/audit_latest_review_mapping_20260910.py} on the saved map and pools.
+
+\paragraph{Resource closure.}
+The fresh representation program attempted 13,440 scheduled identities with 13,845 raw attempts, including allowed retries. There are 13,292 valid slots and 148 terminal failures, retained as empty. Hosted charged-or-reserved cost is \$1.211903; conservative GPU lifecycle cost is \$0.104540. Total incremental cost is \$1.316443. These resource estimates include retries and serving overhead; they are not a token-matched policy comparison or an independently reconciled provider invoice.
+
+\subsection{Two-model, 720-question native-answer confirmation}\label{app:native720}
+The later confirmation uses 240 native-key MedXpertQA questions from each of Diagnosis, Treatment and Basic Science. Its excluded development and pilot sets contain 48 and 24 questions, respectively; historical and retired assignments are excluded by the frozen selection procedure. Each question receives two new banks of eight calls to each of \path{google/gemma-4-26b-a4b-it} and \path{meta-llama/llama-3.3-70b-instruct}. Within a bank, $H_G$ and $H_L$ use their respective eight calls; $M_{44}$ reuses the first four from each. Thus $720\times2\times2\times8=23{,}040$ scheduled slots support all three policies without treating shared calls as independent observations.
+
+The executed system message was:
+\begin{quote}\footnotesize\ttfamily
+You are performing a controlled medical-question benchmark. Use the supplied question and options. Return the requested JSON.
+\end{quote}
+The user message, with bracketed fields substituted, was:
+\begin{quote}\footnotesize\ttfamily
+MEDICAL\_QUESTION:\\
+\mbox{[QUESTION]}
+
+OPTIONS\_JSON=[OPTIONS\_OBJECT]
+
+Rank exactly five DISTINCT supplied option IDs from most to least plausible answers to the question. For each give a rationale of at most18 words. Return only JSON: \{"candidates":[\{"option\_id":"A","rationale":"brief reason"\}, ... exactly five items]\}. Do not add keys or markdown. Consider the actual question, which may ask for a diagnosis, treatment, or basic science answer.
+\end{quote}
+The literal ``at most18'' wording is retained from the payload constructor. The response format requests a five-element candidate array with legal option IDs and rationales. Sampling uses temperature 1, top-$p=.9$, maximum 384 tokens, and a 31-bit seed derived from the SHA256 of each request identity. At most one identical-payload retry is allowed; the first valid output is retained, and terminal failures contribute no votes. The manifest records 23,449 attempts, 22,929 valid slots and 111 terminal failures. No failed slot is silently replaced by a later successful policy sample.
+
+The first-choice $M_{44}-H_G$ contrast is primary, with Gemma selected on development evidence rather than the confirmation set. Banks average within question before 50,000 task-stratified bootstrap draws (seed 202609103011). Its estimate is $-8.95$pp $[-11.16,-6.75]$; other rules and quality/lift decompositions do not replace that primary. Charged-or-reserved cost is \$3.008604. The schedule, raw attempts and frozen dependencies are retained under \path{runs/competent_alternative_confirmation_restart_2026_09_10/}; the second portable replay check reconstructs the decision analysis. These data establish neither equal generator quality nor independent training ancestry. Later Health routing restrictions are documented separately rather than assumed to match these historical providers.
+
+\paragraph{Exploratory task-specific replay.}
+Table~\ref{tab:taskstrata} disaggregates the same fixed-slot $H_G/M_{44}$ comparison after inspection of pooled results. Exact tie-aware scoring retains empty failures, averages two banks within question, and reproduces the pooled $\theta=-8.9525463$ and $C=9.1770833$ points. Each task resamples its 240 questions 50,000 times, keeping both allocations and rules paired. The family comprises six task--endpoint contrasts; Bonferroni percentile tails are $.05/12$ and $1-.05/12$. These nominal bootstrap intervals are not finite-sample guarantees. The task-specific seeds and input hashes are in the accompanying task-strata replay archive. The results are descriptive reuse, not new confirmation or a test of between-task differences.
+
+\begin{table}[h]
+\centering\small
+\caption{Native720 task breakdown against the unchanged development-selected Gemma policy. Effects and intervals are percentage points; every row has 240 questions. $C$ remains a rule interaction, not final-policy benefit.}
+\label{tab:taskstrata}
+\begin{tabular}{llrrr}
+\toprule
+Task & Contrast & Estimate & Pointwise 95\% & Adjusted six\\
+\midrule
+Diagnosis & $\theta$ & $-9.34$ & $[-13.09,-5.66]$ & $[-14.40,-4.41]$\\
+ & $C$ & $9.26$ & $[5.50,13.16]$ & $[4.16,14.49]$\\
+Treatment & $\theta$ & $-11.13$ & $[-15.50,-6.88]$ & $[-16.98,-5.45]$\\
+ & $C$ & $12.00$ & $[7.88,16.26]$ & $[6.49,17.68]$\\
+Basic Science & $\theta$ & $-6.39$ & $[-9.77,-3.00]$ & $[-10.93,-1.82]$\\
+ & $C$ & $6.27$ & $[2.76,9.76]$ & $[1.51,10.99]$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\subsection{Prespecified MMLU-Pro Health source transport}\label{app:health}
+
+The frozen test uses dataset revision \path{b189ec765aa7ed75c8acfea42df31fdae71f97be}. Of 818 Health rows, 221 fail the exactly-ten-distinct-options rule and 91 repeat an eligible normalized question stem, leaving 506. No normalized question stem matches the local MedXpertQA source. A fixed SHA256 ordering selects 256 before generation; this restricted population is not the full Health benchmark. Exact-stem filtering cannot exclude paraphrase or pretraining contamination. The dataset card reports MIT; scored rank pools and retrieval metadata, not question text, are included in the replay.
+
+The 256 items comprise professional medicine 71, nutrition 56, human aging 30, anatomy 27, clinical knowledge 27, college medicine 18, medical genetics 15 and virology 12. These are source subgroups, not independent datasets. Native keys provide a separate benchmark criterion, not clinical adjudication. The generation template, five-answer parser, models and allocation definitions match the 720-case study. Temperature 1, top-$p=.9$, maximum 384 tokens and hashed seeds remain fixed; only DeepInfra/Novita are permitted for costs. All 8147 returned payloads with a named provider report DeepInfra; 138 attempts lack a returned payload/provider. Historical serving revisions and sampling independence are not guaranteed.
+
+All 8192 scheduled slots were attempted, with one allowed identical retry after failure: 8285 attempts, 8137 valid lists and 55 terminal empty slots (Gemma 1, Llama 54). Ten returned lists had duplicate IDs; 138 attempts lacked usable responses. No incomplete list is promoted to a valid five-answer ballot. The primary includes failures; complete-case exclusion changes the population to 207 questions. No scientific sign or model accuracy determined retry, stopping or case selection.
+
+The sole primary is $C_G=6.14$pp $[2.84,9.45]$, with a 3.30pp half-width, meeting the five-point precision target but not establishing an interaction above five points. Both banks are positive (6.72/5.56pp). Secondary $C_L=5.62$pp $[2.66,8.58]$ is positive against the other homogeneous reference. First-choice mixed-minus-$H_G$ is $-1.14$pp $[-4.20,1.95]$; against $H_L$ it is $+1.76$pp $[-.98,4.49]$. These pointwise secondary intervals establish neither equivalence nor useful final improvement. The development-selected Gemma reference was not reselected using Health outcomes.
+
+\begin{table}[h]
+\centering\small
+\caption{Health transport: two banks averaged per question. Accuracy and availability are percentages; costs are mean USD per eight-call policy execution, including retries. Shared calls are charged once per policy, not summed as independent study spending.}
+\label{tab:health_absolute}
+\begin{tabular}{lrrr}
+\toprule
+Rule or resource & $H_G$ & $H_L$ & $M_{44}$\\
+\midrule
+Inclusion frequency &23.48&21.10&28.48\\
+First choice &68.82&65.92&67.68\\
+Frequency + RR ties &69.04&66.02&68.07\\
+Reciprocal rank &69.04&66.02&68.26\\
+Borda &69.53&66.08&68.55\\
+Per-call first choice &68.73&64.70&66.58\\
+Correct-key availability &96.29&95.31&97.85\\
+Cost (USD) &.000582&.000623&.000610\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The independent exact-rational replay reconstructs 7680 pool/rule outcomes and 3840 bank-averaged case/rule cells, then reproduces the primary whole-question 50,000-draw bootstrap to floating-point precision. Complete-case $C_G=5.67$pp $[2.01,9.32]$; leave-one-question estimates range 5.79--6.56pp. These are sensitivities, not replacements for failure-inclusive inference. Descriptive subgroup C estimates in the source order above are 3.53, 9.40, 11.92, 1.42, 8.52, 5.32, 11.33 and $-8.13$pp; small subgroup sizes and exploratory multiplicity preclude a subgroup mechanism claim.
+
+Collection took 1432 seconds and cost \$0.616917 in charged-or-reserved accounting; no GPU was used. The replay metadata records source, data and protocol hashes; raw attempts retain payloads, usage, finish reasons and parser states. Replaying these records reproduces the stored-output analysis, not clinical correctness or generation under a future provider version.
+
+\subsection{Direct-answer versus ranked-list generation}\label{app:contract}
+
+This later, separately frozen experiment tests a condition not manipulated by saved-list first-choice replay. A conservative audit excludes configured or scheduled historical IDs, retired assignments and normalized native stems. The remaining eligible pools contain 570 native and 250 Health questions. This does not exclude unrecorded human inspection, paraphrases or model pretraining. A hash ordering assigns 16 questions per source to an excluded feasibility/variance pilot; the next 64 per source form confirmation. Pilot variance selects the smallest of 64/128/192 per source forecast to achieve pooled three-point interval half-width, subject to available cases and a fixed spending cap. The pilot's forecast is optimistic: actual confirmation half-width is 3.61 points. We do not enlarge the sample after seeing the result.
+
+K1 requests exactly one supplied answer; K5 requests five distinct ranked answers. Both request at most 18 rationale words per answer, use temperature 1/top-$p=.9$, cap output at 384 tokens, and preserve source option order. Requested rationale count therefore changes with the contract. For each question, two banks and eight calls to each of Gemma4-26B-A4B and Llama3.3-70B are shared by $H_G$, $H_L$ and $M_{44}$. Seeds are paired across contracts; dispatch is hash-randomized. Providers are restricted to DeepInfra/Novita; successful responses came from DeepInfra. This does not guarantee serving determinism or isolate reasoning dose.
+
+Assigned-length JSON with distinct legal IDs and nonempty rationales is required; one same-payload retry is allowed. Failed slots would contribute no vote and zero per-call correctness. The pilot completes all 2,048 slots without retry. Confirmation produces 8,192 valid slots after 8,698 requests: 503 rate-limit errors, two length-terminated invalid responses and one duplicate-option response are retried. There are no terminal failures; 43 accepted responses exceed the rationale-word limit and remain included as specified. Raw payloads, responses, usage, finish reasons and parser states are retained locally.
+
+\begin{table}[h]
+\centering\small
+\caption{Output-contract confirmation: first-choice final accuracy (percent), averaging two banks on 64 new questions per source. Allocation contrasts and source interactions have secondary pointwise 95\% whole-question intervals. Only pooled $R$ is primary.}
+\label{tab:contract}
+\begin{tabular}{llrrrr}
+\toprule
+Source & Contract & $H_G$ & $H_L$ & $M_{44}$ & $\theta$ [95\% CI] (pp)\\
+\midrule
+MedXpertQA & K1 &38.28&16.02&25.78&$-12.50\ [-19.53,-5.47]$\\
+MedXpertQA & K5 &34.77&17.58&26.56&$-8.20\ [-16.41,.39]$\\
+Health & K1 &61.72&50.78&57.81&$-3.91\ [-10.16,2.34]$\\
+Health & K5 &64.45&53.12&61.72&$-2.73\ [-8.59,3.12]$\\
+\midrule
+\multicolumn{5}{l}{Native $R=\theta_{K5}-\theta_{K1}$ (pp)} &$4.30\ [-1.56,10.55]$\\
+\multicolumn{5}{l}{Health $R$ (pp)} &$1.17\ [-2.73,5.08]$\\
+\multicolumn{5}{l}{Equal-source pooled $R$ (primary, pp)} &$2.73\ [-.78,6.45]$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Both banks average within question before 50,000 whole-question bootstrap draws, stratified by source for the pooled primary. The unresolved interaction is not equivalence or proof of unchanged allocation. The secondary native K1 deficit supports the limited boundary that forced five-answer generation is not necessary for a mixed deficit in this pair. Source intervals are too wide for strong per-source moderation conclusions. All original $C$, $\theta$, $J$ and $J_{\rm norm}$ tests remain separate.
+
+Across paired individual calls, K1-wrong/K5-correct versus K1-correct/K5-wrong counts are 35/83 for native Gemma, 19/3 for native Llama, 19/6 for Health Gemma and 56/28 for Health Llama (1,024 paired slots per source/model). These descriptive counts are not independent case-level replications or evidence that model quality was controlled. Confirmation K1/K5 attempts consume 1,743,854/1,759,592 input tokens and 120,192/480,858 output tokens. Missing-usage rate-limit attempts contribute conservative reserved cost, not fabricated token counts. Charged-or-reserved costs are \$0.381499/\$0.500202; pilot cost is \$0.122994. Confirmation takes 736 seconds, without GPU. Call matching is not token/cost matching.
+
+The sixth text-free offline check reconstructs all 8,192 ballot slots, exact rational voting and the frozen primary bootstrap. A separate raw-response audit also verifies pre-output hashes, pilot exclusion, paired payload seeds and parser decisions. Replaying these artifacts does not regenerate hosted responses or validate clinical labels.
+
+\section{Rank, candidate access and confidence diagnostics}
+\subsection{Exploratory rank-information intervention}\label{app:rank_information}
+
+This post-review analysis asks whether the allocation gap depends on expressed candidate preferences, beyond candidate membership. It reuses every Native720 and Health256 question and both banks. For each of the 16 unique call slots per bank, select one recorded candidate uniformly as the new first answer. For first-choice voting this is equivalent to a uniform random permutation of the list. Shared calls use the same draw in both allocations; failed calls remain empty. The original fixed-slot $H_G/M_{44}$ policies, candidate sets and call budget are unchanged. Inclusion-vote accuracy is therefore invariant. Random draws do not consult answer keys.
+
+We use two independently seeded runs of 8,192 draws per bank and question, scoring final vote ties by their exact uniform expectation. After averaging draws and banks within question, 50,000 paired question-bootstrap draws produce pointwise and Bonferroni intervals across four endpoints per source (eight total). Native resampling preserves the three task strata. The protocol, seeds and endpoint family were fixed before this new calculation, but after the original results were known: this is exploratory intervention evidence, not independent confirmation. Maximum Monte Carlo standard error is .014 percentage points; reported bootstrap intervals condition on simulated case means rather than including that numerical error. Both seeds yield the same qualitative interpretation.
+
+\begin{table}[h]
+\centering\small
+\caption{Rank randomization on fixed ballots. Accuracy and differences are percentage points; intervals adjust across all eight endpoints. ``Rank benefit'' is original minus randomized first-choice accuracy. A positive gap change means randomization makes mixing relatively more favorable, not that it improves either policy.}
+\label{tab:rank_information}
+\begin{tabular}{lrr}
+\toprule
+Quantity & Native720 & Health256\\
+\midrule
+Original H / M accuracy &35.21 / 26.26&68.82 / 67.68\\
+Randomized H / M accuracy &16.71 / 16.19&19.97 / 21.52\\
+H rank benefit & $18.50\ [14.21,22.82]$ & $48.85\ [41.41,56.12]$\\
+M rank benefit & $10.07\ [6.50,13.75]$ & $46.16\ [39.36,52.76]$\\
+Randomized M--H gap & $-.52\ [-1.15,.08]$ & $1.55\ [.89,2.16]$\\
+Change in M--H gap & $8.43\ [5.49,11.43]$ & $2.69\ [-1.62,6.97]$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Native preferences benefit repeated Gemma sampling more than mixing; destroying them sharply attenuates its advantage. Health demonstrates a boundary: both policies lose substantial accuracy, but their differential loss is unresolved. Its randomized mixed advantage does not establish a reliable reversal from the original gap; the paired change interval includes zero. Rank destruction changes per-call accuracy and is not a deployable improvement, a quality-matched diversity comparison, or evidence about training mechanisms. It identifies the effect of this specified intervention on the recorded lists only.
+
+The anonymous rank-information replay contains stripped candidate IDs, native keys, task strata, fixed slots, the two-seed protocol, all case vectors and expected results. Checks reconcile original first-choice and inclusion accuracies, preserve empty slots and shared calls, reconstruct Health lists from raw records against the original pools, and test ties and small exact enumerations. No hosted generations, paid calls or new cases are added.
+
+For comparison, the separate empirical-list reference draws whole lists independently for each question and model from its stored banks, including failures, and reconstructs allocations 4,096 times. It gives $C=9.48$ versus observed $9.72$ on Native288 and $8.73$ versus $9.18$ on Native720; the observed-minus-resampled differences are $.24\ [-1.20,1.71]$ and $.45\ [-.32,1.21]$ points, respectively. Both intervals include zero. Unlike rank destruction, it preserves each list's internal ordering, but not its original grouping with other calls. Its question-bootstrap intervals condition on observed list distributions and omit uncertainty in those distributions. Agreement with this fitted reference neither proves independent generation nor identifies a causal mechanism.
+
+\input{review_diagnostics}
+\section{Policy, budget and partner sensitivity}
+\subsection{Exploratory joint allocation-and-rule selection}\label{app:joint_policy}
+
+This saved-output analysis was specified after the original test outcomes were known. It is exploratory, not a new preregistered confirmation. The original 48 development questions supply eight scheduled calls per model; the mixture uses the first four scheduled slots from each. All five rules are applied to each of three allocations, with uniform expected correctness for unresolved vote ties. The policy with highest mean development accuracy is selected, breaking policy ties lexicographically by allocation then rule. Development, pilot and test IDs are disjoint. Development uses one bank; each test averages its two banks within question. No test outcome selects the policy, although the decision to perform this expanded analysis was retrospective.
+
+The expanded 15-policy search selects the same $H_G$ first-choice policy as the original ten-policy homogeneous search. Its development accuracy is 29.17\%; per-call development accuracy is a different quantity. Selection frequencies under 10,000 task-stratified development bootstraps are 75.92\% for $H_G$ first-choice, 8.32\% for $H_L$ Borda and 8.25\% for mixed first-choice; the other policies share the remainder. Tied policies are credited to the fixed lexicographic winner, so these frequencies are descriptive stability estimates, not intrinsic probabilities that one voting rule is best.
+
+\begin{table}[h]
+\centering\small
+\caption{All 15 policies before test-based selection. Development, native720 and Health256 final accuracy (\%). The fixed development winner is $H_G$ first-choice. Test-best alternatives are hindsight descriptions, not deployable selectors.}
+\label{tab:joint_policy}
+\begin{tabular}{llrrr}
+\toprule
+Allocation & Rule & Development48 & Native720 & Health256\\
+\midrule
+$H_G$ & Borda &23.96&35.13&69.53\\
+$H_G$ & First choice &29.17&35.21&68.82\\
+$H_G$ & Inclusion &17.01&19.49&23.48\\
+$H_G$ & RR &27.08&34.65&69.04\\
+$H_G$ & Frequency + RR ties &26.04&34.34&69.04\\
+$H_L$ & Borda &22.92&19.76&66.08\\
+$H_L$ & First choice &22.92&19.97&65.92\\
+$H_L$ & Inclusion &17.36&15.38&21.10\\
+$H_L$ & RR &22.92&19.97&66.02\\
+$H_L$ & Frequency + RR ties &22.92&20.03&66.02\\
+$M_{44}$ & Borda &18.75&25.06&68.55\\
+$M_{44}$ & First choice &25.00&26.26&67.68\\
+$M_{44}$ & Inclusion &16.15&19.71&28.48\\
+$M_{44}$ & RR &23.96&24.86&68.26\\
+$M_{44}$ & Frequency + RR ties &16.67&25.83&68.07\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For each source, 50,000 whole-question paired bootstrap draws retain all 15 policy outcomes together, stratifying by native task (Health has one stratum). Pointwise 95\% intervals and Bonferroni-adjusted percentile intervals with tail mass $0.05/(2\times28)$ are reported in the replay. The family contains 14 nonreference policies on each of two sources. These are nominal bootstrap simultaneous intervals, not finite-sample guarantees. No adjusted interval has a positive lower endpoint. The $H_G$ Borda advantage on Health is 0.72pp, pointwise interval $[0,1.56]$ and adjusted interval $[-.29,2.15]$; all five mixed alternatives are below the selected reference on native720 with adjusted intervals excluding zero. Absence of a resolved improvement does not prove equality or general optimality.
+
+The test-best constant-policy point gaps are zero on native720 and 0.72pp on Health. A separate hindsight oracle choosing the best of 15 policies independently on each test question gives gaps of 17.32pp $[15.43,19.23]$ and 13.85pp $[10.47,17.43]$. These quantities use the answers and noisy realized outputs; they are neither implementable routing performance nor evidence that a learned router can recover the gap. No new routing claim is made. The seventh offline check independently reconstructs development votes, selection and the paired intervals from stripped ballots and case matrices; the preceding checks reconstruct those test matrices from ballots. Original frozen results and bootstrap seeds remain unchanged.
+
+\subsection{Generation-budget and allocation sensitivity}\label{app:allocation_budget}
+
+This exploratory analysis reuses the 720 native and 256 Health questions, without additional generation. At total call budgets $B=2,4,8$, Gemma call counts are respectively $\{0,1,2\}$, $\{0,1,2,3,4\}$ and $\{0,2,4,6,8\}$; remaining calls use Llama. Every subset without replacement from each model's eight scheduled slots is enumerated within bank. Each subset uses the same five ranked-answer rules, uniform final ties and empty terminal failures. We average subsets exactly, then average the two banks within question. These are finite-bank policy expectations, not independent observations for each subset, estimates at unobserved budgets, or new held-out confirmation. At eight calls the mixed policy averages all eligible four-plus-four subsets, unlike the original first-four-slot policy. Both homogeneous endpoints reproduce their original accuracies.
+
+Twenty thousand whole-question bootstrap draws retain all grid outcomes together; native resampling is task-stratified. The six balanced-mixture interactions receive Bonferroni-adjusted percentile intervals. All other curves and differences are exploratory, with pointwise intervals in the replay. As with the original percentile intervals, adjustment is nominal, not a finite-sample coverage guarantee. Calls are matched within budget; tokens and costs are not. Expected resource totals weight each scheduled slot's recorded resources, including retries, by its subset inclusion probability. Unknown-usage failed requests remain outside token totals; charged/reserved costs retain them.
+
+Table~\ref{tab:allocation_budget} reports the six balanced-mixture contrasts and both interval families.
+
+The allocation-by-rule interaction persists across these budgets; this is not evidence that its size is invariant. The selected Gemma8 first-choice policy remains the native grid's highest point accuracy. Health's best grid point is six Gemma plus two Llama calls with Borda (70.17\%), 1.36 points above Gemma8 first-choice, but its unadjusted interval $[-.09,2.99]$ includes zero; comparison with Gemma8 Borda is $.64\ [-.63,2.13]$. These hindsight choices do not validate an improved allocation rule. The eighth offline check reconstructs all 130 source--configuration--rule means and their pointwise intervals, plus the six adjusted interaction intervals, from stripped ballots. Separate exact-Fraction checks and reconstruction of 14,640 archived policy--rule means audit the vectorized scorer.
+
+Figure~\ref{fig:allocation_budget} displays these finite-bank curves; Table~\ref{tab:allocation_budget} supplies the balanced-mixture contrasts and multiplicity-adjusted intervals.
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/ALLOCATION_BUDGET.pdf}
+\caption{Exploratory allocation--budget sensitivity: 720 native and 256 Health questions. Points average stored-call subsets and banks, including at eight calls; they are not the primary fixed-slot estimates. Lines connect feasible allocations, not continuous policies. Shading: pointwise 95\% question-bootstrap intervals, not adjusted $C$ intervals. Call budgets are matched. Five rules are evaluated; inclusion and first-choice curves are shown.}
+\label{fig:allocation_budget}
+\end{figure}
+\begin{table}[t]
+\centering\small
+\caption{Balanced-mixture $C$ across call budgets (percentage points), from the exploratory finite-bank replay in Figure~\ref{fig:allocation_budget}. Adjusted intervals cover the six source--budget contrasts using whole-question resampling. All questions were previously inspected; no fixed-slot primary is replaced.}
+\label{tab:allocation_budget}
+\begin{tabular}{llrrr}
+\toprule
+Source & Calls & $C$ & Pointwise 95\% & Adjusted six\\
+\midrule
+MedXpertQA &2&7.59&[6.05,9.12]&[5.50,9.64]\\
+&4&8.23&[6.46,10.02]&[5.84,10.59]\\
+&8&8.76&[6.62,10.92]&[5.85,11.63]\\
+Health &2&5.76&[3.11,8.43]&[2.16,9.36]\\
+&4&5.89&[2.99,8.80]&[1.96,9.78]\\
+&8&6.10&[2.93,9.28]&[1.85,10.36]\\
+\bottomrule
+\end{tabular}
+\end{table}
+\subsection{Partner-composition sensitivity on recorded ballots}\label{app:partner_composition}
+
+This exploratory replay reuses all 288 Native288 questions and their two banks, rather than generating new responses. Each bank contains eight Gemma calls and two calls each from Llama8B, Ministral14B and Qwen14B. At a four-call budget, H4 averages all $\binom{8}{4}=70$ Gemma subsets. For each partner, M2+2 averages all $\binom{8}{2}=28$ Gemma subsets combined with that partner's two stored calls. All five rules and uniform final ties are retained; failed calls remain empty. Subsets are averaged within bank, then banks within question. This estimates a finite recorded-list policy, not performance over independently resampled model outputs.
+
+The original eight-call primary point estimate and every original absolute rule accuracy are reconstructed before the new calculation. An independently written exact-Fraction scorer checks 1,732 mixtures and edge cases against the integer implementation. Fifty thousand whole-question bootstrap draws, stratified by the three native tasks, preserve dependence across partners, rules, subsets and banks. The family consists of $C$, the inclusion allocation difference and the first-choice allocation difference for each of three partners: nine contrasts, with Bonferroni percentile tail probability $.05/18$. Intervals are nominal bootstrap intervals, not finite-sample coverage guarantees. All comparisons are exploratory; none replaces the original primary or selects a new policy.
+
+\begin{table}[h]
+\centering\small
+\caption{Four-call partner replay on Native288. Accuracy is percent; differences and adjusted intervals are percentage points. H4 inclusion/first-choice accuracies are 17.55/29.86. All intervals adjust over the nine contrasts.}
+\label{tab:partner_composition}
+\begin{tabular}{lrrrr}
+\toprule
+Partner & M inclusion & M first & $C$ [adjusted 95\%] & First M--H [adjusted 95\%]\\
+\midrule
+Llama8B &16.08&24.30&$4.08\ [.21,8.07]$&$-5.56\ [-8.99,-2.10]$\\
+Ministral14B &18.39&23.26&$7.43\ [3.09,11.87]$&$-6.59\ [-10.78,-2.36]$\\
+Qwen14B &16.40&22.84&$5.86\ [1.62,10.17]$&$-7.01\ [-11.34,-2.74]$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The inclusion allocation differences are $-1.48\ [-4.18,1.27]$, $.84\ [-1.18,2.86]$ and $-1.15\ [-3.36,1.02]$ points in the same order. Positive $C$ therefore remains distinct from a demonstrated mixed-policy gain. The three comparisons share cases and a Gemma reference, differ in partner quality, and change the original eight-call allocation. They broaden the descriptive composition check without establishing independent replication, a model-size law or quality-independent lineage causality. The separate composition replay includes the stripped ballots, task/answer keys, case vectors, all five-rule accuracies, bank means and bootstrap seed 202609160044.
+
+\section{Prediction and secondary selector comparisons}\label{app:readability_detail}
+
+The held-out predictor tests whether observed tie incidence predicts question-level rule effects. Define $c_i$ by inserting question $i$'s bank-averaged scores into Eq.~\ref{eq:C}; $C$ is the mean of $c_i$. Ridge regressions train on the earlier 128 native cases and predict $c_i$ on Native288. The two baseline features are the M-minus-H differences in distinct candidate count divided by ten and in maximum first-choice count divided by eight. The extension adds H-minus-M inclusion-tie indicators. Features average banks, are training-standardized and use unit ridge penalty. Mean squared error (MSE) uses squared-proportion units. Held-out MSE reduction (baseline minus extended) is effectively zero: $0.0000003\ [-.00290,.00296]$ (95\% interval; Appendix~\ref{app:representation}); positive reduction favors the tie feature. Both models were frozen after generation began but before fresh accuracy analysis. Explaining vote arithmetic has not yielded a useful new-case predictor.
+
+For the separate Native720 quality/lift decomposition, the paired components have bootstrap covariance $0.126$ points$^2$, and bank-level lift differences are $-1.58/-1.71$ points. These descriptive quantities do not establish quality-independent causality.
+
+Under shared uniform tie-breaking priority, Native720 $H_G$ first-choice has expected correction and reversal rates of 24.37\% and 8.64\% relative to inclusion, averaging banks. Question-level $C$ is positive/zero/negative on 305/285/130 native questions and 143/67/46 Health questions. Inclusion obscures a correct unanimous homogeneous first choice in at least one bank on 184/720 and 166/256 questions, respectively. These are retrospective output-defined counts, not prospective predictors.
+
+\subsection{Secondary selector interventions and estimands}\label{app:selector_detail}
+
+Two secondary tests examine LLM selectors: shuffle support numbers within each allocation's pool, or reverse support ranks in a common pool. These are different interventions, not replications.
+
+The \emph{support-number test} uses each allocation's own pool. Selectors read the case, rationales, inclusion counts and reciprocal-rank sums. TRUE supplies actual support; SHUFFLED reassigns support pairs, keeping candidates fixed within allocation. For example, $(6,4)$ for A and $(2,1)$ for B becomes $(2,1)$ for A and $(6,4)$ for B.
+
+For a selector or voting rule $s$, define $D_s=(F_{M,\mathrm{TRUE}}-F_{M,\mathrm{SHUFFLED}})-(F_{H,\mathrm{TRUE}}-F_{H,\mathrm{SHUFFLED}})$. It measures whether correct support helps M more than H. We then compare the LLM with voting: $J=D_{\mathrm{LLM}}-D_{\mathrm{vote}}$. A negative $J$ need not mean support harms the LLM. If correct support helps its M decisions by two points and H by six, $D_{\mathrm{LLM}}=-4$; if voting gains one point in each, $D_{\mathrm{vote}}=0$ and $J=-4$. These illustrative numbers explain the contrast, not the observed effect.
+
+On 96 MedEinst pairs, Gemini's $J=-16.54\ [-27.30,-6.47]$ and Llama's $-13.41\ [-23.35,-3.95]$ points (97.5\% intervals). Using tie-aware inclusion---RR only for ties---instead shifts both by 11.33 points: $-5.21\ [-14.58,4.17]$ and $-2.08\ [-10.94,6.77]$ (exploratory 95\% intervals). No LLM output changes: the reference, not an internal mechanism, changed.
+
+Neither negative contrast reproduces on 128 native-key questions. Here mixed pools more often contain a correct key: the availability gain is 6.25 points $[2.34,10.94]$. Neither selector chooses any of the eight keys available only in mixed pools. Availability therefore need not be converted into a correct decision \citep{chen2026routinggap}. Source and answer format change together, preventing separate attribution. These findings are supporting boundaries, not confirmation of $C$ or $\theta$.
+
+The \emph{support-rank test} compares LLM and top-rank selection from a pool shared across allocations. On 224 reused cases, that pool is the H/M union for MedEinst and all native options. Inclusion count, then RR, then a deterministic hash give unique ranks. Selectors see ranks in forward or reversed order instead of counts. Here $D$ is M-minus-H in the forward-minus-reversed accuracy change; $J_{\rm norm}=D_{\mathrm{LLM}}-D_{\mathrm{top\ rank}}$ compares selectors. This changed intervention and reference cannot confirm $J$. Only Llama on MedEinst has a positive 98.75\% interval, $8.85\ [3.13,15.10]$ percentage points; the other three include zero. The positive interaction partly reflects weaker mixed rankings, not better mixed selection.
+
+\section{Local reproduction, resources and access}\label{app:repro}
+
+\paragraph{Portable saved-output replay.}
+Extract the separate \path{representation_replay.zip}, install NumPy, and run \texttt{python3 replay.py} from the extracted directory. The entry point verifies input checksums and runs eight checks: representation/mapping sensitivity, the 720-question decision analysis, quality/lift accounting, the empirical-list reference, Health transport, the answer-contract test, development-selected joint policies, and allocation/budget curves. Inputs are scored ranks and case identifiers; outputs are reconstructed rule scores, contrasts and uncertainty checks. This requires no model access or credentials. It replays stored-output inference, not fresh hosted sampling or clinical adjudication. Question text and full provider payloads are not included. The separate manuscript-source archive builds the PDF with \texttt{latexmk -pdf main.tex}; it is not an inference runner.
+
+\paragraph{Serving and repair details.}
+\textit{Answer-key access by stage.} Development labels select policies; generators receive questions/options or patient records, not answer keys. Secondary LLM selectors receive candidate text, rationales and support without the key. Voting and rank-transfer operators form decisions without it; scoring then uses it. Retries respond to service/parsing failure, not correctness. Gold-informed membership ceilings, wrong-answer relabeling and hindsight routing use held-out keys for diagnosis, so they are not label-free deployable policies. Changing key metadata leaves all 31,232 scheduled Native720/Health generation messages unchanged. This checks prompt construction, not pretraining contamination or independent clinical validity.
+
+Of 192 Qwen generator identities, 27 came from hosted Featherless inference and 165 from a RunPod/vLLM fallback using the named official 14B weights. Gemma requests were routed among eight serving providers; the nominal endpoint does not fix their kernels or quantization. The original automated mapping used \path{google/gemma-3-12b-it} and \path{microsoft/phi-4}; the seven-cell local repair used \path{Qwen/Qwen2.5-1.5B-Instruct}, a different model from the generator. Three natural-selector formatting repairs preserved top-one identities. C3B ran on 6 September 2026 and returned Google as provider for all 576 choices. C2 cost \$0.244793. The C3/C3B interface experiments used 1,157 requests including five identical retries. The subsequent scoring and rule replays added no inference cost. These implementation qualifications do not establish clinical adjudication or equivalent remote serving implementations.
+
+The manuscript-source archive contains text, official styles, bibliography and figures/tables, not a public experimental dataset. Stored-output replay is distinct from hosted regeneration and terminology adjudication. Original traces and scoring corrections remain archived; credentials are excluded.
+
+\subsection{Replay resources and notation}\label{app:reader_card}
+
+The accompanying \path{ballot_diagnostics_v1.zip} contains 31,232 scheduled native-key lists across 976 questions and two banks, a versioned schema/data card, executable analyses, expected results and checksums. Terminal failures are empty lists. It supports new rule evaluation without regenerating model answers, but is a local anonymous submission artifact, not a public DOI deposit. Install Python and NumPy; run \texttt{python3 replay.py --data data --out outputs}, then \texttt{python3 null.py --data data --out outputs}. Compare the three JSON outputs with \path{expected/}. These commands need no network, question text, model credentials, or clinical dictionaries.
+
+\paragraph{Notation and interval guide.}
+$C$ is the inclusion-minus-first allocation interaction; $C_G$ names the same contrast against Gemma on Health. $\theta$ is mixed-minus-selected-Gemma first-choice accuracy. $\Delta q$ is the per-call accuracy difference; $\Delta L$ is the difference in aggregation lift, an accounting quantity. $R=\theta_{K5}-\theta_{K1}$ compares answer contracts. $v$, $s$ and $\beta$ denote availability, conditional selection success and pool co-failure. Original sole primaries have pointwise 95\% intervals. Rank randomization uses eight adjusted endpoints; transfer four; IRV six; task breakdown six; partner replay nine; policy comparisons 28. The secondary selector quantities are defined in Section~\ref{app:selector_detail}: $D$ is the support-intervention interaction, $J$ subtracts a voting reference, $J_{\rm norm}$ uses a different support-rank intervention and reference, and $\Delta_A$ is an availability difference. The two-selector $J$ family uses 97.5\% marginal intervals; four-cell common-pool intervals are 98.75\%. Exploratory reference changes use the interval level stated at their result.
+
+\paragraph{Cost and serving limits.}
+Dividing Native720 H's recorded eight-call resources by eight gives a uniformly sampled single-slot reference of 585.9 input and 149.1 output tokens, approximately \$0.000098 per question, and 34.48\% accuracy. This uses the same five-answer contract and includes recorded retry costs; it is not a newly run direct-answer model. Batch durations (e.g. Health 1,432 seconds) combine concurrent dispatch and retries and do not identify deployment request latency. The retained logs identify named endpoints/providers and request dates, but do not supply exact weight snapshots for all hosted calls. Missing snapshot hashes remain unknown; open-weight model names do not certify local serving equivalence.
+
+\section{Mapping correction and construct scenarios}\label{app:mapping}
+The versioned union consists of 4,510 earlier A0 pairs and 1,770 C2 pairs with 812 overlap. Version 3 repairs five relations globally: three Ebola disease synonyms, the explicit non-Ebola exclusion, and Koch's disease as a tuberculosis synonym. Version 4 repairs 35 further relationships using source-backed text rules. Strict labels are unchanged from v3. The complete change ledgers include reference/candidate strings, old and new relations, rule identifiers and source locators. Their scope includes the full C1 inventory, not just outcome-relevant C2 cases.
+
+NLM distinguishes a MeSH Concept's synonym group from its broader Descriptor: \url{https://www.nlm.nih.gov/mesh/concept_structure.html}. The correction uses ConceptUI identity, verified aliases/acronyms and target-negation checks. CDC pharyngitis guidance distinguishes streptococcal from viral disease: \url{https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/strep-throat.html}. CDC respiratory guidance distinguishes upper-airway diagnoses from bronchitis/pneumonia: \url{https://www.cdc.gov/antibiotic-use/hcp/clinical-care/adult-outpatient.html}. ACS includes both infarction and unstable angina: \url{https://medlineplus.gov/ency/article/007639.htm}. The complete source index is local; source reading is not case adjudication.
+
+The source-coded audit links all 49 released targets to the official CDC FY2026 order file, retaining the source's undeclared coding vintage as a limitation. For example, Bronchitis has unspecified J40, pulmonary/pancreatic neoplasm names omit the malignancy in C34/C25, and Pericarditis omits the acute state in I30. Other code/name mismatches include the broader asthma code for a compound acute-episode target. Codes never silently override the primary map.
+
+Temporal modifiers are acute, chronic, recurrent, recurrence and exacerbation; etiologic modifiers are viral and bacterial; severity/site modifiers are severe, mild, left, right and bilateral. Only candidate modifiers absent from the full reference can be removed, and the remainder must match the full reference through independent synonym rules. This recognizes 18 temporal, ten etiologic and two severity/site pair incidences (classes can overlap). All eight subsets are evaluated. A separate finite source-coded sensitivity concerns explicit terms for pulmonary/pancreatic malignancy, acute pericarditis and myocardial infarction. It affects eight inventory pairs; it is not an exhaustive clinical scoring system.
+
+The 14 priority source dispositions agree with the final map. All 106 original class controls are retained; 675 C2 relations remain flagged unresolved. Regression checks cover historical/current mentions, contradictory etiology, upper/lower disease, episode specificity, alternatives, negation, causal clauses and unverified parentheses. Broad v3 mapper-disagreement extrema remain preserved as stress bounds, not clinically plausible confidence bounds; the present scenarios provide narrower, source-motivated construct checks without claiming exhaustive semantic coverage.
+
+\section{Secondary study protocols and development limitations}\label{app:support_screens}
+These studies ask whether a selector uses the candidate support supplied by generators. The intervention changes the displayed support while retaining each candidate pool. The direct interaction $D$ compares the effect on mixed and homogeneous pools; $J$ subtracts that interaction for a specified voting rule (Section~\ref{app:selector_detail}). A negative $J$ therefore concerns the LLM relative to that reference, not necessarily an absolute loss in LLM accuracy. The development, MedEinst confirmation and native-key transport below use different cases and must remain separate.
+
+In the 128-question native-key support transport, Gemma's per-call first-choice accuracy is 305/1,024, versus 31/256, 33/256 and 32/256 for the other generators. These descriptive quality differences accompany the larger mixed candidate pools; they do not identify a quality-independent lineage effect.
+
+On 48 development pairs, the original positive rescue fails: Gemini's refinement interaction is $-.0625$ (95\% CI $[-.1562,.0312]$), with strict $+.0104$ $[-.0833,.1042]$. Exploratory frequency-relative $J$ is $-.1840$ $[-.2969,-.0790]$ strict and $-.2309$ $[-.3394,-.1276]$ with refinements.
+
+\subsection{Earlier native support-study cells}\label{app:earlier_native_cells}
+Table~\ref{tab:medx} preserves the full earlier 128-item support-intervention cells. It is a different cohort and estimand from the fresh 288-item representation primary. Section~\ref{sec:support_boundaries} reports the unresolved transport and available-but-unselected keys.
+
+The correct key is available on 114 H and 122 M questions, while the best deterministic rule scores 38 expected correct H selections. Availability is therefore much larger than achieved voting accuracy on this earlier cohort; these are not the Native720 pools.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Earlier MedXpertQA support study: expected correct selections out of 128 native-key questions. Fractional cells integrate uniform ties for deterministic rules; LLM rows count actual correct choices. Same support interface; no clinical semantic judge.}
+\label{tab:medx}
+\begin{tabular}{lrrrr}
+\toprule
+Rule & H TRUE & H SHUFFLED & M TRUE & M SHUFFLED\\
+\midrule
+Gemini &42&27&29&23\\
+Llama 8B &32&24&28&15\\
+Inclusion frequency &23.98&15.98&22.08&10.75\\
+First choice &37.50&14.00&21.42&11.42\\
+Frequency + RR ties &37.00&13.50&22.00&14.50\\
+Reciprocal rank &37.50&13.50&23.00&13.33\\
+Borda &38.00&13.50&22.50&15.50\\
+Oracle &114&114&122&122\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Earlier development design}\label{app:pipeline}
+The earlier 48-pair MedEinst study motivated, but does not independently confirm, the native-key studies. An outcome-blind hash-ranked selection balanced transition frequency and narrative length into 16/16/16 strata. Its 96 branches are correlated pairs, not independent cases. The separate 36-case DDXPlus boundary already had a correct concept in every pool under both policies and cannot show increased availability or independent clinical transport. Full early screening records remain in the archival version; material scoring and failure qualifications follow.
+
+\subsection{Diagnostic generation and selection}\label{app:prompts}
+Each branch uses eight Gemma calls and two each from Llama, Ministral and Qwen; the mixed allocation reuses two Gemma calls. The generator system message was:
+\begin{quote}\footnotesize\ttfamily
+You are performing a controlled diagnostic benchmark. Use only the supplied patient record and return the requested JSON.
+\end{quote}
+The user template was:
+\begin{quote}\footnotesize\ttfamily
+Generate a ranked differential diagnosis using only this patient record. Return exactly five distinct plausible diagnosis names, ordered most to least likely. For each, give one evidence-linked rationale of at most 18 words. Do not assume a supplied candidate list, another case version, or other agents.
+
+Patient record:\\
+\mbox{[PATIENT\_RECORD]}
+
+Return only one JSON object:\\ \{"candidates":[\{"diagnosis":"name", "rationale":"at most 18 words"\}, ... exactly five items]\}. Do not use markdown fences or add keys.
+\end{quote}
+Generation uses temperature 1, top-$p=.9$ and 384 output tokens. All 1,344 scheduled proposals are included. Qwen contributes 27 hosted and 165 local responses after 59 provider failures; one malformed local output receives the allowed same-prompt retry. These serving implementations are not established equivalent (Section~\ref{app:repro}).
+
+The natural selector, Gemini2.5-Flash-Lite, receives the patient record, opaque candidate IDs, diagnosis text and one representative rationale. Source, frequency and allocation labels are withheld; candidate order is hash-derived. It returns a complete ID permutation at temperature 0, top-$p=1$, maximum 300 tokens. All 192 canonical rankings are valid after 198 raw attempts; three format-only repairs preserve the original top choice. No failed identity is dropped. The earlier mapping uses Gemma3-12B and Phi4 at temperature 0, top-$p=1$, maximum 5,000 tokens. Diagnosis-only pairs receive one of four relations: synonym, parent/subtype, compound/context-dependent, or non-equivalent. Of 1,916 novel mapping cells, 1,909 come from the provider and seven are completed locally before analysis. Neither model agreement nor this repair is clinical adjudication.
+
+\subsection{Development scoring and failed tests}\label{app:statistics}\label{app:results}\label{app:interface}
+Natural-effect intervals resample whole case pairs 50,000 times (seed 20260905185214). Scoring corrections are retrospective: investigators had seen aggregate results. Rules apply globally to diagnosis pairs, and intervals condition on the chosen map rather than jointly accounting for semantic uncertainty. Frequency counts distinct proposing calls; reciprocal rank uses the best occurrence in each call. Uniform ties and ambiguous surface representatives receive expected correctness, never any-member credit. These rules see support information withheld from the natural selector.
+
+Strict availability is 51/96 versus 60/96 for H/M, with 18/96 versus 10/96 final correct choices. Crediting temporal and other whitelisted refinements changes availability to 60/96 versus 62/96 and final choices to 20/96 versus 14/96. Eight apparent mixed-only opportunities disappear because H's ``Acute Bronchitis'' receives credit against ``Bronchitis.'' Thus these outputs do not establish robust clinical-concept complementarity. No strict mixed-only opportunity converts; one of three refinement opportunities does. Section~\ref{app:mapping} retains the correction authority and unresolved-label limits.
+
+The candidate-set-size test uses 11 mixed-only branches matched to 11 both-available controls by a pre-output difficulty instrument, two sizes ($k=2,8$) and two orders: 88 valid rankings. Original and corrected-strict ten-match intervals include zero. Temporal credit leaves only two eligible matches with identical observed interactions, yielding a degenerate empirical interval $.5\ [.5,.5]$; that is not evidence of a general competition mechanism. An additional refinement-eligible branch has no saved intervention and is not imputed.
+
+The metadata screen changes only supplied support counts/ranks within each pool: hidden, true, or cyclically reassigned metadata. All 576 fresh single-ID choices use Gemini2.5-Flash-Lite at temperature 0, top-$p=1$, maximum 64 tokens and a shared per-pool seed. It fails its prespecified positive-rescue criterion: interaction at least .05, positive 97.5\% case-pair-bootstrap lower limits for both the interaction and mixed true-minus-shuffled contrast, and positive strict-score directions. Historical full rankings are not its control arm. Its preceding full-ranking attempt produced 571/576 valid outputs after 581 attempts and was not scored; the uniform single-ID repair preceded accuracy inspection, and no predecessor outputs were pooled. Negative estimates and later, distinct selector tests remain in Section~\ref{app:support_screens}. These synthetic benchmark studies do not establish patient benefit.
+
+\input{eleven_review_followthrough}

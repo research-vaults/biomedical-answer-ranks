@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE_WITH_RETAINED_FAILED_CALLS",
+  "expected": 2688,
+  "valid": 2687,
+  "retained_identities": 2688,
+  "failed_empty_call_identities": [
+    "fresh96gen::qwen2_5_14b::case_30022::trap::1"
+  ],
+  "syntax_recovered": 5,
+  "missing": [],
+  "hosted_attempts": 2356,
+  "gpu_attempts": 388,
+  "cost_usd": 0.31054605688632364,
+  "canonical_sha256": "a1f71c3f34dcbb6d0ae0e931a2265b5643b10d8e93118cbd54a59bef54715758",
+  "finalizer_sha256": "c0237018a790d5486517729d70268ce2df0a0a37312440b53f8d5325aef2549e"
+}

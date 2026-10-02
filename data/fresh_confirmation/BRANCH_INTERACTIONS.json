@@ -1,0 +1,770 @@
+{
+  "refinement": {
+    "gemini_joint": {
+      "J_control_minus_trap": {
+        "estimate": -0.2838541666666667,
+        "ci95": [
+          -0.46527777777777773,
+          -0.1032986111111111
+        ],
+        "n_pairs": 96
+      },
+      "J_by_branch": {
+        "control": {
+          "estimate": -0.3072916666666667,
+          "ci95": [
+            -0.45746527777777785,
+            -0.16493055555555555
+          ],
+          "n_pairs": 96
+        },
+        "trap": {
+          "estimate": -0.02343750000000001,
+          "ci95": [
+            -0.13196614583333321,
+            0.08159722222222221
+          ],
+          "n_pairs": 96
+        }
+      },
+      "TRUE_absolute": {
+        "control|uniform_mixed|llm": {
+          "estimate": 0.1875,
+          "ci95": [
+            0.11458333333333333,
+            0.2708333333333333
+          ],
+          "n_pairs": 96
+        },
+        "control|uniform_mixed|frequency": {
+          "estimate": 0.21180555555555555,
+          "ci95": [
+            0.13715277777777776,
+            0.2916666666666667
+          ],
+          "n_pairs": 96
+        },
+        "control|uniform_mixed|oracle": {
+          "estimate": 0.6770833333333334,
+          "ci95": [
+            0.5833333333333334,
+            0.7708333333333334
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|llm": {
+          "estimate": 0.34375,
+          "ci95": [
+            0.25,
+            0.4375
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|frequency": {
+          "estimate": 0.165625,
+          "ci95": [
+            0.1189236111111111,
+            0.2154513888888889
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|oracle": {
+          "estimate": 0.6875,
+          "ci95": [
+            0.59375,
+            0.78125
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|llm": {
+          "estimate": 0.11458333333333333,
+          "ci95": [
+            0.052083333333333336,
+            0.17708333333333334
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|frequency": {
+          "estimate": 0.09722222222222221,
+          "ci95": [
+            0.046875,
+            0.15277777777777776
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|oracle": {
+          "estimate": 0.625,
+          "ci95": [
+            0.53125,
+            0.71875
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|llm": {
+          "estimate": 0.16666666666666666,
+          "ci95": [
+            0.09375,
+            0.23958333333333334
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|frequency": {
+          "estimate": 0.10399305555555556,
+          "ci95": [
+            0.0671875,
+            0.14444444444444446
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|oracle": {
+          "estimate": 0.6041666666666666,
+          "ci95": [
+            0.5104166666666666,
+            0.6979166666666666
+          ],
+          "n_pairs": 96
+        }
+      },
+      "scope": "Prespecified secondary regime contrast;not an additional primary or proof of a cognitive mechanism"
+    },
+    "llama8_joint": {
+      "J_control_minus_trap": {
+        "estimate": -0.20052083333333334,
+        "ci95": [
+          -0.35503472222222227,
+          -0.048611111111111105
+        ],
+        "n_pairs": 96
+      },
+      "J_by_branch": {
+        "control": {
+          "estimate": -0.23437500000000003,
+          "ci95": [
+            -0.3654513888888889,
+            -0.109375
+          ],
+          "n_pairs": 96
+        },
+        "trap": {
+          "estimate": -0.03385416666666668,
+          "ci95": [
+            -0.1310763888888889,
+            0.06336805555555554
+          ],
+          "n_pairs": 96
+        }
+      },
+      "TRUE_absolute": {
+        "control|uniform_mixed|llm": {
+          "estimate": 0.20833333333333334,
+          "ci95": [
+            0.13541666666666666,
+            0.2916666666666667
+          ],
+          "n_pairs": 96
+        },
+        "control|uniform_mixed|frequency": {
+          "estimate": 0.21180555555555555,
+          "ci95": [
+            0.13715277777777776,
+            0.2916666666666667
+          ],
+          "n_pairs": 96
+        },
+        "control|uniform_mixed|oracle": {
+          "estimate": 0.6770833333333334,
+          "ci95": [
+            0.5833333333333334,
+            0.7708333333333334
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|llm": {
+          "estimate": 0.3333333333333333,
+          "ci95": [
+            0.23958333333333334,
+            0.4270833333333333
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|frequency": {
+          "estimate": 0.165625,
+          "ci95": [
+            0.1189236111111111,
+            0.2154513888888889
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|oracle": {
+          "estimate": 0.6875,
+          "ci95": [
+            0.59375,
+            0.78125
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|llm": {
+          "estimate": 0.10416666666666667,
+          "ci95": [
+            0.052083333333333336,
+            0.16666666666666666
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|frequency": {
+          "estimate": 0.09722222222222221,
+          "ci95": [
+            0.046875,
+            0.15277777777777776
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|oracle": {
+          "estimate": 0.625,
+          "ci95": [
+            0.53125,
+            0.71875
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|llm": {
+          "estimate": 0.15625,
+          "ci95": [
+            0.08333333333333333,
+            0.22916666666666666
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|frequency": {
+          "estimate": 0.10399305555555556,
+          "ci95": [
+            0.0671875,
+            0.14444444444444446
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|oracle": {
+          "estimate": 0.6041666666666666,
+          "ci95": [
+            0.5104166666666666,
+            0.6979166666666666
+          ],
+          "n_pairs": 96
+        }
+      },
+      "scope": "Prespecified secondary regime contrast;not an additional primary or proof of a cognitive mechanism"
+    }
+  },
+  "strict": {
+    "gemini_joint": {
+      "J_control_minus_trap": {
+        "estimate": -0.2821180555555556,
+        "ci95": [
+          -0.4444444444444444,
+          -0.12760416666666666
+        ],
+        "n_pairs": 96
+      },
+      "J_by_branch": {
+        "control": {
+          "estimate": -0.3072916666666667,
+          "ci95": [
+            -0.4383680555555556,
+            -0.1875
+          ],
+          "n_pairs": 96
+        },
+        "trap": {
+          "estimate": -0.025173611111111115,
+          "ci95": [
+            -0.11718750000000001,
+            0.06076388888888889
+          ],
+          "n_pairs": 96
+        }
+      },
+      "TRUE_absolute": {
+        "control|uniform_mixed|llm": {
+          "estimate": 0.14583333333333334,
+          "ci95": [
+            0.08333333333333333,
+            0.21875
+          ],
+          "n_pairs": 96
+        },
+        "control|uniform_mixed|frequency": {
+          "estimate": 0.18055555555555555,
+          "ci95": [
+            0.109375,
+            0.2586805555555555
+          ],
+          "n_pairs": 96
+        },
+        "control|uniform_mixed|oracle": {
+          "estimate": 0.5833333333333334,
+          "ci95": [
+            0.4791666666666667,
+            0.6770833333333334
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|llm": {
+          "estimate": 0.3020833333333333,
+          "ci95": [
+            0.20833333333333334,
+            0.3958333333333333
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|frequency": {
+          "estimate": 0.1439236111111111,
+          "ci95": [
+            0.0984375,
+            0.19270833333333334
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|oracle": {
+          "estimate": 0.6145833333333334,
+          "ci95": [
+            0.5208333333333334,
+            0.7083333333333334
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|llm": {
+          "estimate": 0.09375,
+          "ci95": [
+            0.041666666666666664,
+            0.15625
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|frequency": {
+          "estimate": 0.08159722222222222,
+          "ci95": [
+            0.036458333333333336,
+            0.13368055555555555
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|oracle": {
+          "estimate": 0.5833333333333334,
+          "ci95": [
+            0.4791666666666667,
+            0.6770833333333334
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|llm": {
+          "estimate": 0.125,
+          "ci95": [
+            0.0625,
+            0.19791666666666666
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|frequency": {
+          "estimate": 0.08802083333333333,
+          "ci95": [
+            0.053298611111111116,
+            0.1265625
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|oracle": {
+          "estimate": 0.5625,
+          "ci95": [
+            0.4583333333333333,
+            0.65625
+          ],
+          "n_pairs": 96
+        }
+      },
+      "scope": "Prespecified secondary regime contrast;not an additional primary or proof of a cognitive mechanism"
+    },
+    "llama8_joint": {
+      "J_control_minus_trap": {
+        "estimate": -0.20920138888888892,
+        "ci95": [
+          -0.3619791666666667,
+          -0.06076388888888889
+        ],
+        "n_pairs": 96
+      },
+      "J_by_branch": {
+        "control": {
+          "estimate": -0.24479166666666666,
+          "ci95": [
+            -0.3654513888888889,
+            -0.1328125
+          ],
+          "n_pairs": 96
+        },
+        "trap": {
+          "estimate": -0.03559027777777778,
+          "ci95": [
+            -0.13194444444444445,
+            0.05902777777777776
+          ],
+          "n_pairs": 96
+        }
+      },
+      "TRUE_absolute": {
+        "control|uniform_mixed|llm": {
+          "estimate": 0.15625,
+          "ci95": [
+            0.08333333333333333,
+            0.22916666666666666
+          ],
+          "n_pairs": 96
+        },
+        "control|uniform_mixed|frequency": {
+          "estimate": 0.18055555555555555,
+          "ci95": [
+            0.109375,
+            0.2586805555555555
+          ],
+          "n_pairs": 96
+        },
+        "control|uniform_mixed|oracle": {
+          "estimate": 0.5833333333333334,
+          "ci95": [
+            0.4791666666666667,
+            0.6770833333333334
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|llm": {
+          "estimate": 0.2916666666666667,
+          "ci95": [
+            0.20833333333333334,
+            0.3854166666666667
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|frequency": {
+          "estimate": 0.1439236111111111,
+          "ci95": [
+            0.0984375,
+            0.19270833333333334
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|oracle": {
+          "estimate": 0.6145833333333334,
+          "ci95": [
+            0.5208333333333334,
+            0.7083333333333334
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|llm": {
+          "estimate": 0.09375,
+          "ci95": [
+            0.041666666666666664,
+            0.15625
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|frequency": {
+          "estimate": 0.08159722222222222,
+          "ci95": [
+            0.036458333333333336,
+            0.13368055555555555
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|oracle": {
+          "estimate": 0.5833333333333334,
+          "ci95": [
+            0.4791666666666667,
+            0.6770833333333334
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|llm": {
+          "estimate": 0.125,
+          "ci95": [
+            0.0625,
+            0.19791666666666666
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|frequency": {
+          "estimate": 0.08802083333333333,
+          "ci95": [
+            0.053298611111111116,
+            0.1265625
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|oracle": {
+          "estimate": 0.5625,
+          "ci95": [
+            0.4583333333333333,
+            0.65625
+          ],
+          "n_pairs": 96
+        }
+      },
+      "scope": "Prespecified secondary regime contrast;not an additional primary or proof of a cognitive mechanism"
+    }
+  },
+  "exact_reference": {
+    "gemini_joint": {
+      "J_control_minus_trap": {
+        "estimate": -0.29253472222222227,
+        "ci95": [
+          -0.44878472222222227,
+          -0.14670138888888887
+        ],
+        "n_pairs": 96
+      },
+      "J_by_branch": {
+        "control": {
+          "estimate": -0.296875,
+          "ci95": [
+            -0.4270833333333333,
+            -0.17708333333333334
+          ],
+          "n_pairs": 96
+        },
+        "trap": {
+          "estimate": -0.004340277777777781,
+          "ci95": [
+            -0.08767361111111112,
+            0.0798611111111111
+          ],
+          "n_pairs": 96
+        }
+      },
+      "TRUE_absolute": {
+        "control|uniform_mixed|llm": {
+          "estimate": 0.125,
+          "ci95": [
+            0.0625,
+            0.19791666666666666
+          ],
+          "n_pairs": 96
+        },
+        "control|uniform_mixed|frequency": {
+          "estimate": 0.18055555555555555,
+          "ci95": [
+            0.109375,
+            0.2586805555555555
+          ],
+          "n_pairs": 96
+        },
+        "control|uniform_mixed|oracle": {
+          "estimate": 0.5833333333333334,
+          "ci95": [
+            0.4791666666666667,
+            0.6770833333333334
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|llm": {
+          "estimate": 0.3020833333333333,
+          "ci95": [
+            0.20833333333333334,
+            0.3958333333333333
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|frequency": {
+          "estimate": 0.1439236111111111,
+          "ci95": [
+            0.0984375,
+            0.19270833333333334
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|oracle": {
+          "estimate": 0.6145833333333334,
+          "ci95": [
+            0.5208333333333334,
+            0.7083333333333334
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|llm": {
+          "estimate": 0.09375,
+          "ci95": [
+            0.041666666666666664,
+            0.15625
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|frequency": {
+          "estimate": 0.08159722222222222,
+          "ci95": [
+            0.036458333333333336,
+            0.13368055555555555
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|oracle": {
+          "estimate": 0.5729166666666666,
+          "ci95": [
+            0.46875,
+            0.6666666666666666
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|llm": {
+          "estimate": 0.125,
+          "ci95": [
+            0.0625,
+            0.19791666666666666
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|frequency": {
+          "estimate": 0.08802083333333333,
+          "ci95": [
+            0.053298611111111116,
+            0.1265625
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|oracle": {
+          "estimate": 0.5625,
+          "ci95": [
+            0.4583333333333333,
+            0.65625
+          ],
+          "n_pairs": 96
+        }
+      },
+      "scope": "Prespecified secondary regime contrast;not an additional primary or proof of a cognitive mechanism"
+    },
+    "llama8_joint": {
+      "J_control_minus_trap": {
+        "estimate": -0.20920138888888892,
+        "ci95": [
+          -0.3619791666666667,
+          -0.06076388888888889
+        ],
+        "n_pairs": 96
+      },
+      "J_by_branch": {
+        "control": {
+          "estimate": -0.24479166666666666,
+          "ci95": [
+            -0.3654513888888889,
+            -0.1328125
+          ],
+          "n_pairs": 96
+        },
+        "trap": {
+          "estimate": -0.03559027777777778,
+          "ci95": [
+            -0.13194444444444445,
+            0.05902777777777776
+          ],
+          "n_pairs": 96
+        }
+      },
+      "TRUE_absolute": {
+        "control|uniform_mixed|llm": {
+          "estimate": 0.15625,
+          "ci95": [
+            0.08333333333333333,
+            0.22916666666666666
+          ],
+          "n_pairs": 96
+        },
+        "control|uniform_mixed|frequency": {
+          "estimate": 0.18055555555555555,
+          "ci95": [
+            0.109375,
+            0.2586805555555555
+          ],
+          "n_pairs": 96
+        },
+        "control|uniform_mixed|oracle": {
+          "estimate": 0.5833333333333334,
+          "ci95": [
+            0.4791666666666667,
+            0.6770833333333334
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|llm": {
+          "estimate": 0.2916666666666667,
+          "ci95": [
+            0.20833333333333334,
+            0.3854166666666667
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|frequency": {
+          "estimate": 0.1439236111111111,
+          "ci95": [
+            0.0984375,
+            0.19270833333333334
+          ],
+          "n_pairs": 96
+        },
+        "control|homogeneous_gemma|oracle": {
+          "estimate": 0.6145833333333334,
+          "ci95": [
+            0.5208333333333334,
+            0.7083333333333334
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|llm": {
+          "estimate": 0.09375,
+          "ci95": [
+            0.041666666666666664,
+            0.15625
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|frequency": {
+          "estimate": 0.08159722222222222,
+          "ci95": [
+            0.036458333333333336,
+            0.13368055555555555
+          ],
+          "n_pairs": 96
+        },
+        "trap|uniform_mixed|oracle": {
+          "estimate": 0.5729166666666666,
+          "ci95": [
+            0.46875,
+            0.6666666666666666
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|llm": {
+          "estimate": 0.125,
+          "ci95": [
+            0.0625,
+            0.19791666666666666
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|frequency": {
+          "estimate": 0.08802083333333333,
+          "ci95": [
+            0.053298611111111116,
+            0.1265625
+          ],
+          "n_pairs": 96
+        },
+        "trap|homogeneous_gemma|oracle": {
+          "estimate": 0.5625,
+          "ci95": [
+            0.4583333333333333,
+            0.65625
+          ],
+          "n_pairs": 96
+        }
+      },
+      "scope": "Prespecified secondary regime contrast;not an additional primary or proof of a cognitive mechanism"
+    }
+  }
+}

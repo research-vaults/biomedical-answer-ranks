@@ -1,0 +1,26 @@
+{
+  "native-720": {
+    "attempts": 23449,
+    "successful_attempts": 22929,
+    "bytes": 6343267,
+    "sha256": "cb8b54dd06a12034676f354987cc6ddedb478cba2fb27b2f1bf3d307aad65ec9"
+  },
+  "representation-hosted": {
+    "attempts": 11899,
+    "successful_attempts": 11385,
+    "bytes": 4302741,
+    "sha256": "0559623264915d2dc3f10428b31ca64a19bb0a03f6c5a0c32ffb8e8ae34a36e7"
+  },
+  "representation-local": {
+    "attempts": 1946,
+    "successful_attempts": 1907,
+    "bytes": 482650,
+    "sha256": "cd22c4a14e1b3e3b5afeb23e70b3a482146112a865e31332420480a817b5cd58"
+  },
+  "health-256": {
+    "attempts": 8285,
+    "successful_attempts": 8137,
+    "bytes": 2160272,
+    "sha256": "60fb08a08a1919cd926703d5fc16ec6d83edc89cc2b953f9897c35ac9ba47c84"
+  }
+}

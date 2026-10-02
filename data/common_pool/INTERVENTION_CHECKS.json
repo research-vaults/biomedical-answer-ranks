@@ -1,0 +1,4162 @@
+[
+  {
+    "unit": "medeinst::case_100465::control",
+    "n_candidates": 33,
+    "all_prompt_utf8_bytes": 4878,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 16.484848484848484,
+    "tie_counts": {
+      "H": 26,
+      "M": 20
+    }
+  },
+  {
+    "unit": "medeinst::case_100465::trap",
+    "n_candidates": 33,
+    "all_prompt_utf8_bytes": 4930,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 16.484848484848484,
+    "tie_counts": {
+      "H": 22,
+      "M": 23
+    }
+  },
+  {
+    "unit": "medeinst::case_101629::control",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3384,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 14,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_101629::trap",
+    "n_candidates": 21,
+    "all_prompt_utf8_bytes": 3277,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 10.476190476190476,
+    "tie_counts": {
+      "H": 12,
+      "M": 6
+    }
+  },
+  {
+    "unit": "medeinst::case_103369::control",
+    "n_candidates": 44,
+    "all_prompt_utf8_bytes": 4983,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 22.0,
+    "tie_counts": {
+      "H": 30,
+      "M": 31
+    }
+  },
+  {
+    "unit": "medeinst::case_103369::trap",
+    "n_candidates": 49,
+    "all_prompt_utf8_bytes": 5431,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 24.489795918367346,
+    "tie_counts": {
+      "H": 36,
+      "M": 41
+    }
+  },
+  {
+    "unit": "medeinst::case_104202::control",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 3234,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 16,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_104202::trap",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3387,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 15,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_10562::control",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3989,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 15,
+      "M": 12
+    }
+  },
+  {
+    "unit": "medeinst::case_10562::trap",
+    "n_candidates": 23,
+    "all_prompt_utf8_bytes": 3811,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.478260869565217,
+    "tie_counts": {
+      "H": 14,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_105868::control",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3317,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 17,
+      "M": 12
+    }
+  },
+  {
+    "unit": "medeinst::case_105868::trap",
+    "n_candidates": 21,
+    "all_prompt_utf8_bytes": 2890,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 10.476190476190476,
+    "tie_counts": {
+      "H": 14,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_10622::control",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3281,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 15,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_10622::trap",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 3182,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 14,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_106645::control",
+    "n_candidates": 27,
+    "all_prompt_utf8_bytes": 4105,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.481481481481481,
+    "tie_counts": {
+      "H": 18,
+      "M": 15
+    }
+  },
+  {
+    "unit": "medeinst::case_106645::trap",
+    "n_candidates": 28,
+    "all_prompt_utf8_bytes": 4378,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.0,
+    "tie_counts": {
+      "H": 18,
+      "M": 16
+    }
+  },
+  {
+    "unit": "medeinst::case_106695::control",
+    "n_candidates": 36,
+    "all_prompt_utf8_bytes": 4567,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 18.0,
+    "tie_counts": {
+      "H": 27,
+      "M": 26
+    }
+  },
+  {
+    "unit": "medeinst::case_106695::trap",
+    "n_candidates": 34,
+    "all_prompt_utf8_bytes": 4574,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 17.0,
+    "tie_counts": {
+      "H": 23,
+      "M": 22
+    }
+  },
+  {
+    "unit": "medeinst::case_107410::control",
+    "n_candidates": 27,
+    "all_prompt_utf8_bytes": 3521,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.481481481481481,
+    "tie_counts": {
+      "H": 19,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_107410::trap",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 3167,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_108084::control",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3033,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 13,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_108084::trap",
+    "n_candidates": 27,
+    "all_prompt_utf8_bytes": 3554,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.481481481481481,
+    "tie_counts": {
+      "H": 18,
+      "M": 13
+    }
+  },
+  {
+    "unit": "medeinst::case_112147::control",
+    "n_candidates": 23,
+    "all_prompt_utf8_bytes": 3275,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.478260869565217,
+    "tie_counts": {
+      "H": 13,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_112147::trap",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3499,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 13
+    }
+  },
+  {
+    "unit": "medeinst::case_11304::control",
+    "n_candidates": 29,
+    "all_prompt_utf8_bytes": 3876,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.482758620689655,
+    "tie_counts": {
+      "H": 17,
+      "M": 16
+    }
+  },
+  {
+    "unit": "medeinst::case_11304::trap",
+    "n_candidates": 32,
+    "all_prompt_utf8_bytes": 4173,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 16.0,
+    "tie_counts": {
+      "H": 22,
+      "M": 20
+    }
+  },
+  {
+    "unit": "medeinst::case_113660::control",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 3298,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 16,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_113660::trap",
+    "n_candidates": 30,
+    "all_prompt_utf8_bytes": 3615,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.0,
+    "tie_counts": {
+      "H": 22,
+      "M": 16
+    }
+  },
+  {
+    "unit": "medeinst::case_11463::control",
+    "n_candidates": 27,
+    "all_prompt_utf8_bytes": 3478,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.481481481481481,
+    "tie_counts": {
+      "H": 17,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_11463::trap",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3276,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 15,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_115060::control",
+    "n_candidates": 27,
+    "all_prompt_utf8_bytes": 3860,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.481481481481481,
+    "tie_counts": {
+      "H": 17,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_115060::trap",
+    "n_candidates": 36,
+    "all_prompt_utf8_bytes": 4606,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 18.0,
+    "tie_counts": {
+      "H": 25,
+      "M": 24
+    }
+  },
+  {
+    "unit": "medeinst::case_116414::control",
+    "n_candidates": 28,
+    "all_prompt_utf8_bytes": 3708,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_116414::trap",
+    "n_candidates": 19,
+    "all_prompt_utf8_bytes": 2906,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 9.473684210526315,
+    "tie_counts": {
+      "H": 12,
+      "M": 5
+    }
+  },
+  {
+    "unit": "medeinst::case_116633::control",
+    "n_candidates": 21,
+    "all_prompt_utf8_bytes": 2950,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 10.476190476190476,
+    "tie_counts": {
+      "H": 12,
+      "M": 5
+    }
+  },
+  {
+    "unit": "medeinst::case_116633::trap",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 3232,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 15,
+      "M": 12
+    }
+  },
+  {
+    "unit": "medeinst::case_117562::control",
+    "n_candidates": 30,
+    "all_prompt_utf8_bytes": 4769,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.0,
+    "tie_counts": {
+      "H": 23,
+      "M": 20
+    }
+  },
+  {
+    "unit": "medeinst::case_117562::trap",
+    "n_candidates": 30,
+    "all_prompt_utf8_bytes": 4830,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.0,
+    "tie_counts": {
+      "H": 20,
+      "M": 19
+    }
+  },
+  {
+    "unit": "medeinst::case_118887::control",
+    "n_candidates": 35,
+    "all_prompt_utf8_bytes": 4265,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 17.485714285714284,
+    "tie_counts": {
+      "H": 21,
+      "M": 21
+    }
+  },
+  {
+    "unit": "medeinst::case_118887::trap",
+    "n_candidates": 37,
+    "all_prompt_utf8_bytes": 4364,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 18.486486486486488,
+    "tie_counts": {
+      "H": 23,
+      "M": 25
+    }
+  },
+  {
+    "unit": "medeinst::case_11971::control",
+    "n_candidates": 31,
+    "all_prompt_utf8_bytes": 3907,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.483870967741936,
+    "tie_counts": {
+      "H": 23,
+      "M": 20
+    }
+  },
+  {
+    "unit": "medeinst::case_11971::trap",
+    "n_candidates": 29,
+    "all_prompt_utf8_bytes": 3805,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.482758620689655,
+    "tie_counts": {
+      "H": 19,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_121478::control",
+    "n_candidates": 33,
+    "all_prompt_utf8_bytes": 3756,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 16.484848484848484,
+    "tie_counts": {
+      "H": 22,
+      "M": 22
+    }
+  },
+  {
+    "unit": "medeinst::case_121478::trap",
+    "n_candidates": 28,
+    "all_prompt_utf8_bytes": 3606,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.0,
+    "tie_counts": {
+      "H": 17,
+      "M": 15
+    }
+  },
+  {
+    "unit": "medeinst::case_121593::control",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3446,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 12
+    }
+  },
+  {
+    "unit": "medeinst::case_121593::trap",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 3125,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 13,
+      "M": 7
+    }
+  },
+  {
+    "unit": "medeinst::case_121914::control",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 3346,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 17,
+      "M": 12
+    }
+  },
+  {
+    "unit": "medeinst::case_121914::trap",
+    "n_candidates": 31,
+    "all_prompt_utf8_bytes": 3995,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.483870967741936,
+    "tie_counts": {
+      "H": 21,
+      "M": 19
+    }
+  },
+  {
+    "unit": "medeinst::case_124077::control",
+    "n_candidates": 32,
+    "all_prompt_utf8_bytes": 3750,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 16.0,
+    "tie_counts": {
+      "H": 21,
+      "M": 18
+    }
+  },
+  {
+    "unit": "medeinst::case_124077::trap",
+    "n_candidates": 19,
+    "all_prompt_utf8_bytes": 2851,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 9.473684210526315,
+    "tie_counts": {
+      "H": 10,
+      "M": 4
+    }
+  },
+  {
+    "unit": "medeinst::case_124275::control",
+    "n_candidates": 19,
+    "all_prompt_utf8_bytes": 2667,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 9.473684210526315,
+    "tie_counts": {
+      "H": 8,
+      "M": 4
+    }
+  },
+  {
+    "unit": "medeinst::case_124275::trap",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 2832,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 12,
+      "M": 8
+    }
+  },
+  {
+    "unit": "medeinst::case_127538::control",
+    "n_candidates": 15,
+    "all_prompt_utf8_bytes": 2221,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 7.466666666666667,
+    "tie_counts": {
+      "H": 9,
+      "M": 3
+    }
+  },
+  {
+    "unit": "medeinst::case_127538::trap",
+    "n_candidates": 19,
+    "all_prompt_utf8_bytes": 2626,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 9.473684210526315,
+    "tie_counts": {
+      "H": 10,
+      "M": 6
+    }
+  },
+  {
+    "unit": "medeinst::case_12897::control",
+    "n_candidates": 38,
+    "all_prompt_utf8_bytes": 4196,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 19.0,
+    "tie_counts": {
+      "H": 26,
+      "M": 25
+    }
+  },
+  {
+    "unit": "medeinst::case_12897::trap",
+    "n_candidates": 28,
+    "all_prompt_utf8_bytes": 3575,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.0,
+    "tie_counts": {
+      "H": 18,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_12967::control",
+    "n_candidates": 28,
+    "all_prompt_utf8_bytes": 3695,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.0,
+    "tie_counts": {
+      "H": 17,
+      "M": 16
+    }
+  },
+  {
+    "unit": "medeinst::case_12967::trap",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3378,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 13,
+      "M": 12
+    }
+  },
+  {
+    "unit": "medeinst::case_129971::control",
+    "n_candidates": 35,
+    "all_prompt_utf8_bytes": 4163,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 17.485714285714284,
+    "tie_counts": {
+      "H": 23,
+      "M": 25
+    }
+  },
+  {
+    "unit": "medeinst::case_129971::trap",
+    "n_candidates": 36,
+    "all_prompt_utf8_bytes": 4209,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 18.0,
+    "tie_counts": {
+      "H": 24,
+      "M": 25
+    }
+  },
+  {
+    "unit": "medeinst::case_1307::control",
+    "n_candidates": 21,
+    "all_prompt_utf8_bytes": 3150,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 10.476190476190476,
+    "tie_counts": {
+      "H": 12,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_1307::trap",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 3294,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 13,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_131891::control",
+    "n_candidates": 38,
+    "all_prompt_utf8_bytes": 5275,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 19.0,
+    "tie_counts": {
+      "H": 27,
+      "M": 26
+    }
+  },
+  {
+    "unit": "medeinst::case_131891::trap",
+    "n_candidates": 34,
+    "all_prompt_utf8_bytes": 5182,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 17.0,
+    "tie_counts": {
+      "H": 23,
+      "M": 21
+    }
+  },
+  {
+    "unit": "medeinst::case_131899::control",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3200,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_131899::trap",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3410,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_132229::control",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3611,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 14,
+      "M": 13
+    }
+  },
+  {
+    "unit": "medeinst::case_132229::trap",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 3188,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 11,
+      "M": 8
+    }
+  },
+  {
+    "unit": "medeinst::case_132662::control",
+    "n_candidates": 28,
+    "all_prompt_utf8_bytes": 4151,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.0,
+    "tie_counts": {
+      "H": 19,
+      "M": 13
+    }
+  },
+  {
+    "unit": "medeinst::case_132662::trap",
+    "n_candidates": 30,
+    "all_prompt_utf8_bytes": 4305,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.0,
+    "tie_counts": {
+      "H": 22,
+      "M": 18
+    }
+  },
+  {
+    "unit": "medeinst::case_132859::control",
+    "n_candidates": 29,
+    "all_prompt_utf8_bytes": 3552,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.482758620689655,
+    "tie_counts": {
+      "H": 18,
+      "M": 15
+    }
+  },
+  {
+    "unit": "medeinst::case_132859::trap",
+    "n_candidates": 30,
+    "all_prompt_utf8_bytes": 3637,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.0,
+    "tie_counts": {
+      "H": 19,
+      "M": 16
+    }
+  },
+  {
+    "unit": "medeinst::case_14617::control",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3090,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 14,
+      "M": 12
+    }
+  },
+  {
+    "unit": "medeinst::case_14617::trap",
+    "n_candidates": 28,
+    "all_prompt_utf8_bytes": 3463,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.0,
+    "tie_counts": {
+      "H": 18,
+      "M": 15
+    }
+  },
+  {
+    "unit": "medeinst::case_14846::control",
+    "n_candidates": 35,
+    "all_prompt_utf8_bytes": 4024,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 17.485714285714284,
+    "tie_counts": {
+      "H": 22,
+      "M": 21
+    }
+  },
+  {
+    "unit": "medeinst::case_14846::trap",
+    "n_candidates": 31,
+    "all_prompt_utf8_bytes": 3841,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.483870967741936,
+    "tie_counts": {
+      "H": 21,
+      "M": 18
+    }
+  },
+  {
+    "unit": "medeinst::case_15765::control",
+    "n_candidates": 38,
+    "all_prompt_utf8_bytes": 4688,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 19.0,
+    "tie_counts": {
+      "H": 29,
+      "M": 26
+    }
+  },
+  {
+    "unit": "medeinst::case_15765::trap",
+    "n_candidates": 35,
+    "all_prompt_utf8_bytes": 4368,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 17.485714285714284,
+    "tie_counts": {
+      "H": 25,
+      "M": 24
+    }
+  },
+  {
+    "unit": "medeinst::case_16822::control",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 3283,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 16,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_16822::trap",
+    "n_candidates": 21,
+    "all_prompt_utf8_bytes": 2927,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 10.476190476190476,
+    "tie_counts": {
+      "H": 12,
+      "M": 6
+    }
+  },
+  {
+    "unit": "medeinst::case_17052::control",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 3696,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 13,
+      "M": 7
+    }
+  },
+  {
+    "unit": "medeinst::case_17052::trap",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 3698,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 11,
+      "M": 8
+    }
+  },
+  {
+    "unit": "medeinst::case_17256::control",
+    "n_candidates": 39,
+    "all_prompt_utf8_bytes": 4438,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 19.487179487179485,
+    "tie_counts": {
+      "H": 26,
+      "M": 26
+    }
+  },
+  {
+    "unit": "medeinst::case_17256::trap",
+    "n_candidates": 35,
+    "all_prompt_utf8_bytes": 4281,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 17.485714285714284,
+    "tie_counts": {
+      "H": 23,
+      "M": 22
+    }
+  },
+  {
+    "unit": "medeinst::case_18073::control",
+    "n_candidates": 36,
+    "all_prompt_utf8_bytes": 4232,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 18.0,
+    "tie_counts": {
+      "H": 26,
+      "M": 25
+    }
+  },
+  {
+    "unit": "medeinst::case_18073::trap",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3179,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 17,
+      "M": 12
+    }
+  },
+  {
+    "unit": "medeinst::case_190095::control",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3576,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 13
+    }
+  },
+  {
+    "unit": "medeinst::case_190095::trap",
+    "n_candidates": 33,
+    "all_prompt_utf8_bytes": 4260,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 16.484848484848484,
+    "tie_counts": {
+      "H": 24,
+      "M": 20
+    }
+  },
+  {
+    "unit": "medeinst::case_190278::control",
+    "n_candidates": 19,
+    "all_prompt_utf8_bytes": 2930,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 9.473684210526315,
+    "tie_counts": {
+      "H": 14,
+      "M": 7
+    }
+  },
+  {
+    "unit": "medeinst::case_190278::trap",
+    "n_candidates": 23,
+    "all_prompt_utf8_bytes": 3355,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.478260869565217,
+    "tie_counts": {
+      "H": 15,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_19309::control",
+    "n_candidates": 17,
+    "all_prompt_utf8_bytes": 2713,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 8.470588235294118,
+    "tie_counts": {
+      "H": 8,
+      "M": 4
+    }
+  },
+  {
+    "unit": "medeinst::case_19309::trap",
+    "n_candidates": 14,
+    "all_prompt_utf8_bytes": 2495,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 7.0,
+    "tie_counts": {
+      "H": 5,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medeinst::case_193676::control",
+    "n_candidates": 27,
+    "all_prompt_utf8_bytes": 3724,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.481481481481481,
+    "tie_counts": {
+      "H": 17,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_193676::trap",
+    "n_candidates": 34,
+    "all_prompt_utf8_bytes": 4288,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 17.0,
+    "tie_counts": {
+      "H": 22,
+      "M": 21
+    }
+  },
+  {
+    "unit": "medeinst::case_199921::control",
+    "n_candidates": 20,
+    "all_prompt_utf8_bytes": 3053,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 10.0,
+    "tie_counts": {
+      "H": 12,
+      "M": 7
+    }
+  },
+  {
+    "unit": "medeinst::case_199921::trap",
+    "n_candidates": 23,
+    "all_prompt_utf8_bytes": 3494,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.478260869565217,
+    "tie_counts": {
+      "H": 15,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_22562::control",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 2993,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 14,
+      "M": 8
+    }
+  },
+  {
+    "unit": "medeinst::case_22562::trap",
+    "n_candidates": 20,
+    "all_prompt_utf8_bytes": 2899,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 10.0,
+    "tie_counts": {
+      "H": 13,
+      "M": 6
+    }
+  },
+  {
+    "unit": "medeinst::case_24439::control",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3174,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 14,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_24439::trap",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 3294,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 17,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_25654::control",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3397,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_25654::trap",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 3083,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 12,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_26604::control",
+    "n_candidates": 27,
+    "all_prompt_utf8_bytes": 3642,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.481481481481481,
+    "tie_counts": {
+      "H": 18,
+      "M": 13
+    }
+  },
+  {
+    "unit": "medeinst::case_26604::trap",
+    "n_candidates": 19,
+    "all_prompt_utf8_bytes": 2988,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 9.473684210526315,
+    "tie_counts": {
+      "H": 10,
+      "M": 6
+    }
+  },
+  {
+    "unit": "medeinst::case_26856::control",
+    "n_candidates": 29,
+    "all_prompt_utf8_bytes": 3506,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.482758620689655,
+    "tie_counts": {
+      "H": 15,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_26856::trap",
+    "n_candidates": 33,
+    "all_prompt_utf8_bytes": 3816,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 16.484848484848484,
+    "tie_counts": {
+      "H": 19,
+      "M": 21
+    }
+  },
+  {
+    "unit": "medeinst::case_27063::control",
+    "n_candidates": 34,
+    "all_prompt_utf8_bytes": 5020,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 17.0,
+    "tie_counts": {
+      "H": 24,
+      "M": 21
+    }
+  },
+  {
+    "unit": "medeinst::case_27063::trap",
+    "n_candidates": 39,
+    "all_prompt_utf8_bytes": 5406,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 19.487179487179485,
+    "tie_counts": {
+      "H": 27,
+      "M": 29
+    }
+  },
+  {
+    "unit": "medeinst::case_28293::control",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3347,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_28293::trap",
+    "n_candidates": 29,
+    "all_prompt_utf8_bytes": 3727,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.482758620689655,
+    "tie_counts": {
+      "H": 19,
+      "M": 19
+    }
+  },
+  {
+    "unit": "medeinst::case_28360::control",
+    "n_candidates": 17,
+    "all_prompt_utf8_bytes": 2382,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 8.470588235294118,
+    "tie_counts": {
+      "H": 9,
+      "M": 5
+    }
+  },
+  {
+    "unit": "medeinst::case_28360::trap",
+    "n_candidates": 19,
+    "all_prompt_utf8_bytes": 2666,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 9.473684210526315,
+    "tie_counts": {
+      "H": 9,
+      "M": 6
+    }
+  },
+  {
+    "unit": "medeinst::case_29352::control",
+    "n_candidates": 28,
+    "all_prompt_utf8_bytes": 4091,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.0,
+    "tie_counts": {
+      "H": 17,
+      "M": 16
+    }
+  },
+  {
+    "unit": "medeinst::case_29352::trap",
+    "n_candidates": 28,
+    "all_prompt_utf8_bytes": 4325,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.0,
+    "tie_counts": {
+      "H": 19,
+      "M": 15
+    }
+  },
+  {
+    "unit": "medeinst::case_30022::control",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 3339,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 14,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_30022::trap",
+    "n_candidates": 21,
+    "all_prompt_utf8_bytes": 3008,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 10.476190476190476,
+    "tie_counts": {
+      "H": 12,
+      "M": 8
+    }
+  },
+  {
+    "unit": "medeinst::case_4842::control",
+    "n_candidates": 30,
+    "all_prompt_utf8_bytes": 4124,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.0,
+    "tie_counts": {
+      "H": 19,
+      "M": 18
+    }
+  },
+  {
+    "unit": "medeinst::case_4842::trap",
+    "n_candidates": 30,
+    "all_prompt_utf8_bytes": 4071,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.0,
+    "tie_counts": {
+      "H": 20,
+      "M": 15
+    }
+  },
+  {
+    "unit": "medeinst::case_51165::control",
+    "n_candidates": 20,
+    "all_prompt_utf8_bytes": 2971,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 10.0,
+    "tie_counts": {
+      "H": 11,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_51165::trap",
+    "n_candidates": 19,
+    "all_prompt_utf8_bytes": 2871,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 9.473684210526315,
+    "tie_counts": {
+      "H": 11,
+      "M": 8
+    }
+  },
+  {
+    "unit": "medeinst::case_5165::control",
+    "n_candidates": 33,
+    "all_prompt_utf8_bytes": 4017,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 16.484848484848484,
+    "tie_counts": {
+      "H": 22,
+      "M": 21
+    }
+  },
+  {
+    "unit": "medeinst::case_5165::trap",
+    "n_candidates": 36,
+    "all_prompt_utf8_bytes": 4268,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 18.0,
+    "tie_counts": {
+      "H": 24,
+      "M": 24
+    }
+  },
+  {
+    "unit": "medeinst::case_522::control",
+    "n_candidates": 27,
+    "all_prompt_utf8_bytes": 3601,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.481481481481481,
+    "tie_counts": {
+      "H": 18,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_522::trap",
+    "n_candidates": 31,
+    "all_prompt_utf8_bytes": 4063,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.483870967741936,
+    "tie_counts": {
+      "H": 21,
+      "M": 18
+    }
+  },
+  {
+    "unit": "medeinst::case_5454::control",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3376,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 19,
+      "M": 16
+    }
+  },
+  {
+    "unit": "medeinst::case_5454::trap",
+    "n_candidates": 28,
+    "all_prompt_utf8_bytes": 3424,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.0,
+    "tie_counts": {
+      "H": 18,
+      "M": 18
+    }
+  },
+  {
+    "unit": "medeinst::case_55317::control",
+    "n_candidates": 31,
+    "all_prompt_utf8_bytes": 3764,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.483870967741936,
+    "tie_counts": {
+      "H": 19,
+      "M": 18
+    }
+  },
+  {
+    "unit": "medeinst::case_55317::trap",
+    "n_candidates": 34,
+    "all_prompt_utf8_bytes": 4162,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 17.0,
+    "tie_counts": {
+      "H": 26,
+      "M": 22
+    }
+  },
+  {
+    "unit": "medeinst::case_56575::control",
+    "n_candidates": 23,
+    "all_prompt_utf8_bytes": 3289,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.478260869565217,
+    "tie_counts": {
+      "H": 14,
+      "M": 8
+    }
+  },
+  {
+    "unit": "medeinst::case_56575::trap",
+    "n_candidates": 21,
+    "all_prompt_utf8_bytes": 3260,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 10.476190476190476,
+    "tie_counts": {
+      "H": 12,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_5672::control",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 2835,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 17,
+      "M": 12
+    }
+  },
+  {
+    "unit": "medeinst::case_5672::trap",
+    "n_candidates": 27,
+    "all_prompt_utf8_bytes": 3152,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.481481481481481,
+    "tie_counts": {
+      "H": 18,
+      "M": 13
+    }
+  },
+  {
+    "unit": "medeinst::case_59154::control",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3620,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_59154::trap",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3351,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 14,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_60587::control",
+    "n_candidates": 27,
+    "all_prompt_utf8_bytes": 3445,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.481481481481481,
+    "tie_counts": {
+      "H": 14,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_60587::trap",
+    "n_candidates": 23,
+    "all_prompt_utf8_bytes": 3176,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.478260869565217,
+    "tie_counts": {
+      "H": 15,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_60652::control",
+    "n_candidates": 33,
+    "all_prompt_utf8_bytes": 4545,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 16.484848484848484,
+    "tie_counts": {
+      "H": 23,
+      "M": 22
+    }
+  },
+  {
+    "unit": "medeinst::case_60652::trap",
+    "n_candidates": 31,
+    "all_prompt_utf8_bytes": 4271,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.483870967741936,
+    "tie_counts": {
+      "H": 21,
+      "M": 17
+    }
+  },
+  {
+    "unit": "medeinst::case_61180::control",
+    "n_candidates": 16,
+    "all_prompt_utf8_bytes": 2433,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 8.0,
+    "tie_counts": {
+      "H": 7,
+      "M": 4
+    }
+  },
+  {
+    "unit": "medeinst::case_61180::trap",
+    "n_candidates": 30,
+    "all_prompt_utf8_bytes": 3533,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.0,
+    "tie_counts": {
+      "H": 20,
+      "M": 19
+    }
+  },
+  {
+    "unit": "medeinst::case_62650::control",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3408,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 15,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_62650::trap",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3516,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_63262::control",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3261,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 13
+    }
+  },
+  {
+    "unit": "medeinst::case_63262::trap",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3260,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 13,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_65094::control",
+    "n_candidates": 29,
+    "all_prompt_utf8_bytes": 3604,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.482758620689655,
+    "tie_counts": {
+      "H": 16,
+      "M": 16
+    }
+  },
+  {
+    "unit": "medeinst::case_65094::trap",
+    "n_candidates": 32,
+    "all_prompt_utf8_bytes": 3845,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 16.0,
+    "tie_counts": {
+      "H": 21,
+      "M": 17
+    }
+  },
+  {
+    "unit": "medeinst::case_65924::control",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3398,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 15,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_65924::trap",
+    "n_candidates": 23,
+    "all_prompt_utf8_bytes": 3252,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.478260869565217,
+    "tie_counts": {
+      "H": 13,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_69009::control",
+    "n_candidates": 20,
+    "all_prompt_utf8_bytes": 2820,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 10.0,
+    "tie_counts": {
+      "H": 12,
+      "M": 7
+    }
+  },
+  {
+    "unit": "medeinst::case_69009::trap",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3275,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 18,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_70802::control",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 3898,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 15,
+      "M": 12
+    }
+  },
+  {
+    "unit": "medeinst::case_70802::trap",
+    "n_candidates": 29,
+    "all_prompt_utf8_bytes": 4303,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.482758620689655,
+    "tie_counts": {
+      "H": 20,
+      "M": 17
+    }
+  },
+  {
+    "unit": "medeinst::case_70986::control",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3275,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 15,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_70986::trap",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3370,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 17,
+      "M": 15
+    }
+  },
+  {
+    "unit": "medeinst::case_72280::control",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3682,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 15,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_72280::trap",
+    "n_candidates": 19,
+    "all_prompt_utf8_bytes": 3076,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 9.473684210526315,
+    "tie_counts": {
+      "H": 10,
+      "M": 6
+    }
+  },
+  {
+    "unit": "medeinst::case_737::control",
+    "n_candidates": 28,
+    "all_prompt_utf8_bytes": 3884,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 15
+    }
+  },
+  {
+    "unit": "medeinst::case_737::trap",
+    "n_candidates": 36,
+    "all_prompt_utf8_bytes": 4530,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 18.0,
+    "tie_counts": {
+      "H": 23,
+      "M": 24
+    }
+  },
+  {
+    "unit": "medeinst::case_74893::control",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 4110,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 18,
+      "M": 15
+    }
+  },
+  {
+    "unit": "medeinst::case_74893::trap",
+    "n_candidates": 27,
+    "all_prompt_utf8_bytes": 4301,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.481481481481481,
+    "tie_counts": {
+      "H": 18,
+      "M": 15
+    }
+  },
+  {
+    "unit": "medeinst::case_77063::control",
+    "n_candidates": 31,
+    "all_prompt_utf8_bytes": 3922,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.483870967741936,
+    "tie_counts": {
+      "H": 18,
+      "M": 16
+    }
+  },
+  {
+    "unit": "medeinst::case_77063::trap",
+    "n_candidates": 32,
+    "all_prompt_utf8_bytes": 3925,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 16.0,
+    "tie_counts": {
+      "H": 21,
+      "M": 18
+    }
+  },
+  {
+    "unit": "medeinst::case_8040::control",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 4081,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 14,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_8040::trap",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 4263,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 17,
+      "M": 13
+    }
+  },
+  {
+    "unit": "medeinst::case_81017::control",
+    "n_candidates": 21,
+    "all_prompt_utf8_bytes": 2624,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 10.476190476190476,
+    "tie_counts": {
+      "H": 15,
+      "M": 8
+    }
+  },
+  {
+    "unit": "medeinst::case_81017::trap",
+    "n_candidates": 19,
+    "all_prompt_utf8_bytes": 2539,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 9.473684210526315,
+    "tie_counts": {
+      "H": 10,
+      "M": 7
+    }
+  },
+  {
+    "unit": "medeinst::case_85702::control",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 3261,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_85702::trap",
+    "n_candidates": 17,
+    "all_prompt_utf8_bytes": 2720,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 8.470588235294118,
+    "tie_counts": {
+      "H": 12,
+      "M": 5
+    }
+  },
+  {
+    "unit": "medeinst::case_86461::control",
+    "n_candidates": 30,
+    "all_prompt_utf8_bytes": 3985,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.0,
+    "tie_counts": {
+      "H": 20,
+      "M": 16
+    }
+  },
+  {
+    "unit": "medeinst::case_86461::trap",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3633,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 12
+    }
+  },
+  {
+    "unit": "medeinst::case_86719::control",
+    "n_candidates": 29,
+    "all_prompt_utf8_bytes": 3911,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 14.482758620689655,
+    "tie_counts": {
+      "H": 21,
+      "M": 16
+    }
+  },
+  {
+    "unit": "medeinst::case_86719::trap",
+    "n_candidates": 31,
+    "all_prompt_utf8_bytes": 4129,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.483870967741936,
+    "tie_counts": {
+      "H": 22,
+      "M": 18
+    }
+  },
+  {
+    "unit": "medeinst::case_87004::control",
+    "n_candidates": 18,
+    "all_prompt_utf8_bytes": 2653,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 9.0,
+    "tie_counts": {
+      "H": 11,
+      "M": 5
+    }
+  },
+  {
+    "unit": "medeinst::case_87004::trap",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 2958,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 14,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_8858::control",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 3418,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 15,
+      "M": 6
+    }
+  },
+  {
+    "unit": "medeinst::case_8858::trap",
+    "n_candidates": 34,
+    "all_prompt_utf8_bytes": 4371,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 17.0,
+    "tie_counts": {
+      "H": 24,
+      "M": 23
+    }
+  },
+  {
+    "unit": "medeinst::case_89249::control",
+    "n_candidates": 26,
+    "all_prompt_utf8_bytes": 3638,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 13.0,
+    "tie_counts": {
+      "H": 16,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_89249::trap",
+    "n_candidates": 30,
+    "all_prompt_utf8_bytes": 4132,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.0,
+    "tie_counts": {
+      "H": 18,
+      "M": 18
+    }
+  },
+  {
+    "unit": "medeinst::case_90836::control",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 3651,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 17,
+      "M": 14
+    }
+  },
+  {
+    "unit": "medeinst::case_90836::trap",
+    "n_candidates": 30,
+    "all_prompt_utf8_bytes": 4217,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.0,
+    "tie_counts": {
+      "H": 20,
+      "M": 18
+    }
+  },
+  {
+    "unit": "medeinst::case_91726::control",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 4352,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 17,
+      "M": 11
+    }
+  },
+  {
+    "unit": "medeinst::case_91726::trap",
+    "n_candidates": 31,
+    "all_prompt_utf8_bytes": 4786,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 15.483870967741936,
+    "tie_counts": {
+      "H": 23,
+      "M": 19
+    }
+  },
+  {
+    "unit": "medeinst::case_92160::control",
+    "n_candidates": 21,
+    "all_prompt_utf8_bytes": 2968,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 10.476190476190476,
+    "tie_counts": {
+      "H": 12,
+      "M": 6
+    }
+  },
+  {
+    "unit": "medeinst::case_92160::trap",
+    "n_candidates": 22,
+    "all_prompt_utf8_bytes": 3138,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.0,
+    "tie_counts": {
+      "H": 13,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_97816::control",
+    "n_candidates": 23,
+    "all_prompt_utf8_bytes": 3383,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.478260869565217,
+    "tie_counts": {
+      "H": 15,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_97816::trap",
+    "n_candidates": 24,
+    "all_prompt_utf8_bytes": 3430,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.0,
+    "tie_counts": {
+      "H": 17,
+      "M": 9
+    }
+  },
+  {
+    "unit": "medeinst::case_98772::control",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 3905,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 17,
+      "M": 12
+    }
+  },
+  {
+    "unit": "medeinst::case_98772::trap",
+    "n_candidates": 25,
+    "all_prompt_utf8_bytes": 3902,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 12.48,
+    "tie_counts": {
+      "H": 18,
+      "M": 12
+    }
+  },
+  {
+    "unit": "medeinst::case_98829::control",
+    "n_candidates": 19,
+    "all_prompt_utf8_bytes": 2621,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 9.473684210526315,
+    "tie_counts": {
+      "H": 10,
+      "M": 7
+    }
+  },
+  {
+    "unit": "medeinst::case_98829::trap",
+    "n_candidates": 23,
+    "all_prompt_utf8_bytes": 3115,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 11.478260869565217,
+    "tie_counts": {
+      "H": 13,
+      "M": 10
+    }
+  },
+  {
+    "unit": "medeinst::case_99593::control",
+    "n_candidates": 37,
+    "all_prompt_utf8_bytes": 4796,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 18.486486486486488,
+    "tie_counts": {
+      "H": 25,
+      "M": 25
+    }
+  },
+  {
+    "unit": "medeinst::case_99593::trap",
+    "n_candidates": 35,
+    "all_prompt_utf8_bytes": 4535,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 17.485714285714284,
+    "tie_counts": {
+      "H": 23,
+      "M": 23
+    }
+  },
+  {
+    "unit": "medx::Text-979",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3247,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 1,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1276",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3168,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-292",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2741,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-756",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2338,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-715",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2248,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-681",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3396,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-746",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3340,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-284",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2905,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1252",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3413,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 1,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-781",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2611,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1291",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2624,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-907",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2417,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-2313",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2051,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-1428",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2464,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-1952",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2816,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1885",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2152,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 3
+    }
+  },
+  {
+    "unit": "medx::Text-696",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2293,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1760",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2394,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-2003",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3103,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 1,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-28",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3110,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1479",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2514,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 1,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-173",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2142,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1129",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2218,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-966",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2653,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-289",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2888,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1557",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3049,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-732",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2473,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1782",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3752,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1165",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2841,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-201",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2536,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-2072",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2474,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-1983",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3693,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1406",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2579,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-636",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2067,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 0,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-847",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2421,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-2298",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2078,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1214",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2312,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-2137",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2456,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-942",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2862,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-1104",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2507,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1337",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2354,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-701",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2348,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1795",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 1766,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 3
+    }
+  },
+  {
+    "unit": "medx::Text-1900",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3738,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-1418",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2357,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-690",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2764,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-2237",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2863,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-941",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 1872,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 1,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1466",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2349,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-2198",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2292,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-2044",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2331,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-2383",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2416,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1475",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2197,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1968",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 1948,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 1,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-993",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2149,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-1108",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2116,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1003",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2604,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-264",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2872,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-503",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2853,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-367",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2920,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 1,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-2054",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2161,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1381",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2261,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-2247",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3199,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-835",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2072,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 0,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-290",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2788,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-2343",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3598,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-1081",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2553,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-143",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2130,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 1,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1590",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2699,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 0,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-722",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2588,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-2127",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2171,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-248",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2295,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-2433",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2760,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-2119",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2215,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1805",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2857,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-754",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2062,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-207",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2357,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-687",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 4894,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-2076",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2789,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 1,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-765",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2628,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-914",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2658,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1313",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 1879,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-972",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 1447,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1572",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2362,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1451",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2508,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 5,
+      "M": 3
+    }
+  },
+  {
+    "unit": "medx::Text-2364",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2340,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-935",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2956,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 1,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-1824",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2709,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-1537",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2206,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-1567",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2262,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1002",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 1729,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-2241",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2026,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-684",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2562,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-1133",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2142,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-680",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3358,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 3
+    }
+  },
+  {
+    "unit": "medx::Text-2214",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3716,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-1179",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3038,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 1,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1820",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 1520,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-725",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2095,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-2120",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2490,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-2124",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2897,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-2112",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 1587,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1970",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2526,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1915",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3331,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-160",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2078,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-902",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2138,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-953",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2072,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-890",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2091,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-2152",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2496,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-702",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2635,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 0,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-2088",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2437,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 0,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-2225",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2423,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-457",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3294,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-1355",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2326,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-597",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2121,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 0,
+      "M": 2
+    }
+  },
+  {
+    "unit": "medx::Text-1058",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 1794,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-2426",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2347,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 0,
+      "M": 3
+    }
+  },
+  {
+    "unit": "medx::Text-239",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2843,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 4,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-514",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 1672,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1931",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2261,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1978",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2632,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-530",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2666,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-600",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 1741,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-1281",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2329,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 1,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-2347",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2405,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 2,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-26",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 2507,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 1,
+      "M": 0
+    }
+  },
+  {
+    "unit": "medx::Text-118",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 3464,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 1
+    }
+  },
+  {
+    "unit": "medx::Text-501",
+    "n_candidates": 10,
+    "all_prompt_utf8_bytes": 1587,
+    "same_content_and_length": true,
+    "same_rank_multiset": true,
+    "same_absolute_reversal_dose": true,
+    "dose_l1_per_candidate": 5.0,
+    "tie_counts": {
+      "H": 3,
+      "M": 2
+    }
+  }
+]

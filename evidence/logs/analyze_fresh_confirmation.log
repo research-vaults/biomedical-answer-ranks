@@ -1,0 +1,17 @@
+# Fresh96 frozen confirmation
+
+96 disjoint paired cases;192 branches. Intervals resample case pairs. Primary refinement endpoint, two frozen selectors;97.5% intervals control the two-primary family. Exact reference is a deliberately narrow sensitivity, not clinical truth.
+
+|Endpoint|Selector|J|97.5% interval|RR minus LLM, mixed TRUE|Availability M−H|
+|---|---|---:|---|---:|---:|
+|refinement|gemini_joint|-0.1654|[-0.27300347222222227, -0.06467013888888891]|0.0547|0.0052|
+|refinement|llama8_joint|-0.1341|[-0.23350694444444445, -0.03949652777777778]|0.0495|0.0052|
+|strict|gemini_joint|-0.1662|[-0.2565104166666667, -0.08333333333333336]|0.0599|-0.0052|
+|strict|llama8_joint|-0.1402|[-0.23046875, -0.05815972222222223]|0.0547|-0.0052|
+|exact_reference|gemini_joint|-0.1506|[-0.24001736111111108, -0.06640625]|0.0703|-0.0104|
+|exact_reference|llama8_joint|-0.1402|[-0.23046875, -0.05815972222222223]|0.0547|-0.0104|
+
+## Scoring and implementation limits
+Unresolved mapping relations: 2204/3085. Every corresponding occurrence shares the same label in the uncertainty envelope. These unrestricted bounds are not probability intervals or clinically plausible adjudications.
+Valid choices: 1536/1536. Invalid/missing choices score0;missing-outcome envelopes are retained. Costs: 0.654367 USD. Fixed-rule choices never use reference labels. All raw outputs remain saved.
+Matplotlib is building the font cache; this may take a moment.

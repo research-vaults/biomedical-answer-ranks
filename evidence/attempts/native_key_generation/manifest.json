@@ -1,0 +1,24 @@
+{
+  "format": "sanitized-evidence-gzip-shards-v1",
+  "logical_name": "native_key_generation.jsonl",
+  "logical_bytes": 8277894,
+  "logical_sha256": "b157c61f63de2b6a458f3756e2c11b28d81cc0e5a972fbf7d2cf7f7509751a0f",
+  "chunk_bytes": 4194304,
+  "parts": [
+    {
+      "file": "part-000000.gz",
+      "compressed_bytes": 686347,
+      "compressed_sha256": "4563a4f6c791ec5084819c6fd0d0a505697d05effab5aca2fbb2c96ed8b927e0",
+      "logical_bytes": 4194304,
+      "logical_sha256": "c9884cc73ec5913534f91e965a0dd15e47d15b7829b405cf90f110cd27bdae51"
+    },
+    {
+      "file": "part-000001.gz",
+      "compressed_bytes": 695534,
+      "compressed_sha256": "4a5513878924f52579b0401a3c90a0b26b4b63b2249d56dd8a4c2e057eca92f3",
+      "logical_bytes": 4083590,
+      "logical_sha256": "0b098135697b06c4c20e396cdf7f77a656e7c4d7cf5f129c12a4267c1b4aad43"
+    }
+  ],
+  "privacy_note": "Compression is not anonymization; scan the logical content before and after packing."
+}

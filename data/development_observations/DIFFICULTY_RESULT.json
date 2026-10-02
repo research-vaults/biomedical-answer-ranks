@@ -1,0 +1,21 @@
+{
+  "status": "C2_PREOUTCOME_DIFFICULTY_COVARIATE_FROZEN_BEFORE_GENERATION",
+  "n_case_branches": 96,
+  "n_cases": 48,
+  "validity": 1.0,
+  "top1": 0.6041666666666666,
+  "mean_correct_rank_auc": 0.8898809523809526,
+  "mean_false_priority_rate": 0.1101190476190476,
+  "rank_counts": {
+    "1": 58,
+    "2": 15,
+    "3": 14,
+    "4": 5,
+    "5": 4
+  },
+  "quartile_rule": "sort full 96 branches by (rank_auc, case_id, branch), consecutive groups of 24; Q1 is lowest rank AUC/hardest",
+  "output_hashes": {
+    "rows": "fd401870fb157a3555ac487281670379bde9b4c3e910bcfd8086951d61a687db",
+    "result_md": "fb4e2832ecb3375f3f69ccdc2058d44713aec30d0aa229695206b2dad1bf0c94"
+  }
+}

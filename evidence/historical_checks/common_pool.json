@@ -1,0 +1,29 @@
+{
+  "status": "PASS_RAW_TEXT_PAYLOAD_AND_POINT_REPLAY",
+  "valid": 6400,
+  "attempts": 6409,
+  "cost_usd": 0.900507169999999,
+  "cumulative_usd": 10.5903211071,
+  "matched_prompt_groups": 1280,
+  "provider_token_groups_available": 1280,
+  "token_equal_groups": 0,
+  "max_within_group_token_range": 49,
+  "rank_only_token_equal_groups": 1280,
+  "rank_only_max_token_range": 0,
+  "finish_reasons": {
+    "stop": 6400
+  },
+  "J_replayed": {
+    "medeinst|refinement|gemini": 0.078125,
+    "medeinst|refinement|llama": 0.08854166666666667,
+    "medeinst|strict|gemini": 0.07552083333333333,
+    "medeinst|strict|llama": 0.08333333333333333,
+    "medeinst|exact_reference|gemini": 0.078125,
+    "medeinst|exact_reference|llama": 0.078125,
+    "medx|native_key|gemini": 0.078125,
+    "medx|native_key|llama": 0.078125
+  },
+  "source_hashes_unchanged": true,
+  "clinical_authority_not_certified": true,
+  "record_scope": "Historical verification of original research records, preserved as evidence; not a claim that sanitized files retain original byte hashes."
+}

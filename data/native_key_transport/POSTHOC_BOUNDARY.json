@@ -1,0 +1,84 @@
+{
+  "gemini": {
+    "transitions": [
+      {
+        "H_available": 0,
+        "M_available": 0,
+        "cases": 6,
+        "H_correct": 0,
+        "M_correct": 0
+      },
+      {
+        "H_available": 0,
+        "M_available": 1,
+        "cases": 8,
+        "H_correct": 0,
+        "M_correct": 0
+      },
+      {
+        "H_available": 1,
+        "M_available": 0,
+        "cases": 0,
+        "H_correct": 0,
+        "M_correct": 0
+      },
+      {
+        "H_available": 1,
+        "M_available": 1,
+        "cases": 114,
+        "H_correct": 42,
+        "M_correct": 29
+      }
+    ],
+    "transport_minus_fresh_J": {
+      "estimate": 0.06901041666666667,
+      "ci95": [
+        -0.07443576388888887,
+        0.21332465277777773
+      ],
+      "status": "POSTHOC_INDEPENDENT_SOURCE_COMPARISON_NOT_MECHANISM",
+      "scope": "Different source, answer regime and estimand composition; new128 tasks-balanced items minus old96 paired-case means"
+    }
+  },
+  "llama": {
+    "transitions": [
+      {
+        "H_available": 0,
+        "M_available": 0,
+        "cases": 6,
+        "H_correct": 0,
+        "M_correct": 0
+      },
+      {
+        "H_available": 0,
+        "M_available": 1,
+        "cases": 8,
+        "H_correct": 0,
+        "M_correct": 0
+      },
+      {
+        "H_available": 1,
+        "M_available": 0,
+        "cases": 0,
+        "H_correct": 0,
+        "M_correct": 0
+      },
+      {
+        "H_available": 1,
+        "M_available": 1,
+        "cases": 114,
+        "H_correct": 32,
+        "M_correct": 28
+      }
+    ],
+    "transport_minus_fresh_J": {
+      "estimate": 0.14713541666666669,
+      "ci95": [
+        0.014105902777777804,
+        0.2808159722222222
+      ],
+      "status": "POSTHOC_INDEPENDENT_SOURCE_COMPARISON_NOT_MECHANISM",
+      "scope": "Different source, answer regime and estimand composition; new128 tasks-balanced items minus old96 paired-case means"
+    }
+  }
+}

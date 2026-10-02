@@ -1,0 +1,18 @@
+test_roundtrip_and_determinism (test_evidence_storage.EvidenceStorageTests.test_roundtrip_and_determinism) ... ok
+test_sanitizer_keeps_science_not_provider_envelope (test_evidence_storage.EvidenceStorageTests.test_sanitizer_keeps_science_not_provider_envelope) ... ok
+test_tampering_rejected (test_evidence_storage.EvidenceStorageTests.test_tampering_rejected) ... ok
+test_case_and_sample_counts (test_release.ReleaseTests.test_case_and_sample_counts) ... ok
+test_common_pool_completed_choices (test_release.ReleaseTests.test_common_pool_completed_choices) ... ok
+test_common_pool_matched_rank_dose (test_release.ReleaseTests.test_common_pool_matched_rank_dose) ... ok
+test_contrast_invariance (test_release.ReleaseTests.test_contrast_invariance) ... ok
+test_contrast_sign (test_release.ReleaseTests.test_contrast_sign) ... ok
+test_no_false_transport_confirmation (test_release.ReleaseTests.test_no_false_transport_confirmation) ... ok
+test_parser_rejects_outside_pool (test_release.ReleaseTests.test_parser_rejects_outside_pool) ... ok
+test_parser_valid (test_release.ReleaseTests.test_parser_valid) ... ok
+test_pool_construction_from_generation (test_release.ReleaseTests.test_pool_construction_from_generation) ... ok
+test_schedule_matches_retained_responses (test_release.ReleaseTests.test_schedule_matches_retained_responses) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.313s
+
+OK

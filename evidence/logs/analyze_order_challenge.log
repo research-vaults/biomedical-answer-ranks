@@ -1,0 +1,12 @@
+# Frozen order/shuffle challenge
+
+24-pair conditional robustness, not fresh independent confirmation; pointwise intervals; original TRUE reused for alternate shuffle
+
+|Scoring|Selector|Original J|Alternate-order J|Paired order change,95%CI|Alternate-shuffle J|Paired shuffle change,95%CI|
+|---|---|---:|---:|---|---:|---|
+|refinement|gemini_joint|-0.1476|-0.2934|{'estimate': -0.14583333333333334, 'ci95': [-0.2708333333333333, -0.020833333333333332], 'n_pairs': 24}|-0.0712|{'estimate': 0.0763888888888889, 'ci95': [-0.11458333333333333, 0.2864583333333333], 'n_pairs': 24}|
+|refinement|llama8_joint|-0.1059|-0.1476|{'estimate': -0.041666666666666664, 'ci95': [-0.16666666666666666, 0.0625], 'n_pairs': 24}|-0.0920|{'estimate': 0.013888888888888893, 'ci95': [-0.13020833333333334, 0.17534722222222224], 'n_pairs': 24}|
+|strict|gemini_joint|-0.1337|-0.2587|{'estimate': -0.125, 'ci95': [-0.20833333333333334, -0.041666666666666664], 'n_pairs': 24}|-0.1042|{'estimate': 0.029513888888888895, 'ci95': [-0.11458333333333333, 0.17534722222222224], 'n_pairs': 24}|
+|strict|llama8_joint|-0.1128|-0.1545|{'estimate': -0.041666666666666664, 'ci95': [-0.16666666666666666, 0.08333333333333333], 'n_pairs': 24}|-0.1042|{'estimate': 0.008680555555555547, 'ci95': [-0.11458333333333333, 0.13198784722222476], 'n_pairs': 24}|
+|exact_reference|gemini_joint|-0.1337|-0.2795|{'estimate': -0.14583333333333334, 'ci95': [-0.25, -0.0625], 'n_pairs': 24}|-0.0833|{'estimate': 0.05034722222222223, 'ci95': [-0.1111111111111111, 0.22222222222222224], 'n_pairs': 24}|
+|exact_reference|llama8_joint|-0.1128|-0.1545|{'estimate': -0.041666666666666664, 'ci95': [-0.16666666666666666, 0.08333333333333333], 'n_pairs': 24}|-0.1042|{'estimate': 0.008680555555555547, 'ci95': [-0.11458333333333333, 0.13198784722222476], 'n_pairs': 24}|

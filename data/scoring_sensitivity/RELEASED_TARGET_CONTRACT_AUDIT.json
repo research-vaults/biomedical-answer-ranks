@@ -1,0 +1,987 @@
+[
+  {
+    "label": "Spontaneous pneumothorax",
+    "released_metadata": {
+      "condition_name": "Spontaneous pneumothorax",
+      "cond-name-fr": "Pneumothorax spontané",
+      "cond-name-eng": "Spontaneous pneumothorax",
+      "icd10-id": "J93",
+      "severity": 2
+    },
+    "descriptions": [
+      {
+        "code": "J93",
+        "description": "Pneumothorax and air leak",
+        "line": 13714
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Spontaneous pneumothorax",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Cluster headache",
+    "released_metadata": {
+      "condition_name": "Cluster headache",
+      "cond-name-fr": "Céphalée en grappe",
+      "cond-name-eng": "Cluster headache",
+      "icd10-id": "g44.009",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "G44009",
+        "description": "Cluster headache syndrome, unspecified, not intractable",
+        "line": 6637
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Cluster headache",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Boerhaave",
+    "released_metadata": {
+      "condition_name": "Boerhaave",
+      "cond-name-fr": "Syndrome de Boerhaave",
+      "cond-name-eng": "Boerhaave",
+      "icd10-id": "K22.3",
+      "severity": 2
+    },
+    "descriptions": [
+      {
+        "code": "K223",
+        "description": "Perforation of esophagus",
+        "line": 14076
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Boerhaave",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Spontaneous rib fracture",
+    "released_metadata": {
+      "condition_name": "Spontaneous rib fracture",
+      "cond-name-fr": "Fracture de côte spontanée",
+      "cond-name-eng": "Spontaneous rib fracture",
+      "icd10-id": "S22.9",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "S229",
+        "description": "Fracture of bony thorax, part unspecified",
+        "line": 36887
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Spontaneous rib fracture",
+    "interpretation": "S22.9 describes unspecified bony thorax fracture, broader than the named spontaneous rib target.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "GERD",
+    "released_metadata": {
+      "condition_name": "GERD",
+      "cond-name-fr": "RGO",
+      "cond-name-eng": "GERD",
+      "icd10-id": "K21",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "K21",
+        "description": "Gastro-esophageal reflux disease",
+        "line": 14065
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/GERD",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "HIV (initial infection)",
+    "released_metadata": {
+      "condition_name": "HIV (initial infection)",
+      "cond-name-fr": "VIH (Primo-infection)",
+      "cond-name-eng": "HIV (initial infection)",
+      "icd10-id": "B20",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "B20",
+        "description": "Human immunodeficiency virus [HIV] disease",
+        "line": 838
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/HIV (initial infection)",
+    "interpretation": "B20 does not preserve the named initial-infection restriction.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Anemia",
+    "released_metadata": {
+      "condition_name": "Anemia",
+      "cond-name-fr": "Anémie",
+      "cond-name-eng": "Anemia",
+      "icd10-id": "D64.9",
+      "severity": 4
+    },
+    "descriptions": [
+      {
+        "code": "D649",
+        "description": "Anemia, unspecified",
+        "line": 3643
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Anemia",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Viral pharyngitis",
+    "released_metadata": {
+      "condition_name": "Viral pharyngitis",
+      "cond-name-fr": "Pharyngite virale",
+      "cond-name-eng": "Viral pharyngitis",
+      "icd10-id": "J02.9",
+      "severity": 4
+    },
+    "descriptions": [
+      {
+        "code": "J029",
+        "description": "Acute pharyngitis, unspecified",
+        "line": 13361
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Viral pharyngitis",
+    "interpretation": "J02.9 does not itself establish viral etiology; preserve the named viral restriction and reject strep-throat synonymy.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Inguinal hernia",
+    "released_metadata": {
+      "condition_name": "Inguinal hernia",
+      "cond-name-fr": "Hernie inguinale",
+      "cond-name-eng": "Inguinal hernia",
+      "icd10-id": "K40",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "K40",
+        "description": "Inguinal hernia",
+        "line": 14221
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Inguinal hernia",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Myasthenia gravis",
+    "released_metadata": {
+      "condition_name": "Myasthenia gravis",
+      "cond-name-fr": "Myasthénie grave",
+      "cond-name-eng": "Myasthenia gravis",
+      "icd10-id": "G70.0",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "G700",
+        "description": "Myasthenia gravis",
+        "line": 6926
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Myasthenia gravis",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Whooping cough",
+    "released_metadata": {
+      "condition_name": "Whooping cough",
+      "cond-name-fr": "Coqueluche",
+      "cond-name-eng": "Whooping cough",
+      "icd10-id": "A37",
+      "severity": 4
+    },
+    "descriptions": [
+      {
+        "code": "A37",
+        "description": "Whooping cough",
+        "line": 256
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Whooping cough",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Anaphylaxis",
+    "released_metadata": {
+      "condition_name": "Anaphylaxis",
+      "cond-name-fr": "Anaphylaxie",
+      "cond-name-eng": "Anaphylaxis",
+      "icd10-id": "T78.0",
+      "severity": 1
+    },
+    "descriptions": [
+      {
+        "code": "T780",
+        "description": "Anaphylactic reaction due to food",
+        "line": 83162
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Anaphylaxis",
+    "interpretation": "T78.0 specifies adverse food reaction, narrower than the unqualified name.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Epiglottitis",
+    "released_metadata": {
+      "condition_name": "Epiglottitis",
+      "cond-name-fr": "Épiglottite",
+      "cond-name-eng": "Epiglottitis",
+      "icd10-id": "J05.1",
+      "severity": 2
+    },
+    "descriptions": [
+      {
+        "code": "J051",
+        "description": "Acute epiglottitis",
+        "line": 13383
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Epiglottitis",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Guillain-Barré syndrome",
+    "released_metadata": {
+      "condition_name": "Guillain-Barré syndrome",
+      "cond-name-fr": "Syndrome de Guillain-Barré",
+      "cond-name-eng": "Guillain-Barré syndrome",
+      "icd10-id": "G61.0",
+      "severity": 2
+    },
+    "descriptions": [
+      {
+        "code": "G610",
+        "description": "Guillain-Barre syndrome",
+        "line": 6903
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Guillain-Barré syndrome",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Acute laryngitis",
+    "released_metadata": {
+      "condition_name": "Acute laryngitis",
+      "cond-name-fr": "Laryngite aigue",
+      "cond-name-eng": "Acute laryngitis",
+      "icd10-id": "J04.0",
+      "severity": 4
+    },
+    "descriptions": [
+      {
+        "code": "J040",
+        "description": "Acute laryngitis",
+        "line": 13373
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Acute laryngitis",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Croup",
+    "released_metadata": {
+      "condition_name": "Croup",
+      "cond-name-fr": "Laryngo-trachéo-bronchite (Croup)",
+      "cond-name-eng": "Croup",
+      "icd10-id": "J05.0",
+      "severity": 2
+    },
+    "descriptions": [
+      {
+        "code": "J050",
+        "description": "Acute obstructive laryngitis [croup]",
+        "line": 13382
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Croup",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "PSVT",
+    "released_metadata": {
+      "condition_name": "PSVT",
+      "cond-name-fr": "TSVP",
+      "cond-name-eng": "PSVT",
+      "icd10-id": "I47.1",
+      "severity": 2
+    },
+    "descriptions": [
+      {
+        "code": "I471",
+        "description": "Supraventricular tachycardia",
+        "line": 11863
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/PSVT",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Atrial fibrillation",
+    "released_metadata": {
+      "condition_name": "Atrial fibrillation",
+      "cond-name-fr": "Fibrillation auriculaire/Flutter auriculaire",
+      "cond-name-eng": "Atrial fibrillation",
+      "icd10-id": "I48.91",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "I4891",
+        "description": "Unspecified atrial fibrillation",
+        "line": 11883
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Atrial fibrillation",
+    "interpretation": "French label also mentions flutter while the English label and I48.91 specify fibrillation; keep labels distinct.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Bronchiectasis",
+    "released_metadata": {
+      "condition_name": "Bronchiectasis",
+      "cond-name-fr": "Bronchiectasies",
+      "cond-name-eng": "Bronchiectasis",
+      "icd10-id": "J47",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "J47",
+        "description": "Bronchiectasis",
+        "line": 13602
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Bronchiectasis",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Allergic sinusitis",
+    "released_metadata": {
+      "condition_name": "Allergic sinusitis",
+      "cond-name-fr": "Rhinite allergique",
+      "cond-name-eng": "Allergic sinusitis",
+      "icd10-id": "J30",
+      "severity": 4
+    },
+    "descriptions": [
+      {
+        "code": "J30",
+        "description": "Vasomotor and allergic rhinitis",
+        "line": 13475
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Allergic sinusitis",
+    "interpretation": "French name/code refer to allergic rhinitis; English name says sinusitis. Explicit source inconsistency, not automatic equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Chagas",
+    "released_metadata": {
+      "condition_name": "Chagas",
+      "cond-name-fr": "Chagas",
+      "cond-name-eng": "Chagas",
+      "icd10-id": "B57",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "B57",
+        "description": "Chagas' disease",
+        "line": 1057
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Chagas",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Scombroid food poisoning",
+    "released_metadata": {
+      "condition_name": "Scombroid food poisoning",
+      "cond-name-fr": "Scombroïde",
+      "cond-name-eng": "Scombroid food poisoning",
+      "icd10-id": "T61.1",
+      "severity": 2
+    },
+    "descriptions": [
+      {
+        "code": "T611",
+        "description": "Scombroid fish poisoning",
+        "line": 81485
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Scombroid food poisoning",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Myocarditis",
+    "released_metadata": {
+      "condition_name": "Myocarditis",
+      "cond-name-fr": "Myocardite",
+      "cond-name-eng": "Myocarditis",
+      "icd10-id": "I51.4",
+      "severity": 2
+    },
+    "descriptions": [
+      {
+        "code": "I514",
+        "description": "Myocarditis, unspecified",
+        "line": 11932
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Myocarditis",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Larygospasm",
+    "released_metadata": {
+      "condition_name": "Larygospasm",
+      "cond-name-fr": "Laryngospasme",
+      "cond-name-eng": "Larygospasm",
+      "icd10-id": "J38.5",
+      "severity": 1
+    },
+    "descriptions": [
+      {
+        "code": "J385",
+        "description": "Laryngeal spasm",
+        "line": 13543
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Larygospasm",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Acute dystonic reactions",
+    "released_metadata": {
+      "condition_name": "Acute dystonic reactions",
+      "cond-name-fr": "Réaction dystonique aïgue",
+      "cond-name-eng": "Acute dystonic reactions",
+      "icd10-id": "G24.02",
+      "severity": 2
+    },
+    "descriptions": [
+      {
+        "code": "G2402",
+        "description": "Drug induced acute dystonia",
+        "line": 6373
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Acute dystonic reactions",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Localized edema",
+    "released_metadata": {
+      "condition_name": "Localized edema",
+      "cond-name-fr": "Oedème localisé ou généralisé sans atteinte pulmonaire associée",
+      "cond-name-eng": "Localized edema",
+      "icd10-id": "R60.0",
+      "severity": 4
+    },
+    "descriptions": [
+      {
+        "code": "R600",
+        "description": "Localized edema",
+        "line": 31134
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Localized edema",
+    "interpretation": "French name mentions generalized edema too; preserve the English target and record inconsistency.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "SLE",
+    "released_metadata": {
+      "condition_name": "SLE",
+      "cond-name-fr": "Lupus érythémateux disséminé (LED)",
+      "cond-name-eng": "SLE",
+      "icd10-id": "M32",
+      "severity": 4
+    },
+    "descriptions": [
+      {
+        "code": "M32",
+        "description": "Systemic lupus erythematosus (SLE)",
+        "line": 19349
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/SLE",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Tuberculosis",
+    "released_metadata": {
+      "condition_name": "Tuberculosis",
+      "cond-name-fr": "Tuberculose",
+      "cond-name-eng": "Tuberculosis",
+      "icd10-id": "a15",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "A15",
+        "description": "Respiratory tuberculosis",
+        "line": 95
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Tuberculosis",
+    "interpretation": "A15 is respiratory tuberculosis, narrower than the unqualified name; no automatic promotion of all code-neighbor terms.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Unstable angina",
+    "released_metadata": {
+      "condition_name": "Unstable angina",
+      "cond-name-fr": "Angine instable",
+      "cond-name-eng": "Unstable angina",
+      "icd10-id": "I20.0",
+      "severity": 2
+    },
+    "descriptions": [
+      {
+        "code": "I200",
+        "description": "Unstable angina",
+        "line": 11606
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Unstable angina",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Stable angina",
+    "released_metadata": {
+      "condition_name": "Stable angina",
+      "cond-name-fr": "Angine stable",
+      "cond-name-eng": "Stable angina",
+      "icd10-id": "I20.9",
+      "severity": 2
+    },
+    "descriptions": [
+      {
+        "code": "I209",
+        "description": "Angina pectoris, unspecified",
+        "line": 11612
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Stable angina",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Ebola",
+    "released_metadata": {
+      "condition_name": "Ebola",
+      "cond-name-fr": "Ebola",
+      "cond-name-eng": "Ebola",
+      "icd10-id": "a98.4",
+      "severity": 1
+    },
+    "descriptions": [
+      {
+        "code": "A984",
+        "description": "Ebola virus disease",
+        "line": 692
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Ebola",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Acute otitis media",
+    "released_metadata": {
+      "condition_name": "Acute otitis media",
+      "cond-name-fr": "Otite moyenne aigue (OMA)",
+      "cond-name-eng": "Acute otitis media",
+      "icd10-id": "H66.90",
+      "severity": 4
+    },
+    "descriptions": [
+      {
+        "code": "H6690",
+        "description": "Otitis media, unspecified, unspecified ear",
+        "line": 10954
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Acute otitis media",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Panic attack",
+    "released_metadata": {
+      "condition_name": "Panic attack",
+      "cond-name-fr": "Attaque de panique",
+      "cond-name-eng": "Panic attack",
+      "icd10-id": "f41",
+      "severity": 5
+    },
+    "descriptions": [
+      {
+        "code": "F41",
+        "description": "Other anxiety disorders",
+        "line": 5998
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Panic attack",
+    "interpretation": "F41 is a broader anxiety-disorder family; a panic attack does not establish panic disorder.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Bronchospasm / acute asthma exacerbation",
+    "released_metadata": {
+      "condition_name": "Bronchospasm / acute asthma exacerbation",
+      "cond-name-fr": "Asthme exacerbé ou bronchospasme",
+      "cond-name-eng": "Bronchospasm / acute asthma exacerbation",
+      "icd10-id": "J45",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "J45",
+        "description": "Asthma",
+        "line": 13576
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Bronchospasm / acute asthma exacerbation",
+    "interpretation": "J45 asthma is broader than the named acute/symptomatic compound; plain Asthma is not a strict equivalent.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Bronchitis",
+    "released_metadata": {
+      "condition_name": "Bronchitis",
+      "cond-name-fr": "Bronchite",
+      "cond-name-eng": "Bronchitis",
+      "icd10-id": "j40",
+      "severity": 4
+    },
+    "descriptions": [
+      {
+        "code": "J40",
+        "description": "Bronchitis, not specified as acute or chronic",
+        "line": 13553
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Bronchitis",
+    "interpretation": "J40 is unspecified as acute/chronic; Acute Bronchitis is a refinement, not proved synonymous by this source.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Acute COPD exacerbation / infection",
+    "released_metadata": {
+      "condition_name": "Acute COPD exacerbation / infection",
+      "cond-name-fr": "Exacerbation aigue de MPOC et/ou surinfection associée",
+      "cond-name-eng": "Acute COPD exacerbation / infection",
+      "icd10-id": "j44.1",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "J441",
+        "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+        "line": 13567
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Acute COPD exacerbation / infection",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Pulmonary embolism",
+    "released_metadata": {
+      "condition_name": "Pulmonary embolism",
+      "cond-name-fr": "Embolie pulmonaire",
+      "cond-name-eng": "Pulmonary embolism",
+      "icd10-id": "i26",
+      "severity": 2
+    },
+    "descriptions": [
+      {
+        "code": "I26",
+        "description": "Pulmonary embolism",
+        "line": 11724
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Pulmonary embolism",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "URTI",
+    "released_metadata": {
+      "condition_name": "URTI",
+      "cond-name-fr": "IVRS ou virémie",
+      "cond-name-eng": "URTI",
+      "icd10-id": "j06.9",
+      "severity": 5
+    },
+    "descriptions": [
+      {
+        "code": "J069",
+        "description": "Acute upper respiratory infection, unspecified",
+        "line": 13388
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/URTI",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Influenza",
+    "released_metadata": {
+      "condition_name": "Influenza",
+      "cond-name-fr": "Possible influenza ou syndrome virémique typique",
+      "cond-name-eng": "Influenza",
+      "icd10-id": "j11.1",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "J111",
+        "description": "Influenza due to unidentified influenza virus with other respiratory manifestations",
+        "line": 13411
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Influenza",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Pneumonia",
+    "released_metadata": {
+      "condition_name": "Pneumonia",
+      "cond-name-fr": "Pneumonie",
+      "cond-name-eng": "Pneumonia",
+      "icd10-id": "j17, j18",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "J17",
+        "description": "Pneumonia in diseases classified elsewhere",
+        "line": 13451
+      },
+      {
+        "code": "J18",
+        "description": "Pneumonia, unspecified organism",
+        "line": 13452
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Pneumonia",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Acute rhinosinusitis",
+    "released_metadata": {
+      "condition_name": "Acute rhinosinusitis",
+      "cond-name-fr": "Rhinosinusite aigue",
+      "cond-name-eng": "Acute rhinosinusitis",
+      "icd10-id": "j01",
+      "severity": 4
+    },
+    "descriptions": [
+      {
+        "code": "J01",
+        "description": "Acute sinusitis",
+        "line": 13336
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Acute rhinosinusitis",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Chronic rhinosinusitis",
+    "released_metadata": {
+      "condition_name": "Chronic rhinosinusitis",
+      "cond-name-fr": "Rhinosinusite chronique",
+      "cond-name-eng": "Chronic rhinosinusitis",
+      "icd10-id": "j32",
+      "severity": 5
+    },
+    "descriptions": [
+      {
+        "code": "J32",
+        "description": "Chronic sinusitis",
+        "line": 13488
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Chronic rhinosinusitis",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Bronchiolitis",
+    "released_metadata": {
+      "condition_name": "Bronchiolitis",
+      "cond-name-fr": "Bronchiolite",
+      "cond-name-eng": "Bronchiolitis",
+      "icd10-id": "j21",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "J21",
+        "description": "Acute bronchiolitis",
+        "line": 13469
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Bronchiolitis",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Pulmonary neoplasm",
+    "released_metadata": {
+      "condition_name": "Pulmonary neoplasm",
+      "cond-name-fr": "néoplasie pulmonaire",
+      "cond-name-eng": "Pulmonary neoplasm",
+      "icd10-id": "c34",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "C34",
+        "description": "Malignant neoplasm of bronchus and lung",
+        "line": 1475
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Pulmonary neoplasm",
+    "interpretation": "Name is broad, C34 denotes malignant bronchus/lung neoplasm. Code-based lung-cancer equivalence is a sensitivity, not a silent label replacement.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Possible NSTEMI / STEMI",
+    "released_metadata": {
+      "condition_name": "Possible NSTEMI / STEMI",
+      "cond-name-fr": "Possible NSTEMI / STEMI",
+      "cond-name-eng": "Possible NSTEMI / STEMI",
+      "icd10-id": "I21",
+      "severity": 1
+    },
+    "descriptions": [
+      {
+        "code": "I21",
+        "description": "Acute myocardial infarction",
+        "line": 11613
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Possible NSTEMI / STEMI",
+    "interpretation": "I21 denotes acute myocardial infarction; ACS also includes unstable angina. The latter is not an MI synonym.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Sarcoidosis",
+    "released_metadata": {
+      "condition_name": "Sarcoidosis",
+      "cond-name-fr": "Sarcoïdose",
+      "cond-name-eng": "Sarcoidosis",
+      "icd10-id": "d86",
+      "severity": 4
+    },
+    "descriptions": [
+      {
+        "code": "D86",
+        "description": "Sarcoidosis",
+        "line": 3845
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Sarcoidosis",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Pancreatic neoplasm",
+    "released_metadata": {
+      "condition_name": "Pancreatic neoplasm",
+      "cond-name-fr": "Néoplasie du pancréas",
+      "cond-name-eng": "Pancreatic neoplasm",
+      "icd10-id": "c25",
+      "severity": 3
+    },
+    "descriptions": [
+      {
+        "code": "C25",
+        "description": "Malignant neoplasm of pancreas",
+        "line": 1444
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Pancreatic neoplasm",
+    "interpretation": "Name is broad, C25 denotes malignant pancreas neoplasm. Keep source-coded sensitivity separate.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Acute pulmonary edema",
+    "released_metadata": {
+      "condition_name": "Acute pulmonary edema",
+      "cond-name-fr": "OAP/Surcharge pulmonaire",
+      "cond-name-eng": "Acute pulmonary edema",
+      "icd10-id": "J81.0",
+      "severity": 1
+    },
+    "descriptions": [
+      {
+        "code": "J810",
+        "description": "Acute pulmonary edema",
+        "line": 13660
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Acute pulmonary edema",
+    "interpretation": "Retain name and code separately; code linkage alone is not candidate equivalence.",
+    "code_override_permitted": false
+  },
+  {
+    "label": "Pericarditis",
+    "released_metadata": {
+      "condition_name": "Pericarditis",
+      "cond-name-fr": "Péricardite",
+      "cond-name-eng": "Pericarditis",
+      "icd10-id": "I30",
+      "severity": 4
+    },
+    "descriptions": [
+      {
+        "code": "I30",
+        "description": "Acute pericarditis",
+        "line": 11765
+      }
+    ],
+    "source_locator": "data/ddxplus_english_22687585/release_conditions.json/Pericarditis",
+    "interpretation": "Name omits acute; I30 denotes acute pericarditis. Keep source-coded sensitivity separate.",
+    "code_override_permitted": false
+  }
+]

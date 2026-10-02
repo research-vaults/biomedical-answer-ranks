@@ -1,0 +1,2705 @@
+{
+  "status": "FROZEN_BEFORE_SELECTOR_OUTPUTS",
+  "pools": 384,
+  "mapping_pairs": 3085,
+  "unresolved_pairs": 2204,
+  "reused_pairs": 1317,
+  "expected_choices": 1536,
+  "schedule_sha256": "ef0ccebf0ce850c10c23f61d51ce42ac765503045f7b3f65c17840cd9ac130b5",
+  "map_sha256": "7cbdbc7fff010bf481b801e4f7b808220535035945396fb2d0f0b15bb240fe34",
+  "pools_sha256": "2203223dc4afcd781b3afafb3664c3d9c422ae7bf9ede89b89379541601392be",
+  "checks": [
+    {
+      "pool_id": "fresh96natural::case_61180::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_61180::control::uniform_mixed",
+      "candidate_count": 16,
+      "shift": 11,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_61180::trap::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 7,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_61180::trap::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 13,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_116414::control::homogeneous_gemma",
+      "candidate_count": 13,
+      "shift": 10,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_116414::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 8,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_116414::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 5,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_116414::trap::uniform_mixed",
+      "candidate_count": 18,
+      "shift": 8,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_131891::control::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_131891::control::uniform_mixed",
+      "candidate_count": 32,
+      "shift": 17,
+      "unchanged_support": 5,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_131891::trap::homogeneous_gemma",
+      "candidate_count": 14,
+      "shift": 10,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_131891::trap::uniform_mixed",
+      "candidate_count": 30,
+      "shift": 6,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_10562::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_10562::control::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 24,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_10562::trap::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_10562::trap::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 4,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_103369::control::homogeneous_gemma",
+      "candidate_count": 22,
+      "shift": 2,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_103369::control::uniform_mixed",
+      "candidate_count": 30,
+      "shift": 12,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_103369::trap::homogeneous_gemma",
+      "candidate_count": 21,
+      "shift": 19,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_103369::trap::uniform_mixed",
+      "candidate_count": 38,
+      "shift": 34,
+      "unchanged_support": 9,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_100465::control::homogeneous_gemma",
+      "candidate_count": 14,
+      "shift": 9,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_100465::control::uniform_mixed",
+      "candidate_count": 27,
+      "shift": 24,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_100465::trap::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_100465::trap::uniform_mixed",
+      "candidate_count": 29,
+      "shift": 8,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_737::control::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_737::control::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 5,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_737::trap::homogeneous_gemma",
+      "candidate_count": 17,
+      "shift": 4,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_737::trap::uniform_mixed",
+      "candidate_count": 29,
+      "shift": 5,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_18073::control::homogeneous_gemma",
+      "candidate_count": 15,
+      "shift": 12,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_18073::control::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 19,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_18073::trap::homogeneous_gemma",
+      "candidate_count": 6,
+      "shift": 5,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_18073::trap::uniform_mixed",
+      "candidate_count": 24,
+      "shift": 12,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_124275::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_124275::control::uniform_mixed",
+      "candidate_count": 17,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_124275::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_124275::trap::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 5,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_8040::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_8040::control::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 13,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_8040::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 4,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_8040::trap::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 22,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_118887::control::homogeneous_gemma",
+      "candidate_count": 16,
+      "shift": 15,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_118887::control::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 25,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_118887::trap::homogeneous_gemma",
+      "candidate_count": 17,
+      "shift": 15,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_118887::trap::uniform_mixed",
+      "candidate_count": 30,
+      "shift": 16,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_60652::control::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 1,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_60652::control::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 19,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_60652::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_60652::trap::uniform_mixed",
+      "candidate_count": 27,
+      "shift": 19,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_91726::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_91726::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 6,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_91726::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_91726::trap::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 18,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_28293::control::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 10,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_28293::control::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 20,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_28293::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 9,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_28293::trap::uniform_mixed",
+      "candidate_count": 27,
+      "shift": 20,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_132662::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 8,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_132662::control::uniform_mixed",
+      "candidate_count": 27,
+      "shift": 2,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_132662::trap::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_132662::trap::uniform_mixed",
+      "candidate_count": 29,
+      "shift": 5,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_51165::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_51165::control::uniform_mixed",
+      "candidate_count": 18,
+      "shift": 13,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_51165::trap::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_51165::trap::uniform_mixed",
+      "candidate_count": 19,
+      "shift": 7,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_17256::control::homogeneous_gemma",
+      "candidate_count": 18,
+      "shift": 16,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_17256::control::uniform_mixed",
+      "candidate_count": 32,
+      "shift": 3,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_17256::trap::homogeneous_gemma",
+      "candidate_count": 17,
+      "shift": 14,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_17256::trap::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 6,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_190095::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_190095::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 11,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_190095::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_190095::trap::uniform_mixed",
+      "candidate_count": 30,
+      "shift": 17,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_10622::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 3,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_10622::control::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 15,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_10622::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 3,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_10622::trap::uniform_mixed",
+      "candidate_count": 19,
+      "shift": 13,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_14617::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_14617::control::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 16,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_14617::trap::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 10,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_14617::trap::uniform_mixed",
+      "candidate_count": 24,
+      "shift": 3,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_132229::control::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_132229::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 14,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_132229::trap::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 1,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_132229::trap::uniform_mixed",
+      "candidate_count": 19,
+      "shift": 3,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_5165::control::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 7,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_5165::control::uniform_mixed",
+      "candidate_count": 30,
+      "shift": 16,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_5165::trap::homogeneous_gemma",
+      "candidate_count": 15,
+      "shift": 1,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_5165::trap::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 12,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_65094::control::homogeneous_gemma",
+      "candidate_count": 13,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_65094::control::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 14,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_65094::trap::homogeneous_gemma",
+      "candidate_count": 13,
+      "shift": 5,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_65094::trap::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 8,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_101629::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_101629::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 13,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_101629::trap::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_101629::trap::uniform_mixed",
+      "candidate_count": 20,
+      "shift": 7,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_190278::control::homogeneous_gemma",
+      "candidate_count": 5,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_190278::control::uniform_mixed",
+      "candidate_count": 19,
+      "shift": 9,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_190278::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 6,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_190278::trap::uniform_mixed",
+      "candidate_count": 20,
+      "shift": 10,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_124077::control::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 9,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_124077::control::uniform_mixed",
+      "candidate_count": 30,
+      "shift": 8,
+      "unchanged_support": 5,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_124077::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_124077::trap::uniform_mixed",
+      "candidate_count": 16,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_108084::control::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 8,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_108084::control::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 12,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_108084::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 9,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_108084::trap::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 10,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_92160::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_92160::control::uniform_mixed",
+      "candidate_count": 20,
+      "shift": 9,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_92160::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_92160::trap::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 5,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_70986::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_70986::control::uniform_mixed",
+      "candidate_count": 24,
+      "shift": 13,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_70986::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 7,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_70986::trap::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 21,
+      "unchanged_support": 5,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_107410::control::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_107410::control::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 7,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_107410::trap::homogeneous_gemma",
+      "candidate_count": 5,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_107410::trap::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 11,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_4842::control::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 5,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_4842::control::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 3,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_4842::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 6,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_4842::trap::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 10,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_117562::control::homogeneous_gemma",
+      "candidate_count": 6,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_117562::control::uniform_mixed",
+      "candidate_count": 29,
+      "shift": 19,
+      "unchanged_support": 6,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_117562::trap::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 10,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_117562::trap::uniform_mixed",
+      "candidate_count": 27,
+      "shift": 2,
+      "unchanged_support": 5,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_65924::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 2,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_65924::control::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 9,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_65924::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_65924::trap::uniform_mixed",
+      "candidate_count": 20,
+      "shift": 1,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_22562::control::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_22562::control::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 18,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_22562::trap::homogeneous_gemma",
+      "candidate_count": 6,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_22562::trap::uniform_mixed",
+      "candidate_count": 19,
+      "shift": 3,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_127538::control::homogeneous_gemma",
+      "candidate_count": 5,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_127538::control::uniform_mixed",
+      "candidate_count": 15,
+      "shift": 13,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_127538::trap::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_127538::trap::uniform_mixed",
+      "candidate_count": 18,
+      "shift": 9,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_81017::control::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 5,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_81017::control::uniform_mixed",
+      "candidate_count": 20,
+      "shift": 18,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_81017::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 8,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_81017::trap::uniform_mixed",
+      "candidate_count": 17,
+      "shift": 6,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_129971::control::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_129971::control::uniform_mixed",
+      "candidate_count": 32,
+      "shift": 22,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_129971::trap::homogeneous_gemma",
+      "candidate_count": 14,
+      "shift": 3,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_129971::trap::uniform_mixed",
+      "candidate_count": 31,
+      "shift": 11,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_87004::control::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_87004::control::uniform_mixed",
+      "candidate_count": 18,
+      "shift": 16,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_87004::trap::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 5,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_87004::trap::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 12,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_30022::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_30022::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 5,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_30022::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_30022::trap::uniform_mixed",
+      "candidate_count": 20,
+      "shift": 11,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_113660::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_113660::control::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 11,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_113660::trap::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_113660::trap::uniform_mixed",
+      "candidate_count": 29,
+      "shift": 15,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_56575::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 5,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_56575::control::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 2,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_56575::trap::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 5,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_56575::trap::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 4,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_106645::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 8,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_106645::control::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 14,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_106645::trap::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 5,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_106645::trap::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 12,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_28360::control::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_28360::control::uniform_mixed",
+      "candidate_count": 16,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_28360::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 4,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_28360::trap::uniform_mixed",
+      "candidate_count": 15,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_112147::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 5,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_112147::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 2,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_112147::trap::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_112147::trap::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 4,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_5454::control::homogeneous_gemma",
+      "candidate_count": 6,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_5454::control::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 19,
+      "unchanged_support": 5,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_5454::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_5454::trap::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 14,
+      "unchanged_support": 8,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_70802::control::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 9,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_70802::control::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 9,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_70802::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 7,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_70802::trap::uniform_mixed",
+      "candidate_count": 27,
+      "shift": 16,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_12897::control::homogeneous_gemma",
+      "candidate_count": 13,
+      "shift": 9,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_12897::control::uniform_mixed",
+      "candidate_count": 31,
+      "shift": 2,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_12897::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 5,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_12897::trap::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 16,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_29352::control::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 2,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_29352::control::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 10,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_29352::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_29352::trap::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 18,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_98829::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 6,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_98829::control::uniform_mixed",
+      "candidate_count": 17,
+      "shift": 14,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_98829::trap::homogeneous_gemma",
+      "candidate_count": 15,
+      "shift": 3,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_98829::trap::uniform_mixed",
+      "candidate_count": 16,
+      "shift": 12,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_15765::control::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 6,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_15765::control::uniform_mixed",
+      "candidate_count": 32,
+      "shift": 26,
+      "unchanged_support": 6,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_15765::trap::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 9,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_15765::trap::uniform_mixed",
+      "candidate_count": 33,
+      "shift": 27,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_16822::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_16822::control::uniform_mixed",
+      "candidate_count": 24,
+      "shift": 2,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_16822::trap::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_16822::trap::uniform_mixed",
+      "candidate_count": 19,
+      "shift": 10,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_132859::control::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_132859::control::uniform_mixed",
+      "candidate_count": 24,
+      "shift": 10,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_132859::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 2,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_132859::trap::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 12,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_106695::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_106695::control::uniform_mixed",
+      "candidate_count": 32,
+      "shift": 19,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_106695::trap::homogeneous_gemma",
+      "candidate_count": 13,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_106695::trap::uniform_mixed",
+      "candidate_count": 29,
+      "shift": 20,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_11463::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_11463::control::uniform_mixed",
+      "candidate_count": 24,
+      "shift": 15,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_11463::trap::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_11463::trap::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 10,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_12967::control::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_12967::control::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 14,
+      "unchanged_support": 5,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_12967::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_12967::trap::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 14,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_17052::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 5,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_17052::control::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 1,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_17052::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_17052::trap::uniform_mixed",
+      "candidate_count": 20,
+      "shift": 7,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_104202::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_104202::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 10,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_104202::trap::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 4,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_104202::trap::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 2,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_74893::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 1,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_74893::control::uniform_mixed",
+      "candidate_count": 24,
+      "shift": 21,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_74893::trap::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_74893::trap::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 6,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_77063::control::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 9,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_77063::control::uniform_mixed",
+      "candidate_count": 27,
+      "shift": 4,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_77063::trap::homogeneous_gemma",
+      "candidate_count": 14,
+      "shift": 13,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_77063::trap::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 24,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_97816::control::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_97816::control::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 10,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_97816::trap::homogeneous_gemma",
+      "candidate_count": 6,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_97816::trap::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 15,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_86461::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_86461::control::uniform_mixed",
+      "candidate_count": 27,
+      "shift": 3,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_86461::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_86461::trap::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 11,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_59154::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_59154::control::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 15,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_59154::trap::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 4,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_59154::trap::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 19,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_26856::control::homogeneous_gemma",
+      "candidate_count": 15,
+      "shift": 3,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_26856::control::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 22,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_26856::trap::homogeneous_gemma",
+      "candidate_count": 16,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_26856::trap::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 16,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_62650::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_62650::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 1,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_62650::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 8,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_62650::trap::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 4,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_8858::control::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 2,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_8858::control::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 5,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_8858::trap::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 2,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_8858::trap::uniform_mixed",
+      "candidate_count": 32,
+      "shift": 8,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_24439::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_24439::control::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 10,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_24439::trap::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_24439::trap::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 13,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_69009::control::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_69009::control::uniform_mixed",
+      "candidate_count": 19,
+      "shift": 14,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_69009::trap::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_69009::trap::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 15,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_116633::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_116633::control::uniform_mixed",
+      "candidate_count": 20,
+      "shift": 8,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_116633::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_116633::trap::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 15,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_14846::control::homogeneous_gemma",
+      "candidate_count": 13,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_14846::control::uniform_mixed",
+      "candidate_count": 29,
+      "shift": 22,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_14846::trap::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 9,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_14846::trap::uniform_mixed",
+      "candidate_count": 27,
+      "shift": 2,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_89249::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_89249::control::uniform_mixed",
+      "candidate_count": 24,
+      "shift": 2,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_89249::trap::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 8,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_89249::trap::uniform_mixed",
+      "candidate_count": 27,
+      "shift": 25,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_11971::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 3,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_11971::control::uniform_mixed",
+      "candidate_count": 29,
+      "shift": 18,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_11971::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_11971::trap::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 23,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_121593::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 9,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_121593::control::uniform_mixed",
+      "candidate_count": 24,
+      "shift": 6,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_121593::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 7,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_121593::trap::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 7,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_99593::control::homogeneous_gemma",
+      "candidate_count": 14,
+      "shift": 2,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_99593::control::uniform_mixed",
+      "candidate_count": 29,
+      "shift": 14,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_99593::trap::homogeneous_gemma",
+      "candidate_count": 15,
+      "shift": 10,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_99593::trap::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 14,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_115060::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 8,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_115060::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 8,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_115060::trap::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 7,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_115060::trap::uniform_mixed",
+      "candidate_count": 31,
+      "shift": 7,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_90836::control::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_90836::control::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 7,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_90836::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 3,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_90836::trap::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 11,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_19309::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_19309::control::uniform_mixed",
+      "candidate_count": 16,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_19309::trap::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_19309::trap::uniform_mixed",
+      "candidate_count": 14,
+      "shift": 9,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_86719::control::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_86719::control::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 24,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_86719::trap::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_86719::trap::uniform_mixed",
+      "candidate_count": 30,
+      "shift": 14,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_105868::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_105868::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_105868::trap::homogeneous_gemma",
+      "candidate_count": 6,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_105868::trap::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_11304::control::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 10,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_11304::control::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 13,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_11304::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_11304::trap::uniform_mixed",
+      "candidate_count": 31,
+      "shift": 11,
+      "unchanged_support": 7,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_60587::control::homogeneous_gemma",
+      "candidate_count": 13,
+      "shift": 11,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_60587::control::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 9,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_60587::trap::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 6,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_60587::trap::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 13,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_121478::control::homogeneous_gemma",
+      "candidate_count": 13,
+      "shift": 2,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_121478::control::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 5,
+      "unchanged_support": 5,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_121478::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_121478::trap::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 10,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_1307::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_1307::control::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 7,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_1307::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 8,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_1307::trap::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 12,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_98772::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_98772::control::uniform_mixed",
+      "candidate_count": 24,
+      "shift": 17,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_98772::trap::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_98772::trap::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 19,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_131899::control::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_131899::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 13,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_131899::trap::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_131899::trap::uniform_mixed",
+      "candidate_count": 24,
+      "shift": 13,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_26604::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_26604::control::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 22,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_26604::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 5,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_26604::trap::uniform_mixed",
+      "candidate_count": 19,
+      "shift": 3,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_199921::control::homogeneous_gemma",
+      "candidate_count": 7,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_199921::control::uniform_mixed",
+      "candidate_count": 18,
+      "shift": 15,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_199921::trap::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_199921::trap::uniform_mixed",
+      "candidate_count": 21,
+      "shift": 8,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_85702::control::homogeneous_gemma",
+      "candidate_count": 5,
+      "shift": 1,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_85702::control::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 14,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_85702::trap::homogeneous_gemma",
+      "candidate_count": 5,
+      "shift": 4,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_85702::trap::uniform_mixed",
+      "candidate_count": 17,
+      "shift": 11,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_63262::control::homogeneous_gemma",
+      "candidate_count": 12,
+      "shift": 2,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_63262::control::uniform_mixed",
+      "candidate_count": 24,
+      "shift": 2,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_63262::trap::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 5,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_63262::trap::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 21,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_55317::control::homogeneous_gemma",
+      "candidate_count": 13,
+      "shift": 6,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_55317::control::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 10,
+      "unchanged_support": 5,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_55317::trap::homogeneous_gemma",
+      "candidate_count": 11,
+      "shift": 2,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_55317::trap::uniform_mixed",
+      "candidate_count": 31,
+      "shift": 27,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_193676::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_193676::control::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 5,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_193676::trap::homogeneous_gemma",
+      "candidate_count": 14,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_193676::trap::uniform_mixed",
+      "candidate_count": 27,
+      "shift": 13,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_25654::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 5,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_25654::control::uniform_mixed",
+      "candidate_count": 25,
+      "shift": 2,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_25654::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_25654::trap::uniform_mixed",
+      "candidate_count": 22,
+      "shift": 7,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_72280::control::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 5,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_72280::control::uniform_mixed",
+      "candidate_count": 24,
+      "shift": 19,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_72280::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_72280::trap::uniform_mixed",
+      "candidate_count": 19,
+      "shift": 12,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_121914::control::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 4,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_121914::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 9,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_121914::trap::homogeneous_gemma",
+      "candidate_count": 10,
+      "shift": 9,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_121914::trap::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 20,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_522::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 7,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_522::control::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 17,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_522::trap::homogeneous_gemma",
+      "candidate_count": 9,
+      "shift": 2,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_522::trap::uniform_mixed",
+      "candidate_count": 27,
+      "shift": 16,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_5672::control::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_5672::control::uniform_mixed",
+      "candidate_count": 23,
+      "shift": 20,
+      "unchanged_support": 1,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_5672::trap::homogeneous_gemma",
+      "candidate_count": 8,
+      "shift": 3,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_5672::trap::uniform_mixed",
+      "candidate_count": 26,
+      "shift": 19,
+      "unchanged_support": 2,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_27063::control::homogeneous_gemma",
+      "candidate_count": 15,
+      "shift": 9,
+      "unchanged_support": 3,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_27063::control::uniform_mixed",
+      "candidate_count": 28,
+      "shift": 27,
+      "unchanged_support": 4,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_27063::trap::homogeneous_gemma",
+      "candidate_count": 15,
+      "shift": 11,
+      "unchanged_support": 0,
+      "fixed_candidate_content_and_order": true
+    },
+    {
+      "pool_id": "fresh96natural::case_27063::trap::uniform_mixed",
+      "candidate_count": 32,
+      "shift": 16,
+      "unchanged_support": 12,
+      "fixed_candidate_content_and_order": true
+    }
+  ],
+  "preparation_sha256": "3cfebd33978dc43f9f8095aac8dfc69ebf61ac7e0299181bfa2ca9549974e074",
+  "analysis_sha256": "9d113f32adb183d2dee797999b68b53ce2a6789d01988406e96c36f6353febeb",
+  "serving_amendment_sha256": "92cc1ea2aba7ad70c3b38904a86876ea49de860915a8d00bc9afcdd23d9d2bb7",
+  "release_integrity_only": true
+}

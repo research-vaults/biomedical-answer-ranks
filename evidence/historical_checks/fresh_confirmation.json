@@ -1,0 +1,11 @@
+{
+  "status": "PASS_RAW_ARITHMETIC_PROTOCOL_NOT_CLINICAL_AUTHORITY",
+  "raw_choices_rechecked": 2112,
+  "primary_J_means_recomputed": 6,
+  "paired_tuple_and_order_checks": 960,
+  "fresh_case_pairs": 96,
+  "old_C2_overlap": 0,
+  "incremental_usd_with_probe_reserve": 0.794930656886324,
+  "project_cumulative_usd": 9.306940966886325,
+  "record_scope": "Historical verification of original research records, preserved as evidence; not a claim that sanitized files retain original byte hashes."
+}
