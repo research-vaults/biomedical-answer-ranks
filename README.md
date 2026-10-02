@@ -1,17 +1,20 @@
 # Discarding Answer Ranks Changes the Case for Mixing Biomedical LLMs
 
-Public research release of recorded biomedical model outputs, analysis code,
-claim-supporting traces, and a complete manuscript. This is a method-analysis
-study, not a new voting method or a clinical decision system.
+Counting every answer in a ranked list can make mixing models look better by
+weakening the repeated-model baseline. This repository reproduces that
+comparison from saved biomedical model outputs; it introduces no new voting rule.
+
+[Paper PDF](manuscript/current/full-paper.pdf) ·
+[Fixed paper version](https://github.com/research-vaults/biomedical-answer-ranks/blob/956426b4e3b352f21a6ef06a5cd9142b3efb7835/manuscript/current/full-paper.pdf) ·
+[LaTeX source](manuscript/current/main.tex) ·
+[Source ZIP](manuscript/current/manuscript-source.zip)
 
 ## Paper and findings
 
-[Full manuscript](manuscript/current/full-paper.pdf): **1 October 2026 research
-draft**, with nine scientific pages, references on pages 10–12, and supplement
-on pages 13–38. This is not a claim that these bytes were submitted or accepted.
-[LaTeX source](manuscript/current/main.tex), all figures and style files, and a
-[self-contained source ZIP](manuscript/current/manuscript-source.zip) are included.
-PDF SHA-256: `1707638557abe487c73d3a513b2e0b3731e70fba62a2422b367928f972e51be1`.
+**Manuscript:** 1 October 2026 research draft, not the accepted workshop-upload
+version. Scientific pages 1–9; references 10–12; supplement 13–38.
+**Artifact:** 2 October 2026 saved-output release. The checksum manifest binds
+the distributed inputs, source and PDF.
 
 Holding ranked answers fixed, counting every listed answer rather than just the
 first can weaken repeated-model sampling more than mixed-model sampling. On 288
@@ -24,12 +27,13 @@ selected first-choice policy. The intervals are the manuscript's 95% intervals.
 Model quality is not matched; these results do not isolate an intrinsic effect
 of lineage diversity or establish clinical validity.
 
-## Setup and reproduction
+## Quick start
 
 Use Python 3.11 or later on a CPU. Install dependencies once; subsequent
 stored-output analyses need no network, credentials, model weights, GPU or API.
 Allow several minutes and approximately 2 GB working disk for extracted inputs
-and isolated replay outputs. Use a new output directory for each run.
+and isolated replay outputs. Use a new output directory for each run. The
+recorded environment uses the versions in `requirements.txt`.
 
 ```bash
 python3 -m venv .venv
@@ -39,25 +43,25 @@ python3 -m venv .venv
 .venv/bin/python src/reproduce_latest.py --output outputs/latest
 ```
 
-The latest replay runs ten supplementary capsules, including the eight-check
-representation suite, exact allocation/budget analyses, rank destruction,
-task and composition sensitivities, information controls, tie policies and the
-equal-budget donor screen. It verifies archive checksums and compares generated
-results with the supplied expected outputs. The experiments are **not rerun**:
-the scripts recompute inference on already recorded outputs. Bootstrap samples,
-banks, reused questions and retries do not create additional independent cases.
+Expected completion: `PASS: all ten current capsules; no new model outputs.`
+Results and per-capsule logs appear in `outputs/latest/`; `VERIFICATION.json`
+records the comparisons. The runner verifies archive checksums and compares
+recomputed results with frozen expectations. It does not regenerate model answers.
 
-Earlier scientifically relevant controls are also reproducible:
+## Which command supports which result?
 
-```bash
-.venv/bin/python src/reproduce.py --output outputs/earlier-controls
-.venv/bin/python src/verify_common_pool_traces.py
-```
+Run these from the repository root with the environment above.
 
-These earlier analyses include failed transport and scoring-sensitive findings;
-they are not substituted for the paper's native-answer-key results. The older
-five-check entry point `src/reproduce_current.py` is retained for compatibility;
-use `reproduce_latest.py` for the complete present suite.
+| Evidence | Command | Scope |
+|---|---|---|
+| Main fixed-ballot contrast, selected-policy comparison and Health transfer | `.venv/bin/python src/reproduce_latest.py --output outputs/latest` | Recommended entry point; includes the eight-check representation suite |
+| Rank, tie, composition, task, information and finite-budget analyses | Same `reproduce_latest.py` command | Included in its ten capsules; exploratory reuse is preserved |
+| Earlier candidate-selection and support-channel controls | `.venv/bin/python src/reproduce.py --output outputs/earlier-controls` | Supporting evidence, including failed transport and scoring sensitivity |
+| Text/payload consistency of the common-pool control | `.venv/bin/python src/verify_common_pool_traces.py` | Reconstructs choices and point estimates from recorded responses |
+
+The older `reproduce_current.py` runs a superseded five-check subset and is kept
+for compatibility; it is not needed in addition to `reproduce_latest.py`.
+Bootstrap samples, banks, reused questions and retries are not independent cases.
 
 ## Rebuild the paper
 
@@ -90,26 +94,41 @@ Ministral-14B, Qwen2.5-14B and Llama-3.3-70B. The central 720-question and Healt
 tests use Gemma and Llama-3.3-70B; the latter is not a small model. See the
 manuscript and schedules for model identifiers and per-study participation.
 
-Only recorded returned model text is included; no hidden reasoning is inferred.
-Provider envelopes, account IDs, credentials, private patient data, internal
-reviews, planning files and obsolete manuscript drafts are excluded. Historical
-capsule filenames, experimental IDs and hash-seed namespaces remain where they
-are scientific provenance or affect numerical reproduction. Capsule statements
-about their original internal creation are historical, not this release's status.
+## Reproduction boundaries and rights
 
-See [data attribution](docs/DATA_AND_ATTRIBUTION.md) and
-[evidence and large files](docs/EVIDENCE_AND_LARGE_FILES.md). Files are limited
-to 50 MiB; large traces use deterministic gzip shards. No Git LFS or separately
-authenticated storage is needed. Third-party licenses and citation attribution
-are preserved; this release does not relicense third-party material.
+The replay checks inference on saved answers, not fresh generation, clinical
+adjudication, or historical provider kernels. Earlier clinical-name scoring
+remains conditional on its frozen mappings. Failed calls, null results and
+source-transfer failures are retained. Current figure assets are included;
+the numerical replay does not regenerate every original plotting pipeline.
+
+See [data attribution and terms](docs/DATA_AND_ATTRIBUTION.md),
+[evidence and large-file handling](docs/EVIDENCE_AND_LARGE_FILES.md), and
+[data transformations](docs/RELEASE_TRANSFORMATIONS.md). Scientific IDs and
+seed namespaces are retained for reproducibility. Traces contain returned model
+text, not inferred hidden reasoning. Large traces use checksummed gzip shards;
+no Git LFS or separate storage account is needed.
+
+**Original-code licence:** no project-wide reuse licence has yet been granted
+for original code, manuscript or generated records. Public availability is not
+a declaration of open-source licensing. Third-party materials retain their
+stated terms; this repository does not relicense them.
 
 Optional `src/replay_requests.py` defaults to a dry run and can execute explicitly
 limited archived requests only when requested. New calls cost money and produce
 new stochastic observations; they are not necessary for the numerical replay.
 Never commit environment files or credentials.
 
-This public repository may be associated with its authors through external
-links. It is **not certified anonymous for conference review**; a separate
-reviewer-facing snapshot must be used when required. No conference submission
-was changed to create this release. Numerical reproduction is not independent
-clinical adjudication or a guarantee of future model behavior.
+## Cite this version
+
+This title-based reference identifies the distributed research draft without
+adding unverified author metadata:
+
+```bibtex
+@misc{discarding_answer_ranks_2026,
+  title = {Discarding Answer Ranks Changes the Case for Mixing Biomedical LLMs},
+  year = {2026},
+  note = {Research draft, 1 October 2026; saved-output artifact, 2 October 2026},
+  url = {https://github.com/research-vaults/biomedical-answer-ranks/blob/956426b4e3b352f21a6ef06a5cd9142b3efb7835/manuscript/current/full-paper.pdf}
+}
+```
